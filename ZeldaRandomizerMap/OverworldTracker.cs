@@ -350,13 +350,13 @@ namespace ZeldaRandomizerMap
             switch (m_overworldType)
             {
                 case OverworldType.First:
-                    m_cells[m_activeColumn, m_activeRow] = StartingCells1[m_activeColumn, m_activeRow];
+                    m_cells[m_activeRow, m_activeColumn] = StartingCells1[m_activeRow, m_activeColumn];
                     break;
                 case OverworldType.Second:
-                    m_cells[m_activeColumn, m_activeRow] = StartingCells2[m_activeColumn, m_activeRow];
+                    m_cells[m_activeRow, m_activeColumn] = StartingCells2[m_activeRow, m_activeColumn];
                     break;
                 case OverworldType.Mixed:
-                    m_cells[m_activeColumn, m_activeRow] = StartingCellsMixed[m_activeColumn, m_activeRow];
+                    m_cells[m_activeRow, m_activeColumn] = StartingCellsMixed[m_activeRow, m_activeColumn];
                     break;
             }
             UpdateUnexploredImage();
