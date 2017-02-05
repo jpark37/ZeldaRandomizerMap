@@ -19,7 +19,6 @@ namespace ZeldaRandomizerMap
             Ladder,
             Recorder,
             BombLadder,
-            FreeRecorder,
         }
 
         enum ExploreType
@@ -442,9 +441,6 @@ namespace ZeldaRandomizerMap
                                         case CellType.BombLadder:
                                             UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, decalX < 24 || decalY < 24 ? Color.White : Color.White);
                                             break;
-                                        case CellType.FreeRecorder:
-                                            UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, decalX < 24 || decalY < 24 ? Color.White : Color.Black);
-                                            break;
                                     }
                                 }
                             }
@@ -611,14 +607,14 @@ namespace ZeldaRandomizerMap
 
         static CellType[,] StartingCellsMixed =
         {
-            { CellType.Bomb,     CellType.Bomb,     CellType.Bomb,     CellType.Bomb,     CellType.Free,  CellType.Bomb, CellType.Recorder, CellType.Bomb,   CellType.None,       CellType.Bracelet,   CellType.Free,     CellType.Free,     CellType.Free,         CellType.Bomb,     CellType.Free,     CellType.Free },
-            { CellType.Bomb,     CellType.Bracelet, CellType.Bomb,     CellType.Bomb,     CellType.Bomb,  CellType.Bomb, CellType.Bomb,     CellType.None,   CellType.BombLadder, CellType.BombLadder, CellType.Free,     CellType.Bracelet, CellType.Armos,        CellType.Bracelet, CellType.Bomb,     CellType.Free },
-            { CellType.Free,     CellType.Free,     CellType.Free,     CellType.Bracelet, CellType.Armos, CellType.Free, CellType.Bomb,     CellType.Bomb,   CellType.Candle,     CellType.Recorder,   CellType.None,     CellType.Recorder, CellType.Bomb,         CellType.Bomb,     CellType.None,     CellType.Raft },
-            { CellType.Recorder, CellType.None,     CellType.None,     CellType.Bomb,     CellType.Armos, CellType.None, CellType.None,     CellType.Free,   CellType.None,       CellType.None,       CellType.Recorder, CellType.None,     CellType.FreeRecorder, CellType.Armos,    CellType.None,     CellType.None },
-            { CellType.None,     CellType.None,     CellType.Recorder, CellType.None,     CellType.Free,  CellType.Raft, CellType.Candle,   CellType.Candle, CellType.Candle,     CellType.Bracelet,   CellType.Free,     CellType.Candle,   CellType.None,         CellType.Candle,   CellType.Armos,    CellType.None },
-            { CellType.None,     CellType.Candle,   CellType.None,     CellType.Candle,   CellType.None,  CellType.None, CellType.Candle,   CellType.None,   CellType.Recorder,   CellType.None,       CellType.None,     CellType.Candle,   CellType.None,         CellType.None,     CellType.Free,     CellType.Ladder },
-            { CellType.Recorder, CellType.None,     CellType.Candle,   CellType.Candle,   CellType.Free,  CellType.None, CellType.Free,     CellType.Bomb,   CellType.Candle,     CellType.None,       CellType.Candle,   CellType.Candle,   CellType.Candle,       CellType.Candle,     CellType.Recorder, CellType.Free },
-            { CellType.Free,     CellType.Bomb,     CellType.Recorder, CellType.None,     CellType.Free,  CellType.Free, CellType.Bomb,     CellType.Free,   CellType.Candle,     CellType.Bracelet,   CellType.None,     CellType.Bomb,     CellType.Bomb,         CellType.Bomb,     CellType.None,     CellType.None },
+            { CellType.Bomb,     CellType.Bomb,     CellType.Bomb,     CellType.Bomb,     CellType.Free,  CellType.Bomb, CellType.Recorder, CellType.Bomb,   CellType.None,       CellType.Bracelet,   CellType.Free,     CellType.Free,     CellType.Free,     CellType.Bomb,     CellType.Free,     CellType.Free },
+            { CellType.Bomb,     CellType.Bracelet, CellType.Bomb,     CellType.Bomb,     CellType.Bomb,  CellType.Bomb, CellType.Bomb,     CellType.None,   CellType.BombLadder, CellType.BombLadder, CellType.Free,     CellType.Bracelet, CellType.Armos,    CellType.Bracelet, CellType.Bomb,     CellType.Free },
+            { CellType.Free,     CellType.Free,     CellType.Free,     CellType.Bracelet, CellType.Armos, CellType.Free, CellType.Bomb,     CellType.Bomb,   CellType.Candle,     CellType.Recorder,   CellType.None,     CellType.Recorder, CellType.Bomb,     CellType.Bomb,     CellType.None,     CellType.Raft },
+            { CellType.Recorder, CellType.None,     CellType.None,     CellType.Bomb,     CellType.Armos, CellType.None, CellType.None,     CellType.Free,   CellType.None,       CellType.None,       CellType.Recorder, CellType.None,     CellType.Recorder, CellType.Armos,    CellType.None,     CellType.None },
+            { CellType.None,     CellType.None,     CellType.Recorder, CellType.None,     CellType.Free,  CellType.Raft, CellType.Candle,   CellType.Candle, CellType.Candle,     CellType.Bracelet,   CellType.Free,     CellType.Candle,   CellType.None,     CellType.Candle,   CellType.Armos,    CellType.None },
+            { CellType.None,     CellType.Candle,   CellType.None,     CellType.Candle,   CellType.None,  CellType.None, CellType.Candle,   CellType.None,   CellType.Recorder,   CellType.None,       CellType.None,     CellType.Candle,   CellType.None,     CellType.None,     CellType.Free,     CellType.Ladder },
+            { CellType.Recorder, CellType.None,     CellType.Candle,   CellType.Candle,   CellType.Free,  CellType.None, CellType.Free,     CellType.Bomb,   CellType.Candle,     CellType.None,       CellType.Candle,   CellType.Candle,   CellType.Candle,   CellType.Candle,     CellType.Recorder, CellType.Free },
+            { CellType.Free,     CellType.Bomb,     CellType.Recorder, CellType.None,     CellType.Free,  CellType.Free, CellType.Bomb,     CellType.Free,   CellType.Candle,     CellType.Bracelet,   CellType.None,     CellType.Bomb,     CellType.Bomb,     CellType.Bomb,     CellType.None,     CellType.None },
         };
 
         CellType[,] m_cells = (CellType[,])StartingCells1.Clone();
