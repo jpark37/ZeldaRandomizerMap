@@ -112,6 +112,10 @@ namespace ZeldaRandomizerMap
                 case RoomType.NearPatra:
                     m_levelRooms[row, column] = RoomType.Clear;
                     UpdateRoom(row, column);
+                    UnsetRoomNearPatraHelper(m_levelRow - 1, m_levelColumn);
+                    UnsetRoomNearPatraHelper(m_levelRow, m_levelColumn - 1);
+                    UnsetRoomNearPatraHelper(m_levelRow, m_levelColumn + 1);
+                    UnsetRoomNearPatraHelper(m_levelRow + 1, m_levelColumn);
                     break;
             }
         }
@@ -311,6 +315,20 @@ namespace ZeldaRandomizerMap
                 if (m_levelRooms[row, column] == RoomType.Pending)
                 {
                     m_levelRooms[row, column] = RoomType.NearPatra;
+                    UpdateRoom(row, column);
+                }
+            }
+        }
+
+        private void UnsetRoomNearPatraHelper(int row, int column)
+        {
+            int rowCount = m_levelRooms.GetLength(0);
+            int columnCount = m_levelRooms.GetLength(1);
+            if (row >= 0 && row < rowCount && column >= 0 && column < columnCount)
+            {
+                if (m_levelRooms[row, column] == RoomType.NearPatra)
+                {
+                    m_levelRooms[row, column] = RoomType.Pending;
                     UpdateRoom(row, column);
                 }
             }
