@@ -401,6 +401,17 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.solidButton = new System.Windows.Forms.Button();
+            this.comboBox45 = new System.Windows.Forms.ComboBox();
+            this.comboBox46 = new System.Windows.Forms.ComboBox();
+            this.comboBox47 = new System.Windows.Forms.ComboBox();
+            this.comboBox48 = new System.Windows.Forms.ComboBox();
+            this.comboBox49 = new System.Windows.Forms.ComboBox();
+            this.comboBox50 = new System.Windows.Forms.ComboBox();
+            this.comboBox51 = new System.Windows.Forms.ComboBox();
+            this.comboBox52 = new System.Windows.Forms.ComboBox();
+            this.comboBox53 = new System.Windows.Forms.ComboBox();
+            this.comboBox54 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.unexploredPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemNumericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -1293,7 +1304,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(617, 12);
+            this.tabControl1.Location = new System.Drawing.Point(744, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1055, 810);
@@ -1676,6 +1687,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Gray;
+            this.tabPage2.Controls.Add(this.solidButton);
             this.tabPage2.Controls.Add(this.levelRadioButtonUnknown);
             this.tabPage2.Controls.Add(this.nearPatraButton);
             this.tabPage2.Controls.Add(this.levelRadioButton9);
@@ -1886,7 +1898,7 @@
             // 
             this.levelRadioButtonUnknown.AutoSize = true;
             this.levelRadioButtonUnknown.Checked = true;
-            this.levelRadioButtonUnknown.Location = new System.Drawing.Point(874, 706);
+            this.levelRadioButtonUnknown.Location = new System.Drawing.Point(874, 734);
             this.levelRadioButtonUnknown.Name = "levelRadioButtonUnknown";
             this.levelRadioButtonUnknown.Size = new System.Drawing.Size(119, 17);
             this.levelRadioButtonUnknown.TabIndex = 230;
@@ -1897,7 +1909,7 @@
             // 
             // nearPatraButton
             // 
-            this.nearPatraButton.Location = new System.Drawing.Point(874, 357);
+            this.nearPatraButton.Location = new System.Drawing.Point(874, 386);
             this.nearPatraButton.Name = "nearPatraButton";
             this.nearPatraButton.Size = new System.Drawing.Size(79, 23);
             this.nearPatraButton.TabIndex = 229;
@@ -1908,7 +1920,7 @@
             // levelRadioButton9
             // 
             this.levelRadioButton9.AutoSize = true;
-            this.levelRadioButton9.Location = new System.Drawing.Point(874, 683);
+            this.levelRadioButton9.Location = new System.Drawing.Point(874, 711);
             this.levelRadioButton9.Name = "levelRadioButton9";
             this.levelRadioButton9.Size = new System.Drawing.Size(67, 17);
             this.levelRadioButton9.TabIndex = 228;
@@ -1919,7 +1931,7 @@
             // levelRadioButton8
             // 
             this.levelRadioButton8.AutoSize = true;
-            this.levelRadioButton8.Location = new System.Drawing.Point(874, 660);
+            this.levelRadioButton8.Location = new System.Drawing.Point(874, 688);
             this.levelRadioButton8.Name = "levelRadioButton8";
             this.levelRadioButton8.Size = new System.Drawing.Size(67, 17);
             this.levelRadioButton8.TabIndex = 227;
@@ -1930,7 +1942,7 @@
             // levelRadioButton7
             // 
             this.levelRadioButton7.AutoSize = true;
-            this.levelRadioButton7.Location = new System.Drawing.Point(874, 637);
+            this.levelRadioButton7.Location = new System.Drawing.Point(874, 665);
             this.levelRadioButton7.Name = "levelRadioButton7";
             this.levelRadioButton7.Size = new System.Drawing.Size(67, 17);
             this.levelRadioButton7.TabIndex = 226;
@@ -1941,7 +1953,7 @@
             // levelRadioButton6
             // 
             this.levelRadioButton6.AutoSize = true;
-            this.levelRadioButton6.Location = new System.Drawing.Point(874, 614);
+            this.levelRadioButton6.Location = new System.Drawing.Point(874, 642);
             this.levelRadioButton6.Name = "levelRadioButton6";
             this.levelRadioButton6.Size = new System.Drawing.Size(67, 17);
             this.levelRadioButton6.TabIndex = 225;
@@ -1952,7 +1964,7 @@
             // levelRadioButton5
             // 
             this.levelRadioButton5.AutoSize = true;
-            this.levelRadioButton5.Location = new System.Drawing.Point(874, 591);
+            this.levelRadioButton5.Location = new System.Drawing.Point(874, 619);
             this.levelRadioButton5.Name = "levelRadioButton5";
             this.levelRadioButton5.Size = new System.Drawing.Size(67, 17);
             this.levelRadioButton5.TabIndex = 224;
@@ -1963,7 +1975,7 @@
             // levelRadioButton4
             // 
             this.levelRadioButton4.AutoSize = true;
-            this.levelRadioButton4.Location = new System.Drawing.Point(874, 568);
+            this.levelRadioButton4.Location = new System.Drawing.Point(874, 596);
             this.levelRadioButton4.Name = "levelRadioButton4";
             this.levelRadioButton4.Size = new System.Drawing.Size(67, 17);
             this.levelRadioButton4.TabIndex = 223;
@@ -1974,7 +1986,7 @@
             // levelRadioButton3
             // 
             this.levelRadioButton3.AutoSize = true;
-            this.levelRadioButton3.Location = new System.Drawing.Point(874, 545);
+            this.levelRadioButton3.Location = new System.Drawing.Point(874, 573);
             this.levelRadioButton3.Name = "levelRadioButton3";
             this.levelRadioButton3.Size = new System.Drawing.Size(67, 17);
             this.levelRadioButton3.TabIndex = 222;
@@ -1985,7 +1997,7 @@
             // levelRadioButton2
             // 
             this.levelRadioButton2.AutoSize = true;
-            this.levelRadioButton2.Location = new System.Drawing.Point(874, 522);
+            this.levelRadioButton2.Location = new System.Drawing.Point(874, 550);
             this.levelRadioButton2.Name = "levelRadioButton2";
             this.levelRadioButton2.Size = new System.Drawing.Size(67, 17);
             this.levelRadioButton2.TabIndex = 221;
@@ -1996,7 +2008,7 @@
             // levelRadioButton1
             // 
             this.levelRadioButton1.AutoSize = true;
-            this.levelRadioButton1.Location = new System.Drawing.Point(874, 500);
+            this.levelRadioButton1.Location = new System.Drawing.Point(874, 528);
             this.levelRadioButton1.Name = "levelRadioButton1";
             this.levelRadioButton1.Size = new System.Drawing.Size(67, 17);
             this.levelRadioButton1.TabIndex = 220;
@@ -2243,7 +2255,7 @@
             // 
             // zeldaButton
             // 
-            this.zeldaButton.Location = new System.Drawing.Point(874, 444);
+            this.zeldaButton.Location = new System.Drawing.Point(874, 473);
             this.zeldaButton.Name = "zeldaButton";
             this.zeldaButton.Size = new System.Drawing.Size(79, 23);
             this.zeldaButton.TabIndex = 194;
@@ -2263,7 +2275,7 @@
             // 
             // ganonButton
             // 
-            this.ganonButton.Location = new System.Drawing.Point(874, 415);
+            this.ganonButton.Location = new System.Drawing.Point(874, 444);
             this.ganonButton.Name = "ganonButton";
             this.ganonButton.Size = new System.Drawing.Size(79, 23);
             this.ganonButton.TabIndex = 193;
@@ -2273,7 +2285,7 @@
             // 
             // nearGanonButton
             // 
-            this.nearGanonButton.Location = new System.Drawing.Point(874, 386);
+            this.nearGanonButton.Location = new System.Drawing.Point(874, 415);
             this.nearGanonButton.Name = "nearGanonButton";
             this.nearGanonButton.Size = new System.Drawing.Size(79, 23);
             this.nearGanonButton.TabIndex = 192;
@@ -3861,7 +3873,7 @@
             "Recorder",
             "Food",
             "Sword"});
-            this.comboBox3.Location = new System.Drawing.Point(390, 346);
+            this.comboBox3.Location = new System.Drawing.Point(517, 346);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 118;
@@ -3887,7 +3899,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(387, 330);
+            this.label26.Location = new System.Drawing.Point(514, 330);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(86, 13);
             this.label26.TabIndex = 121;
@@ -4064,7 +4076,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(462, 619);
+            this.label27.Location = new System.Drawing.Point(487, 645);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(119, 13);
             this.label27.TabIndex = 148;
@@ -4092,7 +4104,7 @@
             "Magical Key",
             "Red Ring",
             "Silver Arrow"});
-            this.comboBox28.Location = new System.Drawing.Point(465, 635);
+            this.comboBox28.Location = new System.Drawing.Point(490, 661);
             this.comboBox28.Name = "comboBox28";
             this.comboBox28.Size = new System.Drawing.Size(121, 21);
             this.comboBox28.TabIndex = 147;
@@ -4100,7 +4112,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(320, 638);
+            this.label28.Location = new System.Drawing.Point(345, 664);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(139, 13);
             this.label28.TabIndex = 146;
@@ -4127,7 +4139,7 @@
             "Magical Key",
             "Red Ring",
             "Silver Arrow"});
-            this.comboBox29.Location = new System.Drawing.Point(465, 662);
+            this.comboBox29.Location = new System.Drawing.Point(490, 688);
             this.comboBox29.Name = "comboBox29";
             this.comboBox29.Size = new System.Drawing.Size(121, 21);
             this.comboBox29.TabIndex = 150;
@@ -4135,7 +4147,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(431, 665);
+            this.label29.Location = new System.Drawing.Point(456, 691);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(27, 13);
             this.label29.TabIndex = 149;
@@ -4144,7 +4156,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(399, 732);
+            this.label30.Location = new System.Drawing.Point(424, 758);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(60, 13);
             this.label30.TabIndex = 154;
@@ -4153,7 +4165,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(462, 686);
+            this.label31.Location = new System.Drawing.Point(487, 712);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(113, 13);
             this.label31.TabIndex = 153;
@@ -4162,7 +4174,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(401, 705);
+            this.label32.Location = new System.Drawing.Point(426, 731);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(58, 13);
             this.label32.TabIndex = 151;
@@ -4171,7 +4183,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(408, 759);
+            this.label33.Location = new System.Drawing.Point(433, 785);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(51, 13);
             this.label33.TabIndex = 156;
@@ -4193,7 +4205,7 @@
             "Lost Hills",
             "River",
             "Start"});
-            this.comboBox33.Location = new System.Drawing.Point(22, 746);
+            this.comboBox33.Location = new System.Drawing.Point(51, 755);
             this.comboBox33.Name = "comboBox33";
             this.comboBox33.Size = new System.Drawing.Size(121, 21);
             this.comboBox33.TabIndex = 162;
@@ -4201,7 +4213,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(19, 705);
+            this.label34.Location = new System.Drawing.Point(48, 714);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(48, 13);
             this.label34.TabIndex = 161;
@@ -4223,7 +4235,7 @@
             "Lost Hills",
             "River",
             "Start"});
-            this.comboBox34.Location = new System.Drawing.Point(22, 721);
+            this.comboBox34.Location = new System.Drawing.Point(51, 730);
             this.comboBox34.Name = "comboBox34";
             this.comboBox34.Size = new System.Drawing.Size(121, 21);
             this.comboBox34.TabIndex = 160;
@@ -4231,7 +4243,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(146, 749);
+            this.label35.Location = new System.Drawing.Point(175, 758);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(77, 13);
             this.label35.TabIndex = 159;
@@ -4257,7 +4269,7 @@
             "Magical Key",
             "Red Ring",
             "Silver Arrow"});
-            this.comboBox30.Location = new System.Drawing.Point(465, 702);
+            this.comboBox30.Location = new System.Drawing.Point(490, 728);
             this.comboBox30.Name = "comboBox30";
             this.comboBox30.Size = new System.Drawing.Size(121, 21);
             this.comboBox30.TabIndex = 163;
@@ -4282,7 +4294,7 @@
             "Magical Key",
             "Red Ring",
             "Silver Arrow"});
-            this.comboBox31.Location = new System.Drawing.Point(465, 729);
+            this.comboBox31.Location = new System.Drawing.Point(490, 755);
             this.comboBox31.Name = "comboBox31";
             this.comboBox31.Size = new System.Drawing.Size(121, 21);
             this.comboBox31.TabIndex = 164;
@@ -4307,7 +4319,7 @@
             "Magical Key",
             "Red Ring",
             "Silver Arrow"});
-            this.comboBox32.Location = new System.Drawing.Point(465, 756);
+            this.comboBox32.Location = new System.Drawing.Point(490, 782);
             this.comboBox32.Name = "comboBox32";
             this.comboBox32.Size = new System.Drawing.Size(121, 21);
             this.comboBox32.TabIndex = 165;
@@ -4533,7 +4545,7 @@
             "Recorder",
             "Food",
             "Sword"});
-            this.comboBox4.Location = new System.Drawing.Point(390, 373);
+            this.comboBox4.Location = new System.Drawing.Point(517, 373);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(121, 21);
             this.comboBox4.TabIndex = 174;
@@ -4551,7 +4563,7 @@
             "Recorder",
             "Food",
             "Sword"});
-            this.comboBox7.Location = new System.Drawing.Point(390, 427);
+            this.comboBox7.Location = new System.Drawing.Point(517, 427);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(121, 21);
             this.comboBox7.TabIndex = 176;
@@ -4569,7 +4581,7 @@
             "Recorder",
             "Food",
             "Sword"});
-            this.comboBox10.Location = new System.Drawing.Point(390, 400);
+            this.comboBox10.Location = new System.Drawing.Point(517, 400);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(121, 21);
             this.comboBox10.TabIndex = 175;
@@ -4587,7 +4599,7 @@
             "Recorder",
             "Food",
             "Sword"});
-            this.comboBox13.Location = new System.Drawing.Point(390, 535);
+            this.comboBox13.Location = new System.Drawing.Point(517, 535);
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(121, 21);
             this.comboBox13.TabIndex = 180;
@@ -4605,7 +4617,7 @@
             "Recorder",
             "Food",
             "Sword"});
-            this.comboBox16.Location = new System.Drawing.Point(390, 508);
+            this.comboBox16.Location = new System.Drawing.Point(517, 508);
             this.comboBox16.Name = "comboBox16";
             this.comboBox16.Size = new System.Drawing.Size(121, 21);
             this.comboBox16.TabIndex = 179;
@@ -4623,7 +4635,7 @@
             "Recorder",
             "Food",
             "Sword"});
-            this.comboBox19.Location = new System.Drawing.Point(390, 481);
+            this.comboBox19.Location = new System.Drawing.Point(517, 481);
             this.comboBox19.Name = "comboBox19";
             this.comboBox19.Size = new System.Drawing.Size(121, 21);
             this.comboBox19.TabIndex = 178;
@@ -4641,7 +4653,7 @@
             "Recorder",
             "Food",
             "Sword"});
-            this.comboBox22.Location = new System.Drawing.Point(390, 454);
+            this.comboBox22.Location = new System.Drawing.Point(517, 454);
             this.comboBox22.Name = "comboBox22";
             this.comboBox22.Size = new System.Drawing.Size(121, 21);
             this.comboBox22.TabIndex = 177;
@@ -4659,7 +4671,7 @@
             "Recorder",
             "Food",
             "Sword"});
-            this.comboBox25.Location = new System.Drawing.Point(390, 562);
+            this.comboBox25.Location = new System.Drawing.Point(517, 562);
             this.comboBox25.Name = "comboBox25";
             this.comboBox25.Size = new System.Drawing.Size(121, 21);
             this.comboBox25.TabIndex = 181;
@@ -4667,7 +4679,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(514, 330);
+            this.label37.Location = new System.Drawing.Point(641, 330);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(39, 13);
             this.label37.TabIndex = 183;
@@ -4682,7 +4694,7 @@
             "Goriya",
             "Darknut",
             "Wizzrobe"});
-            this.comboBox35.Location = new System.Drawing.Point(517, 346);
+            this.comboBox35.Location = new System.Drawing.Point(644, 346);
             this.comboBox35.Name = "comboBox35";
             this.comboBox35.Size = new System.Drawing.Size(94, 21);
             this.comboBox35.TabIndex = 182;
@@ -4696,7 +4708,7 @@
             "Goriya",
             "Darknut",
             "Wizzrobe"});
-            this.comboBox36.Location = new System.Drawing.Point(517, 373);
+            this.comboBox36.Location = new System.Drawing.Point(644, 373);
             this.comboBox36.Name = "comboBox36";
             this.comboBox36.Size = new System.Drawing.Size(94, 21);
             this.comboBox36.TabIndex = 184;
@@ -4710,7 +4722,7 @@
             "Goriya",
             "Darknut",
             "Wizzrobe"});
-            this.comboBox37.Location = new System.Drawing.Point(517, 400);
+            this.comboBox37.Location = new System.Drawing.Point(644, 400);
             this.comboBox37.Name = "comboBox37";
             this.comboBox37.Size = new System.Drawing.Size(94, 21);
             this.comboBox37.TabIndex = 185;
@@ -4724,7 +4736,7 @@
             "Goriya",
             "Darknut",
             "Wizzrobe"});
-            this.comboBox38.Location = new System.Drawing.Point(517, 482);
+            this.comboBox38.Location = new System.Drawing.Point(644, 482);
             this.comboBox38.Name = "comboBox38";
             this.comboBox38.Size = new System.Drawing.Size(94, 21);
             this.comboBox38.TabIndex = 188;
@@ -4738,7 +4750,7 @@
             "Goriya",
             "Darknut",
             "Wizzrobe"});
-            this.comboBox39.Location = new System.Drawing.Point(517, 455);
+            this.comboBox39.Location = new System.Drawing.Point(644, 455);
             this.comboBox39.Name = "comboBox39";
             this.comboBox39.Size = new System.Drawing.Size(94, 21);
             this.comboBox39.TabIndex = 187;
@@ -4752,7 +4764,7 @@
             "Goriya",
             "Darknut",
             "Wizzrobe"});
-            this.comboBox40.Location = new System.Drawing.Point(517, 428);
+            this.comboBox40.Location = new System.Drawing.Point(644, 428);
             this.comboBox40.Name = "comboBox40";
             this.comboBox40.Size = new System.Drawing.Size(94, 21);
             this.comboBox40.TabIndex = 186;
@@ -4766,7 +4778,7 @@
             "Goriya",
             "Darknut",
             "Wizzrobe"});
-            this.comboBox41.Location = new System.Drawing.Point(517, 508);
+            this.comboBox41.Location = new System.Drawing.Point(644, 508);
             this.comboBox41.Name = "comboBox41";
             this.comboBox41.Size = new System.Drawing.Size(94, 21);
             this.comboBox41.TabIndex = 189;
@@ -4780,7 +4792,7 @@
             "Goriya",
             "Darknut",
             "Wizzrobe"});
-            this.comboBox42.Location = new System.Drawing.Point(517, 535);
+            this.comboBox42.Location = new System.Drawing.Point(644, 535);
             this.comboBox42.Name = "comboBox42";
             this.comboBox42.Size = new System.Drawing.Size(94, 21);
             this.comboBox42.TabIndex = 190;
@@ -4834,7 +4846,7 @@
             "Magical Key",
             "Red Ring",
             "Silver Arrow"});
-            this.comboBox43.Location = new System.Drawing.Point(149, 721);
+            this.comboBox43.Location = new System.Drawing.Point(178, 730);
             this.comboBox43.Name = "comboBox43";
             this.comboBox43.Size = new System.Drawing.Size(121, 21);
             this.comboBox43.TabIndex = 197;
@@ -4859,7 +4871,7 @@
             "Magical Key",
             "Red Ring",
             "Silver Arrow"});
-            this.comboBox44.Location = new System.Drawing.Point(149, 773);
+            this.comboBox44.Location = new System.Drawing.Point(178, 782);
             this.comboBox44.Name = "comboBox44";
             this.comboBox44.Size = new System.Drawing.Size(121, 21);
             this.comboBox44.TabIndex = 195;
@@ -4867,7 +4879,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(19, 776);
+            this.label40.Location = new System.Drawing.Point(48, 785);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(34, 13);
             this.label40.TabIndex = 193;
@@ -4899,7 +4911,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(146, 705);
+            this.label10.Location = new System.Drawing.Point(175, 714);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(27, 13);
             this.label10.TabIndex = 199;
@@ -4907,7 +4919,7 @@
             // 
             // numericUpDown4
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(149, 610);
+            this.numericUpDown4.Location = new System.Drawing.Point(222, 610);
             this.numericUpDown4.Maximum = new decimal(new int[] {
             6,
             0,
@@ -4925,7 +4937,7 @@
             // 
             // numericUpDown10
             // 
-            this.numericUpDown10.Location = new System.Drawing.Point(149, 636);
+            this.numericUpDown10.Location = new System.Drawing.Point(222, 636);
             this.numericUpDown10.Maximum = new decimal(new int[] {
             7,
             0,
@@ -4943,7 +4955,7 @@
             // 
             // numericUpDown11
             // 
-            this.numericUpDown11.Location = new System.Drawing.Point(149, 662);
+            this.numericUpDown11.Location = new System.Drawing.Point(222, 662);
             this.numericUpDown11.Maximum = new decimal(new int[] {
             3,
             0,
@@ -4962,7 +4974,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(102, 612);
+            this.label12.Location = new System.Drawing.Point(175, 612);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(41, 13);
             this.label12.TabIndex = 203;
@@ -4971,7 +4983,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(90, 638);
+            this.label13.Location = new System.Drawing.Point(163, 638);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(53, 13);
             this.label13.TabIndex = 204;
@@ -4980,17 +4992,283 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(100, 664);
+            this.label14.Location = new System.Drawing.Point(173, 664);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(43, 13);
             this.label14.TabIndex = 205;
             this.label14.Text = "Large $";
             // 
+            // solidButton
+            // 
+            this.solidButton.Location = new System.Drawing.Point(874, 357);
+            this.solidButton.Name = "solidButton";
+            this.solidButton.Size = new System.Drawing.Size(79, 23);
+            this.solidButton.TabIndex = 231;
+            this.solidButton.Text = "Solid";
+            this.solidButton.UseVisualStyleBackColor = true;
+            this.solidButton.Click += new System.EventHandler(this.solidButton_Click);
+            // 
+            // comboBox45
+            // 
+            this.comboBox45.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox45.FormattingEnabled = true;
+            this.comboBox45.Items.AddRange(new object[] {
+            "",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Bow",
+            "Raft",
+            "Stepladder",
+            "Magical Rod",
+            "Bible",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox45.Location = new System.Drawing.Point(617, 782);
+            this.comboBox45.Name = "comboBox45";
+            this.comboBox45.Size = new System.Drawing.Size(121, 21);
+            this.comboBox45.TabIndex = 210;
+            // 
+            // comboBox46
+            // 
+            this.comboBox46.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox46.FormattingEnabled = true;
+            this.comboBox46.Items.AddRange(new object[] {
+            "",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Raft",
+            "Stepladder",
+            "Recorder",
+            "Magical Rod",
+            "Bible",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox46.Location = new System.Drawing.Point(617, 755);
+            this.comboBox46.Name = "comboBox46";
+            this.comboBox46.Size = new System.Drawing.Size(121, 21);
+            this.comboBox46.TabIndex = 209;
+            // 
+            // comboBox47
+            // 
+            this.comboBox47.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox47.FormattingEnabled = true;
+            this.comboBox47.Items.AddRange(new object[] {
+            "",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Bow",
+            "Raft",
+            "Recorder",
+            "Magical Rod",
+            "Bible",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox47.Location = new System.Drawing.Point(617, 728);
+            this.comboBox47.Name = "comboBox47";
+            this.comboBox47.Size = new System.Drawing.Size(121, 21);
+            this.comboBox47.TabIndex = 208;
+            // 
+            // comboBox48
+            // 
+            this.comboBox48.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox48.FormattingEnabled = true;
+            this.comboBox48.Items.AddRange(new object[] {
+            "",
+            "(null)",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Bow",
+            "Stepladder",
+            "Recorder",
+            "Magical Rod",
+            "Bible",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox48.Location = new System.Drawing.Point(617, 688);
+            this.comboBox48.Name = "comboBox48";
+            this.comboBox48.Size = new System.Drawing.Size(121, 21);
+            this.comboBox48.TabIndex = 207;
+            // 
+            // comboBox49
+            // 
+            this.comboBox49.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox49.FormattingEnabled = true;
+            this.comboBox49.Items.AddRange(new object[] {
+            "",
+            "(null)",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Bow",
+            "Raft",
+            "Stepladder",
+            "Recorder",
+            "Magical Rod",
+            "Bible",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox49.Location = new System.Drawing.Point(617, 661);
+            this.comboBox49.Name = "comboBox49";
+            this.comboBox49.Size = new System.Drawing.Size(121, 21);
+            this.comboBox49.TabIndex = 206;
+            // 
+            // comboBox50
+            // 
+            this.comboBox50.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox50.FormattingEnabled = true;
+            this.comboBox50.Items.AddRange(new object[] {
+            "",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Bow",
+            "Raft",
+            "Stepladder",
+            "Recorder",
+            "Magical Rod",
+            "Bible",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox50.Location = new System.Drawing.Point(390, 535);
+            this.comboBox50.Name = "comboBox50";
+            this.comboBox50.Size = new System.Drawing.Size(121, 21);
+            this.comboBox50.TabIndex = 213;
+            // 
+            // comboBox51
+            // 
+            this.comboBox51.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox51.FormattingEnabled = true;
+            this.comboBox51.Items.AddRange(new object[] {
+            "",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Bow",
+            "Raft",
+            "Stepladder",
+            "Recorder",
+            "Magical Rod",
+            "Bible",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox51.Location = new System.Drawing.Point(390, 426);
+            this.comboBox51.Name = "comboBox51";
+            this.comboBox51.Size = new System.Drawing.Size(121, 21);
+            this.comboBox51.TabIndex = 212;
+            // 
+            // comboBox52
+            // 
+            this.comboBox52.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox52.FormattingEnabled = true;
+            this.comboBox52.Items.AddRange(new object[] {
+            "",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Bow",
+            "Raft",
+            "Stepladder",
+            "Recorder",
+            "Magical Rod",
+            "Bible",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox52.Location = new System.Drawing.Point(390, 346);
+            this.comboBox52.Name = "comboBox52";
+            this.comboBox52.Size = new System.Drawing.Size(121, 21);
+            this.comboBox52.TabIndex = 211;
+            // 
+            // comboBox53
+            // 
+            this.comboBox53.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox53.FormattingEnabled = true;
+            this.comboBox53.Items.AddRange(new object[] {
+            "",
+            "Goriya",
+            "Darknut",
+            "Wizzrobe"});
+            this.comboBox53.Location = new System.Drawing.Point(644, 562);
+            this.comboBox53.Name = "comboBox53";
+            this.comboBox53.Size = new System.Drawing.Size(94, 21);
+            this.comboBox53.TabIndex = 214;
+            // 
+            // comboBox54
+            // 
+            this.comboBox54.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox54.FormattingEnabled = true;
+            this.comboBox54.Items.AddRange(new object[] {
+            "",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Bow",
+            "Raft",
+            "Stepladder",
+            "Recorder",
+            "Magical Rod",
+            "Bible",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox54.Location = new System.Drawing.Point(390, 562);
+            this.comboBox54.Name = "comboBox54";
+            this.comboBox54.Size = new System.Drawing.Size(121, 21);
+            this.comboBox54.TabIndex = 215;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1684, 834);
+            this.ClientSize = new System.Drawing.Size(1811, 834);
+            this.Controls.Add(this.comboBox54);
+            this.Controls.Add(this.comboBox53);
+            this.Controls.Add(this.comboBox50);
+            this.Controls.Add(this.comboBox51);
+            this.Controls.Add(this.comboBox52);
+            this.Controls.Add(this.comboBox45);
+            this.Controls.Add(this.comboBox46);
+            this.Controls.Add(this.comboBox47);
+            this.Controls.Add(this.comboBox48);
+            this.Controls.Add(this.comboBox49);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -5699,6 +5977,17 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.RadioButton levelRadioButtonUnknown;
+        private System.Windows.Forms.Button solidButton;
+        private System.Windows.Forms.ComboBox comboBox45;
+        private System.Windows.Forms.ComboBox comboBox46;
+        private System.Windows.Forms.ComboBox comboBox47;
+        private System.Windows.Forms.ComboBox comboBox48;
+        private System.Windows.Forms.ComboBox comboBox49;
+        private System.Windows.Forms.ComboBox comboBox50;
+        private System.Windows.Forms.ComboBox comboBox51;
+        private System.Windows.Forms.ComboBox comboBox52;
+        private System.Windows.Forms.ComboBox comboBox53;
+        private System.Windows.Forms.ComboBox comboBox54;
     }
 }
 

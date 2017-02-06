@@ -21,6 +21,7 @@ namespace ZeldaRandomizerMap
         StairsE,
         StairsF,
         StairsX,
+        Solid,
         NearPatra,
         NearGanon,
         Ganon,
@@ -85,6 +86,9 @@ namespace ZeldaRandomizerMap
                         break;
                     case RoomType.StairsX:
                         m_roomPictureBoxes[row, column].Image = ImageConstants.StairsRoomBitmapX;
+                        break;
+                    case RoomType.Solid:
+                        m_roomPictureBoxes[row, column].Image = ImageConstants.SolidRoomBitmap;
                         break;
                     case RoomType.NearPatra:
                         m_roomPictureBoxes[row, column].Image = ImageConstants.NearPatraRoomBitmap;
@@ -172,6 +176,34 @@ namespace ZeldaRandomizerMap
         {
             m_levelRooms[m_levelRow, m_levelColumn] = RoomType.StairsX;
             UpdateRoom(m_levelRow, m_levelColumn);
+        }
+
+        public void SetRoomSolid()
+        {
+            m_levelRooms[m_levelRow, m_levelColumn] = RoomType.Solid;
+            UpdateRoom(m_levelRow, m_levelColumn);
+            if (m_levelRow < 8)
+            {
+                if (m_levelColumn > 0)
+                {
+                    m_horizontalPictureBoxes[m_levelRow, m_levelColumn - 1].Image = ImageConstants.SolidWallBitmap;
+                }
+                if (m_levelColumn < 7)
+                {
+                    m_horizontalPictureBoxes[m_levelRow, m_levelColumn].Image = ImageConstants.SolidWallBitmap;
+                }
+            }
+            if (m_levelColumn < 8)
+            {
+                if (m_levelRow > 0)
+                {
+                    m_verticalPictureBoxes[m_levelRow - 1, m_levelColumn].Image = ImageConstants.SolidWallBitmap;
+                }
+                if (m_levelRow < 7)
+                {
+                    m_verticalPictureBoxes[m_levelRow, m_levelColumn].Image = ImageConstants.SolidWallBitmap;
+                }
+            }
         }
 
         public void SetRoomNearPatra()

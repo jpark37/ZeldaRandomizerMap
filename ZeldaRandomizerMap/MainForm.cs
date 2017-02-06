@@ -879,6 +879,11 @@ namespace ZeldaRandomizerMap
             m_levelTrackers[m_activeLevelIndex].SetRoomStairsUnknown();
         }
 
+        private void solidButton_Click(object sender, EventArgs e)
+        {
+            m_levelTrackers[m_activeLevelIndex].SetRoomSolid();
+        }
+
         private void nearPatraButton_Click(object sender, EventArgs e)
         {
             m_levelTrackers[m_activeLevelIndex].SetRoomNearPatra();
