@@ -124,6 +124,7 @@
             this.arrowButton = new System.Windows.Forms.Button();
             this.candleButton = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.solidButton = new System.Windows.Forms.Button();
             this.levelRadioButtonUnknown = new System.Windows.Forms.RadioButton();
             this.nearPatraButton = new System.Windows.Forms.Button();
             this.levelRadioButton9 = new System.Windows.Forms.RadioButton();
@@ -401,7 +402,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.solidButton = new System.Windows.Forms.Button();
             this.comboBox45 = new System.Windows.Forms.ComboBox();
             this.comboBox46 = new System.Windows.Forms.ComboBox();
             this.comboBox47 = new System.Windows.Forms.ComboBox();
@@ -412,6 +412,10 @@
             this.comboBox52 = new System.Windows.Forms.ComboBox();
             this.comboBox53 = new System.Windows.Forms.ComboBox();
             this.comboBox54 = new System.Windows.Forms.ComboBox();
+            this.filterFirstButton = new System.Windows.Forms.Button();
+            this.filterSecondButton = new System.Windows.Forms.Button();
+            this.bibleButton = new System.Windows.Forms.Button();
+            this.bibleCheckBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.unexploredPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemNumericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -720,7 +724,7 @@
             this.checkBox10.AutoSize = true;
             this.checkBox10.Location = new System.Drawing.Point(135, 197);
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(49, 17);
+            this.checkBox10.Size = new System.Drawing.Size(123, 17);
             this.checkBox10.TabIndex = 11;
             this.checkBox10.Text = "Bible/Magical Shield";
             this.checkBox10.UseVisualStyleBackColor = true;
@@ -1307,11 +1311,15 @@
             this.tabControl1.Location = new System.Drawing.Point(744, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1055, 810);
+            this.tabControl1.Size = new System.Drawing.Size(1055, 803);
             this.tabControl1.TabIndex = 71;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.bibleCheckBox);
+            this.tabPage1.Controls.Add(this.bibleButton);
+            this.tabPage1.Controls.Add(this.filterSecondButton);
+            this.tabPage1.Controls.Add(this.filterFirstButton);
             this.tabPage1.Controls.Add(this.w4Button);
             this.tabPage1.Controls.Add(this.w3Button);
             this.tabPage1.Controls.Add(this.w2Button);
@@ -1319,18 +1327,18 @@
             this.tabPage1.Controls.Add(this.secondQuestButton);
             this.tabPage1.Controls.Add(this.firstQuestButton);
             this.tabPage1.Controls.Add(this.keyCheckBox);
-            this.tabPage1.Controls.Add(this.ringCheckBox);
             this.tabPage1.Controls.Add(this.moneyButton);
-            this.tabPage1.Controls.Add(this.candleCheckBox);
+            this.tabPage1.Controls.Add(this.ringCheckBox);
             this.tabPage1.Controls.Add(this.allRadioButton);
-            this.tabPage1.Controls.Add(this.foodCheckBox);
             this.tabPage1.Controls.Add(this.keyRadioButton);
-            this.tabPage1.Controls.Add(this.arrowCheckBox);
             this.tabPage1.Controls.Add(this.keyButton);
+            this.tabPage1.Controls.Add(this.candleCheckBox);
             this.tabPage1.Controls.Add(this.blueCandleRadioButton);
+            this.tabPage1.Controls.Add(this.foodCheckBox);
             this.tabPage1.Controls.Add(this.ringButton);
             this.tabPage1.Controls.Add(this.bombRadioButton);
             this.tabPage1.Controls.Add(this.bombButton);
+            this.tabPage1.Controls.Add(this.arrowCheckBox);
             this.tabPage1.Controls.Add(this.ringRadioButton);
             this.tabPage1.Controls.Add(this.w1Button);
             this.tabPage1.Controls.Add(this.foodRadioButton);
@@ -1359,7 +1367,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1047, 784);
+            this.tabPage1.Size = new System.Drawing.Size(1047, 777);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Overworld";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1396,7 +1404,7 @@
             // 
             // mixedQuestButton
             // 
-            this.mixedQuestButton.Location = new System.Drawing.Point(966, 6);
+            this.mixedQuestButton.Location = new System.Drawing.Point(793, 6);
             this.mixedQuestButton.Name = "mixedQuestButton";
             this.mixedQuestButton.Size = new System.Drawing.Size(75, 23);
             this.mixedQuestButton.TabIndex = 201;
@@ -1406,7 +1414,7 @@
             // 
             // secondQuestButton
             // 
-            this.secondQuestButton.Location = new System.Drawing.Point(885, 6);
+            this.secondQuestButton.Location = new System.Drawing.Point(604, 6);
             this.secondQuestButton.Name = "secondQuestButton";
             this.secondQuestButton.Size = new System.Drawing.Size(75, 23);
             this.secondQuestButton.TabIndex = 200;
@@ -1416,7 +1424,7 @@
             // 
             // firstQuestButton
             // 
-            this.firstQuestButton.Location = new System.Drawing.Point(804, 6);
+            this.firstQuestButton.Location = new System.Drawing.Point(523, 6);
             this.firstQuestButton.Name = "firstQuestButton";
             this.firstQuestButton.Size = new System.Drawing.Size(75, 23);
             this.firstQuestButton.TabIndex = 198;
@@ -1427,22 +1435,20 @@
             // keyCheckBox
             // 
             this.keyCheckBox.AutoSize = true;
-            this.keyCheckBox.Location = new System.Drawing.Point(578, 752);
+            this.keyCheckBox.Location = new System.Drawing.Point(381, 751);
             this.keyCheckBox.Name = "keyCheckBox";
-            this.keyCheckBox.Size = new System.Drawing.Size(44, 17);
+            this.keyCheckBox.Size = new System.Drawing.Size(15, 14);
             this.keyCheckBox.TabIndex = 199;
-            this.keyCheckBox.Text = "Key";
             this.keyCheckBox.UseVisualStyleBackColor = true;
             this.keyCheckBox.CheckedChanged += new System.EventHandler(this.keyCheckBox_CheckedChanged);
             // 
             // ringCheckBox
             // 
             this.ringCheckBox.AutoSize = true;
-            this.ringCheckBox.Location = new System.Drawing.Point(524, 752);
+            this.ringCheckBox.Location = new System.Drawing.Point(306, 751);
             this.ringCheckBox.Name = "ringCheckBox";
-            this.ringCheckBox.Size = new System.Drawing.Size(48, 17);
+            this.ringCheckBox.Size = new System.Drawing.Size(15, 14);
             this.ringCheckBox.TabIndex = 195;
-            this.ringCheckBox.Text = "Ring";
             this.ringCheckBox.UseVisualStyleBackColor = true;
             this.ringCheckBox.CheckedChanged += new System.EventHandler(this.ringCheckBox_CheckedChanged);
             // 
@@ -1459,11 +1465,10 @@
             // candleCheckBox
             // 
             this.candleCheckBox.AutoSize = true;
-            this.candleCheckBox.Location = new System.Drawing.Point(344, 752);
+            this.candleCheckBox.Location = new System.Drawing.Point(81, 751);
             this.candleCheckBox.Name = "candleCheckBox";
-            this.candleCheckBox.Size = new System.Drawing.Size(59, 17);
+            this.candleCheckBox.Size = new System.Drawing.Size(15, 14);
             this.candleCheckBox.TabIndex = 194;
-            this.candleCheckBox.Text = "Candle";
             this.candleCheckBox.UseVisualStyleBackColor = true;
             this.candleCheckBox.CheckedChanged += new System.EventHandler(this.candleCheckBox_CheckedChanged);
             // 
@@ -1483,11 +1488,10 @@
             // foodCheckBox
             // 
             this.foodCheckBox.AutoSize = true;
-            this.foodCheckBox.Location = new System.Drawing.Point(468, 752);
+            this.foodCheckBox.Location = new System.Drawing.Point(231, 751);
             this.foodCheckBox.Name = "foodCheckBox";
-            this.foodCheckBox.Size = new System.Drawing.Size(50, 17);
+            this.foodCheckBox.Size = new System.Drawing.Size(15, 14);
             this.foodCheckBox.TabIndex = 193;
-            this.foodCheckBox.Text = "Food";
             this.foodCheckBox.UseVisualStyleBackColor = true;
             this.foodCheckBox.CheckedChanged += new System.EventHandler(this.foodCheckBox_CheckedChanged);
             // 
@@ -1506,17 +1510,16 @@
             // arrowCheckBox
             // 
             this.arrowCheckBox.AutoSize = true;
-            this.arrowCheckBox.Location = new System.Drawing.Point(409, 752);
+            this.arrowCheckBox.Location = new System.Drawing.Point(156, 751);
             this.arrowCheckBox.Name = "arrowCheckBox";
-            this.arrowCheckBox.Size = new System.Drawing.Size(53, 17);
+            this.arrowCheckBox.Size = new System.Drawing.Size(15, 14);
             this.arrowCheckBox.TabIndex = 192;
-            this.arrowCheckBox.Text = "Arrow";
             this.arrowCheckBox.UseVisualStyleBackColor = true;
             this.arrowCheckBox.CheckedChanged += new System.EventHandler(this.arrowCheckBox_CheckedChanged);
             // 
             // keyButton
             // 
-            this.keyButton.Location = new System.Drawing.Point(222, 748);
+            this.keyButton.Location = new System.Drawing.Point(402, 748);
             this.keyButton.Name = "keyButton";
             this.keyButton.Size = new System.Drawing.Size(48, 23);
             this.keyButton.TabIndex = 80;
@@ -1538,7 +1541,7 @@
             // 
             // ringButton
             // 
-            this.ringButton.Location = new System.Drawing.Point(168, 748);
+            this.ringButton.Location = new System.Drawing.Point(327, 748);
             this.ringButton.Name = "ringButton";
             this.ringButton.Size = new System.Drawing.Size(48, 23);
             this.ringButton.TabIndex = 79;
@@ -1560,7 +1563,7 @@
             // 
             // bombButton
             // 
-            this.bombButton.Location = new System.Drawing.Point(276, 748);
+            this.bombButton.Location = new System.Drawing.Point(456, 748);
             this.bombButton.Name = "bombButton";
             this.bombButton.Size = new System.Drawing.Size(48, 23);
             this.bombButton.TabIndex = 78;
@@ -1656,7 +1659,7 @@
             // 
             // foodButton
             // 
-            this.foodButton.Location = new System.Drawing.Point(114, 748);
+            this.foodButton.Location = new System.Drawing.Point(252, 748);
             this.foodButton.Name = "foodButton";
             this.foodButton.Size = new System.Drawing.Size(48, 23);
             this.foodButton.TabIndex = 72;
@@ -1666,7 +1669,7 @@
             // 
             // arrowButton
             // 
-            this.arrowButton.Location = new System.Drawing.Point(60, 748);
+            this.arrowButton.Location = new System.Drawing.Point(177, 748);
             this.arrowButton.Name = "arrowButton";
             this.arrowButton.Size = new System.Drawing.Size(48, 23);
             this.arrowButton.TabIndex = 71;
@@ -1676,7 +1679,7 @@
             // 
             // candleButton
             // 
-            this.candleButton.Location = new System.Drawing.Point(6, 748);
+            this.candleButton.Location = new System.Drawing.Point(102, 748);
             this.candleButton.Name = "candleButton";
             this.candleButton.Size = new System.Drawing.Size(48, 23);
             this.candleButton.TabIndex = 70;
@@ -1893,6 +1896,16 @@
             this.tabPage2.Size = new System.Drawing.Size(1047, 784);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Levels";
+            // 
+            // solidButton
+            // 
+            this.solidButton.Location = new System.Drawing.Point(874, 357);
+            this.solidButton.Name = "solidButton";
+            this.solidButton.Size = new System.Drawing.Size(79, 23);
+            this.solidButton.TabIndex = 231;
+            this.solidButton.Text = "Solid";
+            this.solidButton.UseVisualStyleBackColor = true;
+            this.solidButton.Click += new System.EventHandler(this.solidButton_Click);
             // 
             // levelRadioButtonUnknown
             // 
@@ -4998,16 +5011,6 @@
             this.label14.TabIndex = 205;
             this.label14.Text = "Large $";
             // 
-            // solidButton
-            // 
-            this.solidButton.Location = new System.Drawing.Point(874, 357);
-            this.solidButton.Name = "solidButton";
-            this.solidButton.Size = new System.Drawing.Size(79, 23);
-            this.solidButton.TabIndex = 231;
-            this.solidButton.Text = "Solid";
-            this.solidButton.UseVisualStyleBackColor = true;
-            this.solidButton.Click += new System.EventHandler(this.solidButton_Click);
-            // 
             // comboBox45
             // 
             this.comboBox45.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -5254,11 +5257,51 @@
             this.comboBox54.Size = new System.Drawing.Size(121, 21);
             this.comboBox54.TabIndex = 215;
             // 
+            // filterFirstButton
+            // 
+            this.filterFirstButton.Location = new System.Drawing.Point(874, 6);
+            this.filterFirstButton.Name = "filterFirstButton";
+            this.filterFirstButton.Size = new System.Drawing.Size(75, 23);
+            this.filterFirstButton.TabIndex = 205;
+            this.filterFirstButton.Text = "Filter to 1st";
+            this.filterFirstButton.UseVisualStyleBackColor = true;
+            this.filterFirstButton.Click += new System.EventHandler(this.filterFirstButton_Click);
+            // 
+            // filterSecondButton
+            // 
+            this.filterSecondButton.Location = new System.Drawing.Point(955, 6);
+            this.filterSecondButton.Name = "filterSecondButton";
+            this.filterSecondButton.Size = new System.Drawing.Size(75, 23);
+            this.filterSecondButton.TabIndex = 206;
+            this.filterSecondButton.Text = "Filter to 2nd";
+            this.filterSecondButton.UseVisualStyleBackColor = true;
+            this.filterSecondButton.Click += new System.EventHandler(this.filterSecondButton_Click);
+            // 
+            // bibleButton
+            // 
+            this.bibleButton.Location = new System.Drawing.Point(27, 748);
+            this.bibleButton.Name = "bibleButton";
+            this.bibleButton.Size = new System.Drawing.Size(48, 23);
+            this.bibleButton.TabIndex = 207;
+            this.bibleButton.Text = "Bible";
+            this.bibleButton.UseVisualStyleBackColor = true;
+            this.bibleButton.Click += new System.EventHandler(this.bibleButton_Click);
+            // 
+            // bibleCheckBox
+            // 
+            this.bibleCheckBox.AutoSize = true;
+            this.bibleCheckBox.Location = new System.Drawing.Point(6, 751);
+            this.bibleCheckBox.Name = "bibleCheckBox";
+            this.bibleCheckBox.Size = new System.Drawing.Size(15, 14);
+            this.bibleCheckBox.TabIndex = 208;
+            this.bibleCheckBox.UseVisualStyleBackColor = true;
+            this.bibleCheckBox.CheckedChanged += new System.EventHandler(this.bibleCheckBox_CheckedChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1811, 834);
+            this.ClientSize = new System.Drawing.Size(1811, 828);
             this.Controls.Add(this.comboBox54);
             this.Controls.Add(this.comboBox53);
             this.Controls.Add(this.comboBox50);
@@ -5988,6 +6031,10 @@
         private System.Windows.Forms.ComboBox comboBox52;
         private System.Windows.Forms.ComboBox comboBox53;
         private System.Windows.Forms.ComboBox comboBox54;
+        private System.Windows.Forms.Button filterSecondButton;
+        private System.Windows.Forms.Button filterFirstButton;
+        private System.Windows.Forms.CheckBox bibleCheckBox;
+        private System.Windows.Forms.Button bibleButton;
     }
 }
 

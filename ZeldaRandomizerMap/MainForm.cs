@@ -1464,36 +1464,6 @@ namespace ZeldaRandomizerMap
             ToggleHorizontal(7, 6);
         }
 
-        private void blueCandleButton_Click(object sender, EventArgs e)
-        {
-            m_overworldTracker.SetNoteShopCandle();
-        }
-
-        private void arrowButton_Click(object sender, EventArgs e)
-        {
-            m_overworldTracker.SetNoteShopArrow();
-        }
-
-        private void foodButton_Click(object sender, EventArgs e)
-        {
-            m_overworldTracker.SetNoteShopFood();
-        }
-
-        private void blueRingButton_Click(object sender, EventArgs e)
-        {
-            m_overworldTracker.SetNoteShopRing();
-        }
-
-        private void keyButton_Click(object sender, EventArgs e)
-        {
-            m_overworldTracker.SetNoteShopKey();
-        }
-
-        private void bombButton_Click(object sender, EventArgs e)
-        {
-            m_overworldTracker.SetNoteShopBomb();
-        }
-
         private void potionButton_Click(object sender, EventArgs e)
         {
             m_overworldTracker.SetNotePotion();
@@ -1574,9 +1544,24 @@ namespace ZeldaRandomizerMap
             m_overworldTracker.SetShopFilterBomb();
         }
 
+        private void bibleCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            m_overworldTracker.SetHasBible(bibleCheckBox.Checked);
+        }
+
+        private void bibleButton_Click(object sender, EventArgs e)
+        {
+            m_overworldTracker.SetNoteShopBible();
+        }
+
         private void candleCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             m_overworldTracker.SetHasCandle(candleCheckBox.Checked);
+        }
+
+        private void blueCandleButton_Click(object sender, EventArgs e)
+        {
+            m_overworldTracker.SetNoteShopCandle();
         }
 
         private void arrowCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -1584,9 +1569,19 @@ namespace ZeldaRandomizerMap
             m_overworldTracker.SetHasArrow(arrowCheckBox.Checked);
         }
 
+        private void arrowButton_Click(object sender, EventArgs e)
+        {
+            m_overworldTracker.SetNoteShopArrow();
+        }
+
         private void foodCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             m_overworldTracker.SetHasFood(foodCheckBox.Checked);
+        }
+
+        private void foodButton_Click(object sender, EventArgs e)
+        {
+            m_overworldTracker.SetNoteShopFood();
         }
 
         private void ringCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -1594,9 +1589,24 @@ namespace ZeldaRandomizerMap
             m_overworldTracker.SetHasRing(ringCheckBox.Checked);
         }
 
+        private void blueRingButton_Click(object sender, EventArgs e)
+        {
+            m_overworldTracker.SetNoteShopRing();
+        }
+
         private void keyCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             m_overworldTracker.SetHasKey(keyCheckBox.Checked);
+        }
+
+        private void keyButton_Click(object sender, EventArgs e)
+        {
+            m_overworldTracker.SetNoteShopKey();
+        }
+
+        private void bombButton_Click(object sender, EventArgs e)
+        {
+            m_overworldTracker.SetNoteShopBomb();
         }
 
         private void levelRadioButton1_CheckedChanged(object sender, EventArgs e)
@@ -1670,6 +1680,22 @@ namespace ZeldaRandomizerMap
             if (MessageBox.Show("Are you sure?", "Mixed Quest", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 m_overworldTracker.SetMixedQuest();
+            }
+        }
+
+        private void filterFirstButton_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure?", "Mixed to 1st", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                m_overworldTracker.FilterToFirst();
+            }
+        }
+
+        private void filterSecondButton_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure?", "Mixed to 2nd", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                m_overworldTracker.FilterToSecond();
             }
         }
 

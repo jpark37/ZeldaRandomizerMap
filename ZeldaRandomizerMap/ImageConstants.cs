@@ -43,6 +43,7 @@ namespace ZeldaRandomizerMap
         public static readonly Bitmap Level7Image = MakeDecal(@"zelda\level_7.png");
         public static readonly Bitmap Level8Image = MakeDecal(@"zelda\level_8.png");
         public static readonly Bitmap Level9Image = MakeDecal(@"zelda\level_9.png");
+        public static readonly Bitmap BibleImage = MakeDecal(@"zelda\bible.png");
         public static readonly Bitmap CandleImage = MakeDecal(@"zelda\candle.png");
         public static readonly Bitmap ArrowImage = MakeDecal(@"zelda\arrow.png");
         public static readonly Bitmap FoodImage = MakeDecal(@"zelda\food.png");

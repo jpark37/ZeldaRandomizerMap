@@ -50,13 +50,14 @@ namespace ZeldaRandomizerMap
         enum ShopType
         {
             None = 0,
-            BlueCandle = 1,
-            Arrow = 2,
-            Food = 4,
-            BlueRing = 8,
-            Key = 16,
-            Bomb = 32,
-            All = ShopType.BlueCandle | ShopType.Arrow | ShopType.Food | ShopType.BlueRing | ShopType.Key | ShopType.Bomb,
+            Bible = 1,
+            BlueCandle = 2,
+            Arrow = 4,
+            Food = 8,
+            BlueRing = 16,
+            Key = 32,
+            Bomb = 64,
+            All = ShopType.Bible | ShopType.BlueCandle | ShopType.Arrow | ShopType.Food | ShopType.BlueRing | ShopType.Key | ShopType.Bomb,
         }
 
         enum OverworldType
@@ -152,6 +153,13 @@ namespace ZeldaRandomizerMap
         public void SetNoteLevelUnknown()
         {
             m_exploredCells[m_activeRow, m_activeColumn] = ExploreType.LevelUnknown;
+            UpdateExploredImage();
+        }
+
+        public void SetNoteShopBible()
+        {
+            m_exploredCells[m_activeRow, m_activeColumn] = ExploreType.Shop;
+            m_shopCells[m_activeRow, m_activeColumn] |= ShopType.Bible;
             UpdateExploredImage();
         }
 
@@ -293,6 +301,12 @@ namespace ZeldaRandomizerMap
             UpdateExploredImage();
         }
 
+        public void SetHasBible(bool owned)
+        {
+            m_hasBible = owned;
+            UpdateExploredImage();
+        }
+
         public void SetHasCandle(bool owned)
         {
             m_hasCandle = owned;
@@ -344,6 +358,18 @@ namespace ZeldaRandomizerMap
             UpdateUnexploredImage();
         }
 
+        public void FilterToFirst()
+        {
+            FilterOverworld(StartingCells1);
+            UpdateUnexploredImage();
+        }
+
+        public void FilterToSecond()
+        {
+            FilterOverworld(StartingCells2);
+            UpdateUnexploredImage();
+        }
+
         public void ResetCell()
         {
             switch (m_overworldType)
@@ -361,9 +387,27 @@ namespace ZeldaRandomizerMap
             UpdateUnexploredImage();
         }
 
+        private void FilterOverworld(CellType[,] otherQuest)
+        {
+            for (int i = 0; i < m_cells.GetLength(0); ++i)
+            {
+                for (int j = 0; j < m_cells.GetLength(1); ++j)
+                {
+                    if (m_cells[i, j] != CellType.None)
+                    {
+                        m_cells[i, j] = otherQuest[i, j];
+                    }
+                }
+            }
+        }
+
         private bool FilteredShopItem(int row, int column, ShopType shopType)
         {
             ShopType filteredShopType = m_shopFilter;
+            if (m_hasBible)
+            {
+                filteredShopType &= ~ShopType.Bible;
+            }
             if (m_hasCandle)
             {
                 filteredShopType &= ~ShopType.BlueCandle;
@@ -518,7 +562,11 @@ namespace ZeldaRandomizerMap
                                             UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, Color.White);
                                             break;
                                         case ExploreType.Shop:
-                                            if (FilteredShopItem(row, column, ShopType.BlueCandle))
+                                            if (FilteredShopItem(row, column, ShopType.Bible))
+                                            {
+                                                UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, ImageConstants.BibleImage.GetPixel(decalX, decalY));
+                                            }
+                                            else if (FilteredShopItem(row, column, ShopType.BlueCandle))
                                             {
                                                 UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, ImageConstants.CandleImage.GetPixel(decalX, decalY));
                                             }
@@ -617,8 +665,8 @@ namespace ZeldaRandomizerMap
             { CellType.Free,     CellType.Bomb,     CellType.Recorder, CellType.None,     CellType.Free,  CellType.Free, CellType.Bomb,     CellType.Free,   CellType.Candle,     CellType.Bracelet,   CellType.None,     CellType.Bomb,     CellType.Bomb,     CellType.Bomb,     CellType.None,     CellType.None },
         };
 
-        CellType[,] m_cells = (CellType[,])StartingCells1.Clone();
-        OverworldType m_overworldType = OverworldType.First;
+        CellType[,] m_cells = (CellType[,])StartingCellsMixed.Clone();
+        OverworldType m_overworldType = OverworldType.Mixed;
 
         ExploreType[,] m_exploredCells = new ExploreType[8, 16];
         ShopType[,] m_shopCells = new ShopType[8, 16];
@@ -627,6 +675,7 @@ namespace ZeldaRandomizerMap
         int m_activeRow;
         int m_activeColumn;
 
+        bool m_hasBible;
         bool m_hasCandle;
         bool m_hasArrow;
         bool m_hasFood;
