@@ -1696,6 +1696,8 @@ namespace ZeldaRandomizerMap
             if (MessageBox.Show("Are you sure?", "Mixed to 2nd", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 m_overworldTracker.FilterToSecond();
+                smallNumericUpDown.Value += 2;
+                largeNumericUpDown.Value -= 2;
             }
         }
 
