@@ -20,22 +20,26 @@ namespace ZeldaRandomizerMap
             m_overworldTracker = new OverworldTracker(unexploredPictureBox, exploredPictureBox);
             m_levelTrackers = InitializeLevelTrackers();
 
-            m_levelTrackers[8].SelectRoom(7, 6);
-            m_levelTrackers[8].ToggleVertical(6, 6);
-            m_levelTrackers[8].SelectRoom(6, 6);
+            m_levelTrackers[0, 0].ToggleHorizontal(7, 5);
+            m_levelTrackers[0, 0].ToggleHorizontal(7, 5);
+            m_levelTrackers[0, 0].ToggleHorizontal(7, 6);
+            m_levelTrackers[0, 0].ToggleHorizontal(7, 6);
+            m_levelTrackers[0, 0].SelectRoom(7, 6);
+            m_levelTrackers[0, 0].ToggleVertical(6, 6);
+            m_levelTrackers[0, 0].SelectRoom(6, 6);
 
-            m_levelTrackers[9].ToggleHorizontal(7, 5);
-            m_levelTrackers[9].ToggleHorizontal(7, 5);
-            m_levelTrackers[9].ToggleHorizontal(7, 6);
-            m_levelTrackers[9].ToggleHorizontal(7, 6);
-            m_levelTrackers[9].SelectRoom(7, 6);
-            m_levelTrackers[9].ToggleVertical(6, 6);
-            m_levelTrackers[9].SelectRoom(6, 6);
+            m_levelTrackers[1, 8].SelectRoom(7, 6);
+            m_levelTrackers[1, 8].ToggleVertical(6, 6);
+            m_levelTrackers[1, 8].SelectRoom(6, 6);
 
-            RefreshLevelsTab(9);
+            m_levelTrackers[2, 8].SelectRoom(7, 4);
+            m_levelTrackers[2, 8].ToggleVertical(6, 4);
+            m_levelTrackers[2, 8].SelectRoom(6, 4);
+
+            RefreshLevelsTab(0, 0);
         }
 
-        private LevelTracker[] InitializeLevelTrackers()
+        private LevelTracker[,] InitializeLevelTrackers()
         {
             PictureBox[,] roomPictureBoxesAll = new PictureBox[,]
             {
@@ -49,7 +53,7 @@ namespace ZeldaRandomizerMap
                 { levelRoom56, levelRoom57, levelRoom58, levelRoom59, levelRoom60, levelRoom61, levelRoom62, levelRoom63 },
             };
 
-            PictureBox[,] roomPictureBoxes1 = new PictureBox[,]
+            PictureBox[,] roomPictureBoxes11 = new PictureBox[,]
             {
                 { null, null,        null,        null,        null,        null,        null,        null },
                 { null, null,        null,        null,        null,        null,        null,        null },
@@ -61,7 +65,7 @@ namespace ZeldaRandomizerMap
                 { null, null,        levelRoom58, levelRoom59, levelRoom60, null,        null,        null },
             };
 
-            PictureBox[,] roomPictureBoxes2 = new PictureBox[,]
+            PictureBox[,] roomPictureBoxes12 = new PictureBox[,]
             {
                 { null, null, null,        levelRoom3,  levelRoom4,  null,        null, null },
                 { null, null, null,        null,        levelRoom12, levelRoom13, null, null },
@@ -73,7 +77,7 @@ namespace ZeldaRandomizerMap
                 { null, null, null,        levelRoom59, levelRoom60, null,        null, null },
             };
 
-            PictureBox[,] roomPictureBoxes3 = new PictureBox[,]
+            PictureBox[,] roomPictureBoxes13 = new PictureBox[,]
             {
                 { null, null,        null,        null,        null,        null,        null, null },
                 { null, null,        null,        null,        null,        null,        null, null },
@@ -85,7 +89,7 @@ namespace ZeldaRandomizerMap
                 { null, null,        null,        levelRoom59, levelRoom60, null,        null, null },
             };
 
-            PictureBox[,] roomPictureBoxes4 = new PictureBox[,]
+            PictureBox[,] roomPictureBoxes14 = new PictureBox[,]
             {
                 { null, null, levelRoom2,  levelRoom3,  levelRoom4,  levelRoom5,  null, null },
                 { null, null, levelRoom10, levelRoom11, levelRoom12, levelRoom13, null, null },
@@ -97,7 +101,7 @@ namespace ZeldaRandomizerMap
                 { null, null, levelRoom58, levelRoom59, null,        null,        null, null },
             };
 
-            PictureBox[,] roomPictureBoxes5 = new PictureBox[,]
+            PictureBox[,] roomPictureBoxes15 = new PictureBox[,]
             {
                 { null, null, null,        levelRoom3,  levelRoom4,  null,        null, null },
                 { null, null, levelRoom10, levelRoom11, levelRoom12, levelRoom13, null, null },
@@ -109,7 +113,7 @@ namespace ZeldaRandomizerMap
                 { null, null, null,        null,        levelRoom60, levelRoom61, null, null },
             };
 
-            PictureBox[,] roomPictureBoxes6 = new PictureBox[,]
+            PictureBox[,] roomPictureBoxes16 = new PictureBox[,]
             {
                 { null, null,        levelRoom2,  levelRoom3,  levelRoom4,  levelRoom5,  null,        null },
                 { null, levelRoom9,  levelRoom10, levelRoom11, levelRoom12, levelRoom13, levelRoom14, null },
@@ -121,7 +125,7 @@ namespace ZeldaRandomizerMap
                 { null, levelRoom57, levelRoom58, levelRoom59, null,        null,        null,        null },
             };
 
-            PictureBox[,] roomPictureBoxes7 = new PictureBox[,]
+            PictureBox[,] roomPictureBoxes17 = new PictureBox[,]
             {
                 { null, levelRoom1,  levelRoom2,  levelRoom3,  levelRoom4,  levelRoom5,  levelRoom6,  null },
                 { null, levelRoom9,  levelRoom10, levelRoom11, levelRoom12, levelRoom13, null,        null },
@@ -133,7 +137,7 @@ namespace ZeldaRandomizerMap
                 { null, levelRoom57, levelRoom58, levelRoom59, null,        null,        null,        null },
             };
 
-            PictureBox[,] roomPictureBoxes8 = new PictureBox[,]
+            PictureBox[,] roomPictureBoxes18 = new PictureBox[,]
             {
                 { null,       null,        null,        null,        levelRoom4,  null,        null, null },
                 { null,       null,        null,        levelRoom11, levelRoom12, levelRoom13, null, null },
@@ -145,7 +149,7 @@ namespace ZeldaRandomizerMap
                 { null,       null,        levelRoom58, levelRoom59, levelRoom60, levelRoom61, null, null },
             };
 
-            PictureBox[,] roomPictureBoxes9 = new PictureBox[,]
+            PictureBox[,] roomPictureBoxes19 = new PictureBox[,]
             {
                 { null,        levelRoom1,  levelRoom2,  levelRoom3,  levelRoom4,  levelRoom5,  levelRoom6,  levelRoom7 },
                 { levelRoom8,  levelRoom9,  levelRoom10, levelRoom11, levelRoom12, levelRoom13, levelRoom14, levelRoom15 },
@@ -155,6 +159,114 @@ namespace ZeldaRandomizerMap
                 { levelRoom40, levelRoom41, levelRoom42, levelRoom43, levelRoom44, levelRoom45, levelRoom46, levelRoom47 },
                 { null,        levelRoom49, levelRoom50, levelRoom51, levelRoom52, levelRoom53, levelRoom54, null },
                 { null,        levelRoom57, null,        levelRoom59, levelRoom60, null,        levelRoom62, null },
+            };
+
+            PictureBox[,] roomPictureBoxes21 = new PictureBox[,]
+            {
+                { null, null, null, levelRoom3,  levelRoom4,  null, null, null },
+                { null, null, null, levelRoom11, levelRoom12, null, null, null },
+                { null, null, null, levelRoom19, null,        null, null, null },
+                { null, null, null, levelRoom27, levelRoom28, null, null, null },
+                { null, null, null, levelRoom35, levelRoom36, null, null, null },
+                { null, null, null, levelRoom43, null,        null, null, null },
+                { null, null, null, levelRoom51, levelRoom52, null, null, null },
+                { null, null, null, levelRoom59, levelRoom60, null, null, null },
+            };
+
+            PictureBox[,] roomPictureBoxes22 = new PictureBox[,]
+            {
+                { null, null, null,        levelRoom3,  null,        null, null, null },
+                { null, null, levelRoom10, levelRoom11, levelRoom12, null, null, null },
+                { null, null, levelRoom18, levelRoom19, levelRoom20, null, null, null },
+                { null, null, levelRoom26, levelRoom27, levelRoom28, null, null, null },
+                { null, null, levelRoom34, levelRoom35, levelRoom36, null, null, null },
+                { null, null, levelRoom42, levelRoom43, levelRoom44, null, null, null },
+                { null, null, levelRoom50, null,        levelRoom52, null, null, null },
+                { null, null, levelRoom58, null,        levelRoom60, null, null, null },
+            };
+
+            PictureBox[,] roomPictureBoxes23 = new PictureBox[,]
+            {
+                { null,        null, null, null, null, null,        null,        null },
+                { null,        null, null, null, null, levelRoom13, null,        null },
+                { levelRoom16, null, null, null, null, levelRoom21, null,        null },
+                { levelRoom24, null, null, null, null, levelRoom29, null,        null },
+                { null,        null, null, null, null, levelRoom37, null,        null },
+                { null,        null, null, null, null, levelRoom45, null,        null },
+                { null,        null, null, null, null, levelRoom53, levelRoom54, null },
+                { null,        null, null, null, null, levelRoom61, levelRoom62, null },
+            };
+
+            PictureBox[,] roomPictureBoxes24 = new PictureBox[,]
+            {
+                { null, null, levelRoom2,  levelRoom3,  levelRoom4,  null,        null, null },
+                { null, null, levelRoom10, levelRoom11, levelRoom12, levelRoom13, null, null },
+                { null, null, levelRoom18, levelRoom19, levelRoom20, levelRoom21, null, null },
+                { null, null, levelRoom26, levelRoom27, levelRoom28, levelRoom29, null, null },
+                { null, null, levelRoom34, levelRoom35, levelRoom36, levelRoom37, null, null },
+                { null, null, levelRoom42, levelRoom43, levelRoom44, levelRoom45, null, null },
+                { null, null, levelRoom50, levelRoom51, levelRoom52, levelRoom53, null, null },
+                { null, null, levelRoom58, levelRoom59, levelRoom60, null,        null, null },
+            };
+
+            PictureBox[,] roomPictureBoxes25 = new PictureBox[,]
+            {
+                { null, null, levelRoom2,  levelRoom3,  levelRoom4,  null, null, null },
+                { null, null, levelRoom10, levelRoom11, levelRoom12, null, null, null },
+                { null, null, null,        null,        levelRoom20, null, null, null },
+                { null, null, null,        levelRoom27, levelRoom28, null, null, null },
+                { null, null, levelRoom34, levelRoom35, null,        null, null, null },
+                { null, null, levelRoom42, null,        null,        null, null, null },
+                { null, null, levelRoom50, levelRoom51, levelRoom52, null, null, null },
+                { null, null, levelRoom58, levelRoom59, levelRoom60, null, null, null },
+            };
+
+            PictureBox[,] roomPictureBoxes26 = new PictureBox[,]
+            {
+                { null, null,        null,        null,        levelRoom4,  levelRoom5,  levelRoom6,  null },
+                { null, null,        null,        levelRoom11, levelRoom12, null,        levelRoom14, null },
+                { null, null,        null,        levelRoom19, levelRoom20, null,        levelRoom22, null },
+                { null, null,        null,        levelRoom27, levelRoom28, null,        levelRoom30, null },
+                { null, null,        levelRoom34, levelRoom35, levelRoom36, null,        null,        null },
+                { null, levelRoom41, levelRoom42, levelRoom43, levelRoom44, null,        null,        null },
+                { null, null,        null,        levelRoom51, levelRoom52, null,        null,        null },
+                { null, null,        null,        null,        levelRoom60, null,        null,        null },
+            };
+
+            PictureBox[,] roomPictureBoxes27 = new PictureBox[,]
+            {
+                { null,        null,        null,        null,        null,        null,        null,        null },
+                { null,        null,        levelRoom10, levelRoom11, levelRoom12, levelRoom13, levelRoom14, null },
+                { null,        null,        levelRoom18, null,        null,        null,        levelRoom22, null },
+                { null,        null,        levelRoom26, levelRoom27, levelRoom28, null,        levelRoom30, null },
+                { null,        null,        levelRoom34, levelRoom35, levelRoom36, null,        levelRoom38, null },
+                { null,        null,        levelRoom42, levelRoom43, levelRoom44, null,        levelRoom46, null },
+                { null,        null,        null,        null,        null,        null,        levelRoom54, null },
+                { levelRoom56, levelRoom57, levelRoom58, levelRoom59, levelRoom60, levelRoom61, levelRoom62, null },
+            };
+
+            PictureBox[,] roomPictureBoxes28 = new PictureBox[,]
+            {
+                { levelRoom0,  levelRoom1,  levelRoom2,  levelRoom3,  levelRoom4,  levelRoom5,  levelRoom6,  levelRoom7 },
+                { levelRoom8,  levelRoom9,  null,        null,        null,        null,        null,        levelRoom15 },
+                { levelRoom16, levelRoom17, null,        null,        null,        levelRoom21, null,        levelRoom23 },
+                { levelRoom24, levelRoom25, null,        null,        null,        levelRoom29, null,        levelRoom31 },
+                { levelRoom32, levelRoom33, null,        null,        null,        levelRoom37, null,        levelRoom39 },
+                { levelRoom40, levelRoom41, null,        null,        null,        levelRoom45, null,        levelRoom47 },
+                { levelRoom48, levelRoom49, levelRoom50, levelRoom51, levelRoom52, levelRoom53, null,        levelRoom55 },
+                { null,        null,        null,        null,        null,        null,        null,        levelRoom63 },
+            };
+
+            PictureBox[,] roomPictureBoxes29 = new PictureBox[,]
+            {
+                { levelRoom0,  levelRoom1,  null,        null,        null,        null,        levelRoom6,  levelRoom7 },
+                { levelRoom8,  levelRoom9,  levelRoom10, levelRoom11, levelRoom12, levelRoom13, levelRoom14, levelRoom15 },
+                { null,        null,        levelRoom18, levelRoom19, levelRoom20, levelRoom21, null,        null },
+                { null,        levelRoom25, levelRoom26, levelRoom27, levelRoom28, levelRoom29, levelRoom30, null },
+                { levelRoom32, levelRoom33, levelRoom34, levelRoom35, levelRoom36, levelRoom37, levelRoom38, levelRoom39 },
+                { levelRoom40, levelRoom41, levelRoom42, levelRoom43, levelRoom44, levelRoom45, levelRoom46, levelRoom47 },
+                { null,        levelRoom49, levelRoom50, levelRoom51, levelRoom52, levelRoom53, levelRoom54, null },
+                { null,        null,        null,        levelRoom59, levelRoom60, null,        null,        null },
             };
 
             PictureBox[,] verticalPictureBoxesAll = new PictureBox[,]
@@ -168,29 +280,29 @@ namespace ZeldaRandomizerMap
                 { levelVerticalWall48, levelVerticalWall49, levelVerticalWall50, levelVerticalWall51, levelVerticalWall52, levelVerticalWall53, levelVerticalWall54, levelVerticalWall55 },
             };
 
-            PictureBox[,] verticalPictureBoxes1 = new PictureBox[,]
+            PictureBox[,] verticalPictureBoxes11 = new PictureBox[,]
             {
-                { null, null,           null,                null,                null,                null,                null, null },
-                { null, null,           null,                null,                null,                null,                null, null },
-                { null, null,           null,                levelVerticalWall19, null,                null,                null, null },
-                { null, null,           null,                levelVerticalWall27, null,                levelVerticalWall29, null, null },
-                { null, null,           levelVerticalWall34, levelVerticalWall35, levelVerticalWall36, null,                null, null },
-                { null, null,           null,                levelVerticalWall43, null,                null,                null, null },
-                { null, null,           null,                levelVerticalWall51, null,                null,                null, null },
+                { null, null, null,                null,                null,                null,                null, null },
+                { null, null, null,                null,                null,                null,                null, null },
+                { null, null, null,                levelVerticalWall19, null,                null,                null, null },
+                { null, null, null,                levelVerticalWall27, null,                levelVerticalWall29, null, null },
+                { null, null, levelVerticalWall34, levelVerticalWall35, levelVerticalWall36, null,                null, null },
+                { null, null, null,                levelVerticalWall43, null,                null,                null, null },
+                { null, null, null,                levelVerticalWall51, null,                null,                null, null },
             };
 
-            PictureBox[,] verticalPictureBoxes2 = new PictureBox[,]
+            PictureBox[,] verticalPictureBoxes12 = new PictureBox[,]
             {
-                { null, null, null,           null,                levelVerticalWall4,  null,                null, null },
-                { null, null, null,           null,                levelVerticalWall12, levelVerticalWall13, null, null },
-                { null, null, null,           null,                levelVerticalWall20, levelVerticalWall21, null, null },
-                { null, null, null,           null,                levelVerticalWall28, levelVerticalWall29, null, null },
-                { null, null, null,           null,                levelVerticalWall36, levelVerticalWall37, null, null },
-                { null, null, null,           null,                levelVerticalWall44, levelVerticalWall45, null, null },
-                { null, null, null,           levelVerticalWall51, levelVerticalWall52, null,                null, null },
+                { null, null, null, null,                levelVerticalWall4,  null,                null, null },
+                { null, null, null, null,                levelVerticalWall12, levelVerticalWall13, null, null },
+                { null, null, null, null,                levelVerticalWall20, levelVerticalWall21, null, null },
+                { null, null, null, null,                levelVerticalWall28, levelVerticalWall29, null, null },
+                { null, null, null, null,                levelVerticalWall36, levelVerticalWall37, null, null },
+                { null, null, null, null,                levelVerticalWall44, levelVerticalWall45, null, null },
+                { null, null, null, levelVerticalWall51, levelVerticalWall52, null,                null, null },
             };
 
-            PictureBox[,] verticalPictureBoxes3 = new PictureBox[,]
+            PictureBox[,] verticalPictureBoxes13 = new PictureBox[,]
             {
                 { null, null,                null,                null,                null,                null,                null, null },
                 { null, null,                null,                null,                null,                null,                null, null },
@@ -201,7 +313,7 @@ namespace ZeldaRandomizerMap
                 { null, null,                null,                levelVerticalWall51, null,                null,                null, null },
             };
 
-            PictureBox[,] verticalPictureBoxes4 = new PictureBox[,]
+            PictureBox[,] verticalPictureBoxes14 = new PictureBox[,]
             {
                 { null, null, levelVerticalWall2,  levelVerticalWall3,  levelVerticalWall4,  levelVerticalWall5,  null, null },
                 { null, null, levelVerticalWall10, levelVerticalWall11, null,                null,                null, null },
@@ -212,7 +324,7 @@ namespace ZeldaRandomizerMap
                 { null, null, null,                levelVerticalWall51, null,                null,                null, null },
             };
 
-            PictureBox[,] verticalPictureBoxes5 = new PictureBox[,]
+            PictureBox[,] verticalPictureBoxes15 = new PictureBox[,]
             {
                 { null, null, null,                levelVerticalWall3,  levelVerticalWall4,  null,                null, null },
                 { null, null, levelVerticalWall10, levelVerticalWall11, levelVerticalWall12, levelVerticalWall13, null, null },
@@ -223,7 +335,7 @@ namespace ZeldaRandomizerMap
                 { null, null, null,                null,                levelVerticalWall52, levelVerticalWall53, null, null },
             };
 
-            PictureBox[,] verticalPictureBoxes6 = new PictureBox[,]
+            PictureBox[,] verticalPictureBoxes16 = new PictureBox[,]
             {
                 { null, null,                levelVerticalWall2,  levelVerticalWall3,  levelVerticalWall4,  levelVerticalWall5,  null,                null },
                 { null, levelVerticalWall9,  levelVerticalWall10, null,                null,                levelVerticalWall13, levelVerticalWall14, null },
@@ -234,7 +346,7 @@ namespace ZeldaRandomizerMap
                 { null, levelVerticalWall49, null,                levelVerticalWall51, null,                null,                null,                null },
             };
 
-            PictureBox[,] verticalPictureBoxes7 = new PictureBox[,]
+            PictureBox[,] verticalPictureBoxes17 = new PictureBox[,]
             {
                 { null, levelVerticalWall1,  levelVerticalWall2,  levelVerticalWall3,  levelVerticalWall4,  levelVerticalWall5,  null,           null },
                 { null, levelVerticalWall9,  levelVerticalWall10, levelVerticalWall11, levelVerticalWall12, null,                null,           null },
@@ -245,7 +357,7 @@ namespace ZeldaRandomizerMap
                 { null, levelVerticalWall49, levelVerticalWall50, levelVerticalWall51, null,                null,                null,           null },
             };
 
-            PictureBox[,] verticalPictureBoxes8 = new PictureBox[,]
+            PictureBox[,] verticalPictureBoxes18 = new PictureBox[,]
             {
                 { null, null,                null,                null,                levelVerticalWall4,  null, null, null },
                 { null, null,                null,                levelVerticalWall11, levelVerticalWall12, null, null, null },
@@ -256,7 +368,7 @@ namespace ZeldaRandomizerMap
                 { null, null,                null,                null,                levelVerticalWall52, null, null, null },
             };
 
-            PictureBox[,] verticalPictureBoxes9 = new PictureBox[,]
+            PictureBox[,] verticalPictureBoxes19 = new PictureBox[,]
             {
                 { null,                levelVerticalWall1,  levelVerticalWall2,  levelVerticalWall3,  levelVerticalWall4,  levelVerticalWall5,  levelVerticalWall6,  levelVerticalWall7 },
                 { levelVerticalWall8,  levelVerticalWall9,  levelVerticalWall10, levelVerticalWall11, levelVerticalWall12, levelVerticalWall13, levelVerticalWall14, levelVerticalWall15 },
@@ -265,6 +377,105 @@ namespace ZeldaRandomizerMap
                 { levelVerticalWall32, levelVerticalWall33, levelVerticalWall34, levelVerticalWall35, levelVerticalWall36, levelVerticalWall37, levelVerticalWall38, levelVerticalWall39 },
                 { null,                levelVerticalWall41, levelVerticalWall42, levelVerticalWall43, levelVerticalWall44, levelVerticalWall45, levelVerticalWall46, null },
                 { null,                levelVerticalWall49, null,                levelVerticalWall51, levelVerticalWall52, null,                levelVerticalWall54, null },
+            };
+
+            PictureBox[,] verticalPictureBoxes21 = new PictureBox[,]
+            {
+                { null, null, null, levelVerticalWall3,  levelVerticalWall4,  null, null, null },
+                { null, null, null, levelVerticalWall11, null,                null, null, null },
+                { null, null, null, levelVerticalWall19, null,                null, null, null },
+                { null, null, null, levelVerticalWall27, levelVerticalWall28, null, null, null },
+                { null, null, null, levelVerticalWall35, null,                null, null, null },
+                { null, null, null, levelVerticalWall43, null,                null, null, null },
+                { null, null, null, levelVerticalWall51, levelVerticalWall52, null, null, null },
+            };
+
+            PictureBox[,] verticalPictureBoxes22 = new PictureBox[,]
+            {
+                { null, null, null,                levelVerticalWall3,  null,                null, null, null },
+                { null, null, levelVerticalWall10, levelVerticalWall11, levelVerticalWall12, null, null, null },
+                { null, null, levelVerticalWall18, levelVerticalWall19, levelVerticalWall20, null, null, null },
+                { null, null, levelVerticalWall26, levelVerticalWall27, levelVerticalWall28, null, null, null },
+                { null, null, levelVerticalWall34, levelVerticalWall35, levelVerticalWall36, null, null, null },
+                { null, null, levelVerticalWall42, null,                levelVerticalWall44, null, null, null },
+                { null, null, levelVerticalWall50, null,                levelVerticalWall52, null, null, null },
+            };
+
+            PictureBox[,] verticalPictureBoxes23 = new PictureBox[,]
+            {
+                { null,                null, null, null, null, null,                null,                null },
+                { null,                null, null, null, null, levelVerticalWall13, null,                null },
+                { levelVerticalWall16, null, null, null, null, levelVerticalWall21, null,                null },
+                { null,                null, null, null, null, levelVerticalWall29, null,                null },
+                { null,                null, null, null, null, levelVerticalWall37, null,                null },
+                { null,                null, null, null, null, levelVerticalWall45, null,                null },
+                { null,                null, null, null, null, levelVerticalWall53, levelVerticalWall54, null },
+            };
+
+            PictureBox[,] verticalPictureBoxes24 = new PictureBox[,]
+            {
+                { null, null, levelVerticalWall2,  levelVerticalWall3,  levelVerticalWall4,  null,                null, null },
+                { null, null, levelVerticalWall10, levelVerticalWall11, levelVerticalWall12, levelVerticalWall13, null, null },
+                { null, null, levelVerticalWall18, levelVerticalWall19, levelVerticalWall20, levelVerticalWall21, null, null },
+                { null, null, levelVerticalWall26, levelVerticalWall27, levelVerticalWall28, levelVerticalWall29, null, null },
+                { null, null, levelVerticalWall34, levelVerticalWall35, levelVerticalWall36, levelVerticalWall37, null, null },
+                { null, null, levelVerticalWall42, levelVerticalWall43, levelVerticalWall44, levelVerticalWall45, null, null },
+                { null, null, levelVerticalWall50, levelVerticalWall51, levelVerticalWall52, null,                null, null },
+            };
+
+            PictureBox[,] verticalPictureBoxes25 = new PictureBox[,]
+            {
+                { null, null, levelVerticalWall2,  levelVerticalWall3,  levelVerticalWall4,  null, null, null },
+                { null, null, null,                null,                levelVerticalWall12, null, null, null },
+                { null, null, null,                null,                levelVerticalWall20, null, null, null },
+                { null, null, null,                levelVerticalWall27, null,                null, null, null },
+                { null, null, levelVerticalWall34, null,                null,                null, null, null },
+                { null, null, levelVerticalWall42, null,                null,                null, null, null },
+                { null, null, levelVerticalWall50, levelVerticalWall51, levelVerticalWall52, null, null, null },
+            };
+
+            PictureBox[,] verticalPictureBoxes26 = new PictureBox[,]
+            {
+                { null, null, null,                null,                levelVerticalWall4,  null, levelVerticalWall6,  null },
+                { null, null, null,                levelVerticalWall11, levelVerticalWall12, null, levelVerticalWall14, null },
+                { null, null, null,                levelVerticalWall19, levelVerticalWall20, null, levelVerticalWall22, null },
+                { null, null, null,                levelVerticalWall27, levelVerticalWall28, null, null,                null },
+                { null, null, levelVerticalWall34, levelVerticalWall35, levelVerticalWall36, null, null,                null },
+                { null, null, null,                levelVerticalWall43, levelVerticalWall44, null, null,                null },
+                { null, null, null,                null,                levelVerticalWall52, null, null,                null },
+            };
+
+            PictureBox[,] verticalPictureBoxes27 = new PictureBox[,]
+            {
+                { null, null, null,                null,                null,                null, null,                null },
+                { null, null, levelVerticalWall10, null,                null,                null, levelVerticalWall14, null },
+                { null, null, levelVerticalWall18, null,                null,                null, levelVerticalWall22, null },
+                { null, null, levelVerticalWall26, levelVerticalWall27, levelVerticalWall28, null, levelVerticalWall30, null },
+                { null, null, levelVerticalWall34, levelVerticalWall35, levelVerticalWall36, null, levelVerticalWall38, null },
+                { null, null, null,                null,                null,                null, levelVerticalWall46, null },
+                { null, null, null,                null,                null,                null, levelVerticalWall54, null },
+            };
+
+            PictureBox[,] verticalPictureBoxes28 = new PictureBox[,]
+            {
+                { levelVerticalWall0,  levelVerticalWall1,  null, null, null, null,                null, levelVerticalWall7 },
+                { levelVerticalWall8,  levelVerticalWall9,  null, null, null, null,                null, levelVerticalWall15 },
+                { levelVerticalWall16, levelVerticalWall17, null, null, null, levelVerticalWall21, null, levelVerticalWall23 },
+                { levelVerticalWall24, levelVerticalWall25, null, null, null, levelVerticalWall29, null, levelVerticalWall31 },
+                { levelVerticalWall32, levelVerticalWall33, null, null, null, levelVerticalWall37, null, levelVerticalWall39 },
+                { levelVerticalWall40, levelVerticalWall41, null, null, null, levelVerticalWall45, null, levelVerticalWall47 },
+                { null,                null,                null, null, null, null,                null, levelVerticalWall55 },
+            };
+
+            PictureBox[,] verticalPictureBoxes29 = new PictureBox[,]
+            {
+                { levelVerticalWall0,  levelVerticalWall1,  null,                null,                null,                null,                levelVerticalWall6,  levelVerticalWall7 },
+                { null,                null,                levelVerticalWall10, levelVerticalWall11, levelVerticalWall12, levelVerticalWall13, null,                null },
+                { null,                null,                levelVerticalWall18, levelVerticalWall19, levelVerticalWall20, levelVerticalWall21, null,                null },
+                { null,                levelVerticalWall25, levelVerticalWall26, levelVerticalWall27, levelVerticalWall28, levelVerticalWall29, levelVerticalWall30, null },
+                { levelVerticalWall32, levelVerticalWall33, levelVerticalWall34, levelVerticalWall35, levelVerticalWall36, levelVerticalWall37, levelVerticalWall38, levelVerticalWall39 },
+                { null,                levelVerticalWall41, levelVerticalWall42, levelVerticalWall43, levelVerticalWall44, levelVerticalWall45, levelVerticalWall46, null },
+                { null,                null,                null,                levelVerticalWall51, levelVerticalWall52, null,                null,                null },
             };
 
             PictureBox[,] horizontalPictureBoxesAll = new PictureBox[,]
@@ -279,7 +490,7 @@ namespace ZeldaRandomizerMap
                 { levelHorizontalWall49, levelHorizontalWall50, levelHorizontalWall51, levelHorizontalWall52, levelHorizontalWall53, levelHorizontalWall54, levelHorizontalWall55 },
             };
 
-            PictureBox[,] horizontalPictureBoxes1 = new PictureBox[,]
+            PictureBox[,] horizontalPictureBoxes11 = new PictureBox[,]
             {
                 { null, null,                  null,                  null,                  null,                  null,                  null },
                 { null, null,                  null,                  null,                  null,                  null,                  null },
@@ -291,7 +502,7 @@ namespace ZeldaRandomizerMap
                 { null, null,                  levelHorizontalWall51, levelHorizontalWall52, null,                  null,                  null },
             };
 
-            PictureBox[,] horizontalPictureBoxes2 = new PictureBox[,]
+            PictureBox[,] horizontalPictureBoxes12 = new PictureBox[,]
             {
                 { null, null, null,                  levelHorizontalWall3,  null,                  null, null },
                 { null, null, null,                  null,                  levelHorizontalWall11, null, null },
@@ -303,7 +514,7 @@ namespace ZeldaRandomizerMap
                 { null, null, null,                  levelHorizontalWall52, null,                  null, null },
             };
 
-            PictureBox[,] horizontalPictureBoxes3 = new PictureBox[,]
+            PictureBox[,] horizontalPictureBoxes13 = new PictureBox[,]
             {
                 { null, null,                  null,                  null,                  null,                  null, null },
                 { null, null,                  null,                  null,                  null,                  null, null },
@@ -315,7 +526,7 @@ namespace ZeldaRandomizerMap
                 { null, null,                  null,                  levelHorizontalWall52, null,                  null, null },
             };
 
-            PictureBox[,] horizontalPictureBoxes4 = new PictureBox[,]
+            PictureBox[,] horizontalPictureBoxes14 = new PictureBox[,]
             {
                 { null, null, levelHorizontalWall2,  levelHorizontalWall3,  levelHorizontalWall4,  null, null },
                 { null, null, levelHorizontalWall9,  levelHorizontalWall10, levelHorizontalWall11, null, null },
@@ -327,7 +538,7 @@ namespace ZeldaRandomizerMap
                 { null, null, levelHorizontalWall51, null,                  null,                  null, null },
             };
 
-            PictureBox[,] horizontalPictureBoxes5 = new PictureBox[,]
+            PictureBox[,] horizontalPictureBoxes15 = new PictureBox[,]
             {
                 { null, null, null,                  levelHorizontalWall3,  null,                  null, null },
                 { null, null, levelHorizontalWall9,  levelHorizontalWall10, levelHorizontalWall11, null, null },
@@ -339,7 +550,7 @@ namespace ZeldaRandomizerMap
                 { null, null, null,                  null,                  levelHorizontalWall53, null, null },
             };
 
-            PictureBox[,] horizontalPictureBoxes6 = new PictureBox[,]
+            PictureBox[,] horizontalPictureBoxes16 = new PictureBox[,]
             {
                 { null, null,                  levelHorizontalWall2,  levelHorizontalWall3,  levelHorizontalWall4,  null,                  null },
                 { null, levelHorizontalWall8,  levelHorizontalWall9,  levelHorizontalWall10, levelHorizontalWall11, levelHorizontalWall12, null },
@@ -351,7 +562,7 @@ namespace ZeldaRandomizerMap
                 { null, levelHorizontalWall50, levelHorizontalWall51, null,                  null,                  null,                  null },
             };
 
-            PictureBox[,] horizontalPictureBoxes7 = new PictureBox[,]
+            PictureBox[,] horizontalPictureBoxes17 = new PictureBox[,]
             {
                 { null, levelHorizontalWall1,  levelHorizontalWall2,  levelHorizontalWall3,  levelHorizontalWall4,  levelHorizontalWall5,  null },
                 { null, levelHorizontalWall8,  levelHorizontalWall9,  levelHorizontalWall10, levelHorizontalWall11, null,                  null },
@@ -363,7 +574,7 @@ namespace ZeldaRandomizerMap
                 { null, levelHorizontalWall50, levelHorizontalWall51, null,                  null,                  null,                  null },
             };
 
-            PictureBox[,] horizontalPictureBoxes8 = new PictureBox[,]
+            PictureBox[,] horizontalPictureBoxes18 = new PictureBox[,]
             {
                 { null, null,                  null,                  null,                  null,                  null, null },
                 { null, null,                  null,                  levelHorizontalWall10, levelHorizontalWall11, null, null },
@@ -375,7 +586,7 @@ namespace ZeldaRandomizerMap
                 { null, null,                  levelHorizontalWall51, levelHorizontalWall52, levelHorizontalWall53, null, null },
             };
 
-            PictureBox[,] horizontalPictureBoxes9 = new PictureBox[,]
+            PictureBox[,] horizontalPictureBoxes19 = new PictureBox[,]
             {
                 { null,                  levelHorizontalWall1,  levelHorizontalWall2,  levelHorizontalWall3,  levelHorizontalWall4,  levelHorizontalWall5,  levelHorizontalWall6 },
                 { levelHorizontalWall7,  levelHorizontalWall8,  levelHorizontalWall9,  levelHorizontalWall10, levelHorizontalWall11, levelHorizontalWall12, levelHorizontalWall13 },
@@ -387,59 +598,194 @@ namespace ZeldaRandomizerMap
                 { null,                  null,                  null,                  levelHorizontalWall52, null,                  null,                  null },
             };
 
-            return new LevelTracker[]
+            PictureBox[,] horizontalPictureBoxes21 = new PictureBox[,]
             {
-                new LevelTracker(roomPictureBoxesAll, roomPictureBoxes1, verticalPictureBoxesAll, verticalPictureBoxes1, horizontalPictureBoxesAll, horizontalPictureBoxes1),
-                new LevelTracker(roomPictureBoxesAll, roomPictureBoxes2, verticalPictureBoxesAll, verticalPictureBoxes2, horizontalPictureBoxesAll, horizontalPictureBoxes2),
-                new LevelTracker(roomPictureBoxesAll, roomPictureBoxes3, verticalPictureBoxesAll, verticalPictureBoxes3, horizontalPictureBoxesAll, horizontalPictureBoxes3),
-                new LevelTracker(roomPictureBoxesAll, roomPictureBoxes4, verticalPictureBoxesAll, verticalPictureBoxes4, horizontalPictureBoxesAll, horizontalPictureBoxes4),
-                new LevelTracker(roomPictureBoxesAll, roomPictureBoxes5, verticalPictureBoxesAll, verticalPictureBoxes5, horizontalPictureBoxesAll, horizontalPictureBoxes5),
-                new LevelTracker(roomPictureBoxesAll, roomPictureBoxes6, verticalPictureBoxesAll, verticalPictureBoxes6, horizontalPictureBoxesAll, horizontalPictureBoxes6),
-                new LevelTracker(roomPictureBoxesAll, roomPictureBoxes7, verticalPictureBoxesAll, verticalPictureBoxes7, horizontalPictureBoxesAll, horizontalPictureBoxes7),
-                new LevelTracker(roomPictureBoxesAll, roomPictureBoxes8, verticalPictureBoxesAll, verticalPictureBoxes8, horizontalPictureBoxesAll, horizontalPictureBoxes8),
-                new LevelTracker(roomPictureBoxesAll, roomPictureBoxes9, verticalPictureBoxesAll, verticalPictureBoxes9, horizontalPictureBoxesAll, horizontalPictureBoxes9),
-                new LevelTracker(roomPictureBoxesAll, roomPictureBoxesAll, verticalPictureBoxesAll, verticalPictureBoxesAll, horizontalPictureBoxesAll, horizontalPictureBoxesAll),
+                { null, null, null, levelHorizontalWall3,  null, null, null },
+                { null, null, null, levelHorizontalWall10, null, null, null },
+                { null, null, null, null,                  null, null, null },
+                { null, null, null, levelHorizontalWall24, null, null, null },
+                { null, null, null, levelHorizontalWall31, null, null, null },
+                { null, null, null, null,                  null, null, null },
+                { null, null, null, levelHorizontalWall45, null, null, null },
+                { null, null, null, levelHorizontalWall52, null, null, null },
+            };
+
+            PictureBox[,] horizontalPictureBoxes22 = new PictureBox[,]
+            {
+                { null, null, null,                  null,                  null, null, null },
+                { null, null, levelHorizontalWall9,  levelHorizontalWall10, null, null, null },
+                { null, null, levelHorizontalWall16, levelHorizontalWall17, null, null, null },
+                { null, null, levelHorizontalWall23, levelHorizontalWall24, null, null, null },
+                { null, null, levelHorizontalWall30, levelHorizontalWall31, null, null, null },
+                { null, null, levelHorizontalWall37, levelHorizontalWall38, null, null, null },
+                { null, null, null,                  null,                  null, null, null },
+                { null, null, null,                  null,                  null, null, null },
+            };
+
+            PictureBox[,] horizontalPictureBoxes23 = new PictureBox[,]
+            {
+                { null, null, null, null, null, null,                  null },
+                { null, null, null, null, null, null,                  null },
+                { null, null, null, null, null, null,                  null },
+                { null, null, null, null, null, null,                  null },
+                { null, null, null, null, null, null,                  null },
+                { null, null, null, null, null, null,                  null },
+                { null, null, null, null, null, levelHorizontalWall47, null },
+                { null, null, null, null, null, levelHorizontalWall54, null },
+            };
+
+            PictureBox[,] horizontalPictureBoxes24 = new PictureBox[,]
+            {
+                { null, null, levelHorizontalWall2,  levelHorizontalWall3,  null,                  null, null },
+                { null, null, levelHorizontalWall9,  levelHorizontalWall10, levelHorizontalWall11, null, null },
+                { null, null, levelHorizontalWall16, levelHorizontalWall17, levelHorizontalWall18, null, null },
+                { null, null, levelHorizontalWall23, levelHorizontalWall24, levelHorizontalWall25, null, null },
+                { null, null, levelHorizontalWall30, levelHorizontalWall31, levelHorizontalWall32, null, null },
+                { null, null, levelHorizontalWall37, levelHorizontalWall38, levelHorizontalWall39, null, null },
+                { null, null, levelHorizontalWall44, levelHorizontalWall45, levelHorizontalWall46, null, null },
+                { null, null, levelHorizontalWall51, levelHorizontalWall52, null,                  null, null },
+            };
+
+            PictureBox[,] horizontalPictureBoxes25 = new PictureBox[,]
+            {
+                { null, null, levelHorizontalWall2,  levelHorizontalWall3,  null, null, null },
+                { null, null, levelHorizontalWall9,  levelHorizontalWall10, null, null, null },
+                { null, null, null,                  null,                  null, null, null },
+                { null, null, null,                  levelHorizontalWall24, null, null, null },
+                { null, null, levelHorizontalWall30, null,                  null, null, null },
+                { null, null, null,                  null,                  null, null, null },
+                { null, null, levelHorizontalWall44, levelHorizontalWall45, null, null, null },
+                { null, null, levelHorizontalWall51, levelHorizontalWall52, null, null, null },
+            };
+
+            PictureBox[,] horizontalPictureBoxes26 = new PictureBox[,]
+            {
+                { null, null,                  null,                  null,                  levelHorizontalWall4, levelHorizontalWall5, null },
+                { null, null,                  null,                  levelHorizontalWall10, null,                 null,                 null },
+                { null, null,                  null,                  levelHorizontalWall17, null,                 null,                 null },
+                { null, null,                  null,                  levelHorizontalWall24, null,                 null,                 null },
+                { null, null,                  levelHorizontalWall30, levelHorizontalWall31, null,                 null,                 null },
+                { null, levelHorizontalWall36, levelHorizontalWall37, levelHorizontalWall38, null,                 null,                 null },
+                { null, null,                  null,                  levelHorizontalWall45, null,                 null,                 null },
+                { null, null,                  null,                  null,                  null,                 null,                 null },
+            };
+
+            PictureBox[,] horizontalPictureBoxes27 = new PictureBox[,]
+            {
+                { null,                  null,                  null,                  null,                  null,                  null,                  null },
+                { null,                  null,                  levelHorizontalWall9,  levelHorizontalWall10, levelHorizontalWall11, levelHorizontalWall12, null },
+                { null,                  null,                  null,                  null,                  null,                  null,                  null },
+                { null,                  null,                  levelHorizontalWall23, levelHorizontalWall24, null,                  null,                  null },
+                { null,                  null,                  levelHorizontalWall30, levelHorizontalWall31, null,                  null,                  null },
+                { null,                  null,                  levelHorizontalWall37, levelHorizontalWall38, null,                  null,                  null },
+                { null,                  null,                  null,                  null,                  null,                  null,                  null },
+                { levelHorizontalWall49, levelHorizontalWall50, levelHorizontalWall51, levelHorizontalWall52, levelHorizontalWall53, levelHorizontalWall54, null },
+            };
+
+            PictureBox[,] horizontalPictureBoxes28 = new PictureBox[,]
+            {
+                { levelHorizontalWall0,  levelHorizontalWall1,  levelHorizontalWall2,  levelHorizontalWall3,  levelHorizontalWall4,  levelHorizontalWall5, levelHorizontalWall6 },
+                { levelHorizontalWall7,  null,                  null,                  null,                  null,                  null,                 null },
+                { levelHorizontalWall14, null,                  null,                  null,                  null,                  null,                 null },
+                { levelHorizontalWall21, null,                  null,                  null,                  null,                  null,                 null },
+                { levelHorizontalWall28, null,                  null,                  null,                  null,                  null,                 null },
+                { levelHorizontalWall35, null,                  null,                  null,                  null,                  null,                 null },
+                { levelHorizontalWall42, levelHorizontalWall43, levelHorizontalWall44, levelHorizontalWall45, levelHorizontalWall46, null,                 null },
+                { null,                  null,                  null,                  null,                  null,                  null,                 null },
+            };
+
+            PictureBox[,] horizontalPictureBoxes29 = new PictureBox[,]
+            {
+                { levelHorizontalWall0,  null,                  null,                  null,                  null,                  null,                  levelHorizontalWall6 },
+                { levelHorizontalWall7,  levelHorizontalWall8,  levelHorizontalWall9,  levelHorizontalWall10, levelHorizontalWall11, levelHorizontalWall12, levelHorizontalWall13 },
+                { null,                  null,                  levelHorizontalWall16, levelHorizontalWall17, levelHorizontalWall18, null,                  null },
+                { null,                  levelHorizontalWall22, levelHorizontalWall23, levelHorizontalWall24, levelHorizontalWall25, levelHorizontalWall26, null },
+                { levelHorizontalWall28, levelHorizontalWall29, levelHorizontalWall30, levelHorizontalWall31, levelHorizontalWall32, levelHorizontalWall33, levelHorizontalWall34 },
+                { levelHorizontalWall35, levelHorizontalWall36, levelHorizontalWall37, levelHorizontalWall38, levelHorizontalWall39, levelHorizontalWall40, levelHorizontalWall41 },
+                { null,                  levelHorizontalWall43, levelHorizontalWall44, levelHorizontalWall45, levelHorizontalWall46, levelHorizontalWall47, null },
+                { null,                  null,                  null,                  levelHorizontalWall52, null,                  null,                  null },
+            };
+
+            return new LevelTracker[,]
+            {
+                {
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxesAll, verticalPictureBoxesAll, verticalPictureBoxesAll, horizontalPictureBoxesAll, horizontalPictureBoxesAll),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxesAll, verticalPictureBoxesAll, verticalPictureBoxesAll, horizontalPictureBoxesAll, horizontalPictureBoxesAll),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxesAll, verticalPictureBoxesAll, verticalPictureBoxesAll, horizontalPictureBoxesAll, horizontalPictureBoxesAll),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxesAll, verticalPictureBoxesAll, verticalPictureBoxesAll, horizontalPictureBoxesAll, horizontalPictureBoxesAll),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxesAll, verticalPictureBoxesAll, verticalPictureBoxesAll, horizontalPictureBoxesAll, horizontalPictureBoxesAll),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxesAll, verticalPictureBoxesAll, verticalPictureBoxesAll, horizontalPictureBoxesAll, horizontalPictureBoxesAll),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxesAll, verticalPictureBoxesAll, verticalPictureBoxesAll, horizontalPictureBoxesAll, horizontalPictureBoxesAll),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxesAll, verticalPictureBoxesAll, verticalPictureBoxesAll, horizontalPictureBoxesAll, horizontalPictureBoxesAll),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxesAll, verticalPictureBoxesAll, verticalPictureBoxesAll, horizontalPictureBoxesAll, horizontalPictureBoxesAll),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxesAll, verticalPictureBoxesAll, verticalPictureBoxesAll, horizontalPictureBoxesAll, horizontalPictureBoxesAll),
+                },
+                {
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes11, verticalPictureBoxesAll, verticalPictureBoxes11, horizontalPictureBoxesAll, horizontalPictureBoxes11),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes12, verticalPictureBoxesAll, verticalPictureBoxes12, horizontalPictureBoxesAll, horizontalPictureBoxes12),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes13, verticalPictureBoxesAll, verticalPictureBoxes13, horizontalPictureBoxesAll, horizontalPictureBoxes13),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes14, verticalPictureBoxesAll, verticalPictureBoxes14, horizontalPictureBoxesAll, horizontalPictureBoxes14),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes15, verticalPictureBoxesAll, verticalPictureBoxes15, horizontalPictureBoxesAll, horizontalPictureBoxes15),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes16, verticalPictureBoxesAll, verticalPictureBoxes16, horizontalPictureBoxesAll, horizontalPictureBoxes16),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes17, verticalPictureBoxesAll, verticalPictureBoxes17, horizontalPictureBoxesAll, horizontalPictureBoxes17),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes18, verticalPictureBoxesAll, verticalPictureBoxes18, horizontalPictureBoxesAll, horizontalPictureBoxes18),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes19, verticalPictureBoxesAll, verticalPictureBoxes19, horizontalPictureBoxesAll, horizontalPictureBoxes19),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxesAll, verticalPictureBoxesAll, verticalPictureBoxesAll, horizontalPictureBoxesAll, horizontalPictureBoxesAll),
+                },
+                {
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes21, verticalPictureBoxesAll, verticalPictureBoxes21, horizontalPictureBoxesAll, horizontalPictureBoxes21),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes22, verticalPictureBoxesAll, verticalPictureBoxes22, horizontalPictureBoxesAll, horizontalPictureBoxes22),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes23, verticalPictureBoxesAll, verticalPictureBoxes23, horizontalPictureBoxesAll, horizontalPictureBoxes23),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes24, verticalPictureBoxesAll, verticalPictureBoxes24, horizontalPictureBoxesAll, horizontalPictureBoxes24),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes25, verticalPictureBoxesAll, verticalPictureBoxes25, horizontalPictureBoxesAll, horizontalPictureBoxes25),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes26, verticalPictureBoxesAll, verticalPictureBoxes26, horizontalPictureBoxesAll, horizontalPictureBoxes26),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes27, verticalPictureBoxesAll, verticalPictureBoxes27, horizontalPictureBoxesAll, horizontalPictureBoxes27),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes28, verticalPictureBoxesAll, verticalPictureBoxes28, horizontalPictureBoxesAll, horizontalPictureBoxes28),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxes29, verticalPictureBoxesAll, verticalPictureBoxes29, horizontalPictureBoxesAll, horizontalPictureBoxes29),
+                    new LevelTracker(roomPictureBoxesAll, roomPictureBoxesAll, verticalPictureBoxesAll, verticalPictureBoxesAll, horizontalPictureBoxesAll, horizontalPictureBoxesAll),
+                }
             };
         }
 
         private void SelectRoom(int row, int column)
         {
-            m_levelTrackers[m_activeLevelIndex].SelectRoom(row, column);
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SelectRoom(row, column);
         }
 
         private void ToggleVertical(int row, int column)
         {
-            m_levelTrackers[m_activeLevelIndex].ToggleVertical(row, column);
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].ToggleVertical(row, column);
         }
 
         private void ToggleHorizontal(int row, int column)
         {
-            m_levelTrackers[m_activeLevelIndex].ToggleHorizontal(row, column);
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].ToggleHorizontal(row, column);
         }
 
-        void RefreshLevelsTab(int levelIndex)
+        void RefreshLevelsTab(int questIndex, int levelIndex)
         {
+            m_activeQuestIndex = questIndex;
             m_activeLevelIndex = levelIndex;
 
             for (int row = 0; row < 8; ++row)
             {
                 for (int column = 0; column < 8; ++column)
                 {
-                    m_levelTrackers[m_activeLevelIndex].UpdateRoom(row, column);
+                    m_levelTrackers[questIndex, levelIndex].UpdateRoom(row, column);
                 }
             }
             for (int row = 0; row < 7; ++row)
             {
                 for (int column = 0; column < 8; ++column)
                 {
-                    m_levelTrackers[m_activeLevelIndex].UpdateVertical(row, column);
+                    m_levelTrackers[questIndex, levelIndex].UpdateVertical(row, column);
                 }
             }
             for (int row = 0; row < 8; ++row)
             {
                 for (int column = 0; column < 7; ++column)
                 {
-                    m_levelTrackers[m_activeLevelIndex].UpdateHorizontal(row, column);
+                    m_levelTrackers[questIndex, levelIndex].UpdateHorizontal(row, column);
                 }
             }
         }
@@ -836,72 +1182,72 @@ namespace ZeldaRandomizerMap
 
         private void resetRoomButton_Click(object sender, EventArgs e)
         {
-            m_levelTrackers[m_activeLevelIndex].SetRoomPending();
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomPending();
         }
 
         private void clearRoomButton_Click(object sender, EventArgs e)
         {
-            m_levelTrackers[m_activeLevelIndex].SetRoomClear();
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomClear();
         }
 
         private void stairsButtonA_Click(object sender, EventArgs e)
         {
-            m_levelTrackers[m_activeLevelIndex].SetRoomStairsA();
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomStairsA();
         }
 
         private void stairsButtonB_Click(object sender, EventArgs e)
         {
-            m_levelTrackers[m_activeLevelIndex].SetRoomStairsB();
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomStairsB();
         }
 
         private void stairsButtonC_Click(object sender, EventArgs e)
         {
-            m_levelTrackers[m_activeLevelIndex].SetRoomStairsC();
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomStairsC();
         }
 
         private void stairsButtonD_Click(object sender, EventArgs e)
         {
-            m_levelTrackers[m_activeLevelIndex].SetRoomStairsD();
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomStairsD();
         }
 
         private void stairsButtonE_Click(object sender, EventArgs e)
         {
-            m_levelTrackers[m_activeLevelIndex].SetRoomStairsE();
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomStairsE();
         }
 
         private void stairsButtonF_Click(object sender, EventArgs e)
         {
-            m_levelTrackers[m_activeLevelIndex].SetRoomStairsF();
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomStairsF();
         }
 
         private void stairsButtonX_Click(object sender, EventArgs e)
         {
-            m_levelTrackers[m_activeLevelIndex].SetRoomStairsUnknown();
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomStairsUnknown();
         }
 
         private void solidButton_Click(object sender, EventArgs e)
         {
-            m_levelTrackers[m_activeLevelIndex].SetRoomSolid();
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomSolid();
         }
 
         private void nearPatraButton_Click(object sender, EventArgs e)
         {
-            m_levelTrackers[m_activeLevelIndex].SetRoomNearPatra();
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomNearPatra();
         }
 
         private void nearGanonButton_Click(object sender, EventArgs e)
         {
-            m_levelTrackers[m_activeLevelIndex].SetRoomNearGanon();
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomNearGanon();
         }
 
         private void ganonButton_Click(object sender, EventArgs e)
         {
-            m_levelTrackers[m_activeLevelIndex].SetRoomGanon();
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomGanon();
         }
 
         private void zeldaButton_Click(object sender, EventArgs e)
         {
-            m_levelTrackers[m_activeLevelIndex].SetRoomZelda();
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomZelda();
         }
 
         private void levelVerticalWall0_Click(object sender, EventArgs e)
@@ -1611,52 +1957,97 @@ namespace ZeldaRandomizerMap
 
         private void levelRadioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            RefreshLevelsTab(0);
+            RefreshLevelsTab(1, 0);
         }
 
         private void levelRadioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            RefreshLevelsTab(1);
+            RefreshLevelsTab(1, 1);
         }
 
         private void levelRadioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            RefreshLevelsTab(2);
+            RefreshLevelsTab(1, 2);
         }
 
         private void levelRadioButton4_CheckedChanged(object sender, EventArgs e)
         {
-            RefreshLevelsTab(3);
+            RefreshLevelsTab(1, 3);
         }
 
         private void levelRadioButton5_CheckedChanged(object sender, EventArgs e)
         {
-            RefreshLevelsTab(4);
+            RefreshLevelsTab(1, 4);
         }
 
         private void levelRadioButton6_CheckedChanged(object sender, EventArgs e)
         {
-            RefreshLevelsTab(5);
+            RefreshLevelsTab(1, 5);
         }
 
         private void levelRadioButton7_CheckedChanged(object sender, EventArgs e)
         {
-            RefreshLevelsTab(6);
+            RefreshLevelsTab(1, 6);
         }
 
         private void levelRadioButton8_CheckedChanged(object sender, EventArgs e)
         {
-            RefreshLevelsTab(7);
+            RefreshLevelsTab(1, 7);
         }
 
         private void levelRadioButton9_CheckedChanged(object sender, EventArgs e)
         {
-            RefreshLevelsTab(8);
+            RefreshLevelsTab(1, 8);
+        }
+
+        private void levelRadioButton21_CheckedChanged(object sender, EventArgs e)
+        {
+            RefreshLevelsTab(2, 0);
+        }
+
+        private void levelRadioButton22_CheckedChanged(object sender, EventArgs e)
+        {
+            RefreshLevelsTab(2, 1);
+        }
+
+        private void levelRadioButton23_CheckedChanged(object sender, EventArgs e)
+        {
+            RefreshLevelsTab(2, 2);
+        }
+
+        private void levelRadioButton24_CheckedChanged(object sender, EventArgs e)
+        {
+            RefreshLevelsTab(2, 3);
+        }
+
+        private void levelRadioButton25_CheckedChanged(object sender, EventArgs e)
+        {
+            RefreshLevelsTab(2, 4);
+        }
+
+        private void levelRadioButton26_CheckedChanged(object sender, EventArgs e)
+        {
+            RefreshLevelsTab(2, 5);
+        }
+
+        private void levelRadioButton27_CheckedChanged(object sender, EventArgs e)
+        {
+            RefreshLevelsTab(2, 6);
+        }
+
+        private void levelRadioButton28_CheckedChanged(object sender, EventArgs e)
+        {
+            RefreshLevelsTab(2, 7);
+        }
+
+        private void levelRadioButton29_CheckedChanged(object sender, EventArgs e)
+        {
+            RefreshLevelsTab(2, 8);
         }
 
         private void levelRadioButtonUnknown_CheckedChanged(object sender, EventArgs e)
         {
-            RefreshLevelsTab(9);
+            RefreshLevelsTab(0, 0);
         }
 
         private void firstQuestButton_Click(object sender, EventArgs e)
@@ -1702,8 +2093,9 @@ namespace ZeldaRandomizerMap
         }
 
         OverworldTracker m_overworldTracker;
-        LevelTracker[] m_levelTrackers;
+        LevelTracker[,] m_levelTrackers;
 
-        int m_activeLevelIndex = 9;
+        int m_activeQuestIndex = 0;
+        int m_activeLevelIndex = 0;
     }
 }

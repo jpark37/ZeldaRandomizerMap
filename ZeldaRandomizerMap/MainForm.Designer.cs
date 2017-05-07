@@ -131,15 +131,15 @@
             this.solidButton = new System.Windows.Forms.Button();
             this.levelRadioButtonUnknown = new System.Windows.Forms.RadioButton();
             this.nearPatraButton = new System.Windows.Forms.Button();
-            this.levelRadioButton9 = new System.Windows.Forms.RadioButton();
-            this.levelRadioButton8 = new System.Windows.Forms.RadioButton();
-            this.levelRadioButton7 = new System.Windows.Forms.RadioButton();
-            this.levelRadioButton6 = new System.Windows.Forms.RadioButton();
-            this.levelRadioButton5 = new System.Windows.Forms.RadioButton();
-            this.levelRadioButton4 = new System.Windows.Forms.RadioButton();
-            this.levelRadioButton3 = new System.Windows.Forms.RadioButton();
-            this.levelRadioButton2 = new System.Windows.Forms.RadioButton();
-            this.levelRadioButton1 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton19 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton18 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton17 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton16 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton15 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton14 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton13 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton12 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton11 = new System.Windows.Forms.RadioButton();
             this.levelRoom55 = new System.Windows.Forms.PictureBox();
             this.levelHorizontalWall55 = new System.Windows.Forms.PictureBox();
             this.levelHorizontalWall54 = new System.Windows.Forms.PictureBox();
@@ -416,6 +416,15 @@
             this.comboBox52 = new System.Windows.Forms.ComboBox();
             this.comboBox53 = new System.Windows.Forms.ComboBox();
             this.comboBox54 = new System.Windows.Forms.ComboBox();
+            this.levelRadioButton29 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton28 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton27 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton26 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton25 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton24 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton23 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton22 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton21 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.unexploredPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemNumericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -1730,18 +1739,27 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Gray;
+            this.tabPage2.Controls.Add(this.levelRadioButton29);
+            this.tabPage2.Controls.Add(this.levelRadioButton28);
+            this.tabPage2.Controls.Add(this.levelRadioButton27);
+            this.tabPage2.Controls.Add(this.levelRadioButton26);
+            this.tabPage2.Controls.Add(this.levelRadioButton25);
+            this.tabPage2.Controls.Add(this.levelRadioButton24);
+            this.tabPage2.Controls.Add(this.levelRadioButton23);
+            this.tabPage2.Controls.Add(this.levelRadioButton22);
+            this.tabPage2.Controls.Add(this.levelRadioButton21);
             this.tabPage2.Controls.Add(this.solidButton);
             this.tabPage2.Controls.Add(this.levelRadioButtonUnknown);
             this.tabPage2.Controls.Add(this.nearPatraButton);
-            this.tabPage2.Controls.Add(this.levelRadioButton9);
-            this.tabPage2.Controls.Add(this.levelRadioButton8);
-            this.tabPage2.Controls.Add(this.levelRadioButton7);
-            this.tabPage2.Controls.Add(this.levelRadioButton6);
-            this.tabPage2.Controls.Add(this.levelRadioButton5);
-            this.tabPage2.Controls.Add(this.levelRadioButton4);
-            this.tabPage2.Controls.Add(this.levelRadioButton3);
-            this.tabPage2.Controls.Add(this.levelRadioButton2);
-            this.tabPage2.Controls.Add(this.levelRadioButton1);
+            this.tabPage2.Controls.Add(this.levelRadioButton19);
+            this.tabPage2.Controls.Add(this.levelRadioButton18);
+            this.tabPage2.Controls.Add(this.levelRadioButton17);
+            this.tabPage2.Controls.Add(this.levelRadioButton16);
+            this.tabPage2.Controls.Add(this.levelRadioButton15);
+            this.tabPage2.Controls.Add(this.levelRadioButton14);
+            this.tabPage2.Controls.Add(this.levelRadioButton13);
+            this.tabPage2.Controls.Add(this.levelRadioButton12);
+            this.tabPage2.Controls.Add(this.levelRadioButton11);
             this.tabPage2.Controls.Add(this.levelRoom55);
             this.tabPage2.Controls.Add(this.levelHorizontalWall55);
             this.tabPage2.Controls.Add(this.levelHorizontalWall54);
@@ -1970,104 +1988,104 @@
             this.nearPatraButton.UseVisualStyleBackColor = true;
             this.nearPatraButton.Click += new System.EventHandler(this.nearPatraButton_Click);
             // 
-            // levelRadioButton9
+            // levelRadioButton19
             // 
-            this.levelRadioButton9.AutoSize = true;
-            this.levelRadioButton9.Location = new System.Drawing.Point(874, 711);
-            this.levelRadioButton9.Name = "levelRadioButton9";
-            this.levelRadioButton9.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton9.TabIndex = 228;
-            this.levelRadioButton9.Text = "LEVEL-9";
-            this.levelRadioButton9.UseVisualStyleBackColor = true;
-            this.levelRadioButton9.CheckedChanged += new System.EventHandler(this.levelRadioButton9_CheckedChanged);
+            this.levelRadioButton19.AutoSize = true;
+            this.levelRadioButton19.Location = new System.Drawing.Point(874, 711);
+            this.levelRadioButton19.Name = "levelRadioButton19";
+            this.levelRadioButton19.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton19.TabIndex = 228;
+            this.levelRadioButton19.Text = "LEVEL-9";
+            this.levelRadioButton19.UseVisualStyleBackColor = true;
+            this.levelRadioButton19.CheckedChanged += new System.EventHandler(this.levelRadioButton9_CheckedChanged);
             // 
-            // levelRadioButton8
+            // levelRadioButton18
             // 
-            this.levelRadioButton8.AutoSize = true;
-            this.levelRadioButton8.Location = new System.Drawing.Point(874, 688);
-            this.levelRadioButton8.Name = "levelRadioButton8";
-            this.levelRadioButton8.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton8.TabIndex = 227;
-            this.levelRadioButton8.Text = "LEVEL-8";
-            this.levelRadioButton8.UseVisualStyleBackColor = true;
-            this.levelRadioButton8.CheckedChanged += new System.EventHandler(this.levelRadioButton8_CheckedChanged);
+            this.levelRadioButton18.AutoSize = true;
+            this.levelRadioButton18.Location = new System.Drawing.Point(874, 688);
+            this.levelRadioButton18.Name = "levelRadioButton18";
+            this.levelRadioButton18.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton18.TabIndex = 227;
+            this.levelRadioButton18.Text = "LEVEL-8";
+            this.levelRadioButton18.UseVisualStyleBackColor = true;
+            this.levelRadioButton18.CheckedChanged += new System.EventHandler(this.levelRadioButton8_CheckedChanged);
             // 
-            // levelRadioButton7
+            // levelRadioButton17
             // 
-            this.levelRadioButton7.AutoSize = true;
-            this.levelRadioButton7.Location = new System.Drawing.Point(874, 665);
-            this.levelRadioButton7.Name = "levelRadioButton7";
-            this.levelRadioButton7.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton7.TabIndex = 226;
-            this.levelRadioButton7.Text = "LEVEL-7";
-            this.levelRadioButton7.UseVisualStyleBackColor = true;
-            this.levelRadioButton7.CheckedChanged += new System.EventHandler(this.levelRadioButton7_CheckedChanged);
+            this.levelRadioButton17.AutoSize = true;
+            this.levelRadioButton17.Location = new System.Drawing.Point(874, 665);
+            this.levelRadioButton17.Name = "levelRadioButton17";
+            this.levelRadioButton17.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton17.TabIndex = 226;
+            this.levelRadioButton17.Text = "LEVEL-7";
+            this.levelRadioButton17.UseVisualStyleBackColor = true;
+            this.levelRadioButton17.CheckedChanged += new System.EventHandler(this.levelRadioButton7_CheckedChanged);
             // 
-            // levelRadioButton6
+            // levelRadioButton16
             // 
-            this.levelRadioButton6.AutoSize = true;
-            this.levelRadioButton6.Location = new System.Drawing.Point(874, 642);
-            this.levelRadioButton6.Name = "levelRadioButton6";
-            this.levelRadioButton6.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton6.TabIndex = 225;
-            this.levelRadioButton6.Text = "LEVEL-6";
-            this.levelRadioButton6.UseVisualStyleBackColor = true;
-            this.levelRadioButton6.CheckedChanged += new System.EventHandler(this.levelRadioButton6_CheckedChanged);
+            this.levelRadioButton16.AutoSize = true;
+            this.levelRadioButton16.Location = new System.Drawing.Point(874, 642);
+            this.levelRadioButton16.Name = "levelRadioButton16";
+            this.levelRadioButton16.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton16.TabIndex = 225;
+            this.levelRadioButton16.Text = "LEVEL-6";
+            this.levelRadioButton16.UseVisualStyleBackColor = true;
+            this.levelRadioButton16.CheckedChanged += new System.EventHandler(this.levelRadioButton6_CheckedChanged);
             // 
-            // levelRadioButton5
+            // levelRadioButton15
             // 
-            this.levelRadioButton5.AutoSize = true;
-            this.levelRadioButton5.Location = new System.Drawing.Point(874, 619);
-            this.levelRadioButton5.Name = "levelRadioButton5";
-            this.levelRadioButton5.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton5.TabIndex = 224;
-            this.levelRadioButton5.Text = "LEVEL-5";
-            this.levelRadioButton5.UseVisualStyleBackColor = true;
-            this.levelRadioButton5.CheckedChanged += new System.EventHandler(this.levelRadioButton5_CheckedChanged);
+            this.levelRadioButton15.AutoSize = true;
+            this.levelRadioButton15.Location = new System.Drawing.Point(874, 619);
+            this.levelRadioButton15.Name = "levelRadioButton15";
+            this.levelRadioButton15.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton15.TabIndex = 224;
+            this.levelRadioButton15.Text = "LEVEL-5";
+            this.levelRadioButton15.UseVisualStyleBackColor = true;
+            this.levelRadioButton15.CheckedChanged += new System.EventHandler(this.levelRadioButton5_CheckedChanged);
             // 
-            // levelRadioButton4
+            // levelRadioButton14
             // 
-            this.levelRadioButton4.AutoSize = true;
-            this.levelRadioButton4.Location = new System.Drawing.Point(874, 596);
-            this.levelRadioButton4.Name = "levelRadioButton4";
-            this.levelRadioButton4.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton4.TabIndex = 223;
-            this.levelRadioButton4.Text = "LEVEL-4";
-            this.levelRadioButton4.UseVisualStyleBackColor = true;
-            this.levelRadioButton4.CheckedChanged += new System.EventHandler(this.levelRadioButton4_CheckedChanged);
+            this.levelRadioButton14.AutoSize = true;
+            this.levelRadioButton14.Location = new System.Drawing.Point(874, 596);
+            this.levelRadioButton14.Name = "levelRadioButton14";
+            this.levelRadioButton14.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton14.TabIndex = 223;
+            this.levelRadioButton14.Text = "LEVEL-4";
+            this.levelRadioButton14.UseVisualStyleBackColor = true;
+            this.levelRadioButton14.CheckedChanged += new System.EventHandler(this.levelRadioButton4_CheckedChanged);
             // 
-            // levelRadioButton3
+            // levelRadioButton13
             // 
-            this.levelRadioButton3.AutoSize = true;
-            this.levelRadioButton3.Location = new System.Drawing.Point(874, 573);
-            this.levelRadioButton3.Name = "levelRadioButton3";
-            this.levelRadioButton3.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton3.TabIndex = 222;
-            this.levelRadioButton3.Text = "LEVEL-3";
-            this.levelRadioButton3.UseVisualStyleBackColor = true;
-            this.levelRadioButton3.CheckedChanged += new System.EventHandler(this.levelRadioButton3_CheckedChanged);
+            this.levelRadioButton13.AutoSize = true;
+            this.levelRadioButton13.Location = new System.Drawing.Point(874, 573);
+            this.levelRadioButton13.Name = "levelRadioButton13";
+            this.levelRadioButton13.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton13.TabIndex = 222;
+            this.levelRadioButton13.Text = "LEVEL-3";
+            this.levelRadioButton13.UseVisualStyleBackColor = true;
+            this.levelRadioButton13.CheckedChanged += new System.EventHandler(this.levelRadioButton3_CheckedChanged);
             // 
-            // levelRadioButton2
+            // levelRadioButton12
             // 
-            this.levelRadioButton2.AutoSize = true;
-            this.levelRadioButton2.Location = new System.Drawing.Point(874, 550);
-            this.levelRadioButton2.Name = "levelRadioButton2";
-            this.levelRadioButton2.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton2.TabIndex = 221;
-            this.levelRadioButton2.Text = "LEVEL-2";
-            this.levelRadioButton2.UseVisualStyleBackColor = true;
-            this.levelRadioButton2.CheckedChanged += new System.EventHandler(this.levelRadioButton2_CheckedChanged);
+            this.levelRadioButton12.AutoSize = true;
+            this.levelRadioButton12.Location = new System.Drawing.Point(874, 550);
+            this.levelRadioButton12.Name = "levelRadioButton12";
+            this.levelRadioButton12.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton12.TabIndex = 221;
+            this.levelRadioButton12.Text = "LEVEL-2";
+            this.levelRadioButton12.UseVisualStyleBackColor = true;
+            this.levelRadioButton12.CheckedChanged += new System.EventHandler(this.levelRadioButton2_CheckedChanged);
             // 
-            // levelRadioButton1
+            // levelRadioButton11
             // 
-            this.levelRadioButton1.AutoSize = true;
-            this.levelRadioButton1.Location = new System.Drawing.Point(874, 528);
-            this.levelRadioButton1.Name = "levelRadioButton1";
-            this.levelRadioButton1.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton1.TabIndex = 220;
-            this.levelRadioButton1.Text = "LEVEL-1";
-            this.levelRadioButton1.UseVisualStyleBackColor = true;
-            this.levelRadioButton1.CheckedChanged += new System.EventHandler(this.levelRadioButton1_CheckedChanged);
+            this.levelRadioButton11.AutoSize = true;
+            this.levelRadioButton11.Location = new System.Drawing.Point(874, 528);
+            this.levelRadioButton11.Name = "levelRadioButton11";
+            this.levelRadioButton11.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton11.TabIndex = 220;
+            this.levelRadioButton11.Text = "LEVEL-1";
+            this.levelRadioButton11.UseVisualStyleBackColor = true;
+            this.levelRadioButton11.CheckedChanged += new System.EventHandler(this.levelRadioButton1_CheckedChanged);
             // 
             // levelRoom55
             // 
@@ -5297,6 +5315,105 @@
             this.comboBox54.Size = new System.Drawing.Size(121, 21);
             this.comboBox54.TabIndex = 215;
             // 
+            // levelRadioButton29
+            // 
+            this.levelRadioButton29.AutoSize = true;
+            this.levelRadioButton29.Location = new System.Drawing.Point(947, 712);
+            this.levelRadioButton29.Name = "levelRadioButton29";
+            this.levelRadioButton29.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton29.TabIndex = 240;
+            this.levelRadioButton29.Text = "LEVEL-9";
+            this.levelRadioButton29.UseVisualStyleBackColor = true;
+            this.levelRadioButton29.CheckedChanged += new System.EventHandler(this.levelRadioButton29_CheckedChanged);
+            // 
+            // levelRadioButton28
+            // 
+            this.levelRadioButton28.AutoSize = true;
+            this.levelRadioButton28.Location = new System.Drawing.Point(947, 689);
+            this.levelRadioButton28.Name = "levelRadioButton28";
+            this.levelRadioButton28.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton28.TabIndex = 239;
+            this.levelRadioButton28.Text = "LEVEL-8";
+            this.levelRadioButton28.UseVisualStyleBackColor = true;
+            this.levelRadioButton28.CheckedChanged += new System.EventHandler(this.levelRadioButton28_CheckedChanged);
+            // 
+            // levelRadioButton27
+            // 
+            this.levelRadioButton27.AutoSize = true;
+            this.levelRadioButton27.Location = new System.Drawing.Point(947, 666);
+            this.levelRadioButton27.Name = "levelRadioButton27";
+            this.levelRadioButton27.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton27.TabIndex = 238;
+            this.levelRadioButton27.Text = "LEVEL-7";
+            this.levelRadioButton27.UseVisualStyleBackColor = true;
+            this.levelRadioButton27.CheckedChanged += new System.EventHandler(this.levelRadioButton27_CheckedChanged);
+            // 
+            // levelRadioButton26
+            // 
+            this.levelRadioButton26.AutoSize = true;
+            this.levelRadioButton26.Location = new System.Drawing.Point(947, 643);
+            this.levelRadioButton26.Name = "levelRadioButton26";
+            this.levelRadioButton26.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton26.TabIndex = 237;
+            this.levelRadioButton26.Text = "LEVEL-6";
+            this.levelRadioButton26.UseVisualStyleBackColor = true;
+            this.levelRadioButton26.CheckedChanged += new System.EventHandler(this.levelRadioButton26_CheckedChanged);
+            // 
+            // levelRadioButton25
+            // 
+            this.levelRadioButton25.AutoSize = true;
+            this.levelRadioButton25.Location = new System.Drawing.Point(947, 620);
+            this.levelRadioButton25.Name = "levelRadioButton25";
+            this.levelRadioButton25.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton25.TabIndex = 236;
+            this.levelRadioButton25.Text = "LEVEL-5";
+            this.levelRadioButton25.UseVisualStyleBackColor = true;
+            this.levelRadioButton25.CheckedChanged += new System.EventHandler(this.levelRadioButton25_CheckedChanged);
+            // 
+            // levelRadioButton24
+            // 
+            this.levelRadioButton24.AutoSize = true;
+            this.levelRadioButton24.Location = new System.Drawing.Point(947, 597);
+            this.levelRadioButton24.Name = "levelRadioButton24";
+            this.levelRadioButton24.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton24.TabIndex = 235;
+            this.levelRadioButton24.Text = "LEVEL-4";
+            this.levelRadioButton24.UseVisualStyleBackColor = true;
+            this.levelRadioButton24.CheckedChanged += new System.EventHandler(this.levelRadioButton24_CheckedChanged);
+            // 
+            // levelRadioButton23
+            // 
+            this.levelRadioButton23.AutoSize = true;
+            this.levelRadioButton23.Location = new System.Drawing.Point(947, 574);
+            this.levelRadioButton23.Name = "levelRadioButton23";
+            this.levelRadioButton23.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton23.TabIndex = 234;
+            this.levelRadioButton23.Text = "LEVEL-3";
+            this.levelRadioButton23.UseVisualStyleBackColor = true;
+            this.levelRadioButton23.CheckedChanged += new System.EventHandler(this.levelRadioButton23_CheckedChanged);
+            // 
+            // levelRadioButton22
+            // 
+            this.levelRadioButton22.AutoSize = true;
+            this.levelRadioButton22.Location = new System.Drawing.Point(947, 551);
+            this.levelRadioButton22.Name = "levelRadioButton22";
+            this.levelRadioButton22.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton22.TabIndex = 233;
+            this.levelRadioButton22.Text = "LEVEL-2";
+            this.levelRadioButton22.UseVisualStyleBackColor = true;
+            this.levelRadioButton22.CheckedChanged += new System.EventHandler(this.levelRadioButton22_CheckedChanged);
+            // 
+            // levelRadioButton21
+            // 
+            this.levelRadioButton21.AutoSize = true;
+            this.levelRadioButton21.Location = new System.Drawing.Point(947, 529);
+            this.levelRadioButton21.Name = "levelRadioButton21";
+            this.levelRadioButton21.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton21.TabIndex = 232;
+            this.levelRadioButton21.Text = "LEVEL-1";
+            this.levelRadioButton21.UseVisualStyleBackColor = true;
+            this.levelRadioButton21.CheckedChanged += new System.EventHandler(this.levelRadioButton21_CheckedChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5991,15 +6108,15 @@
         private System.Windows.Forms.PictureBox levelHorizontalWall48;
         private System.Windows.Forms.PictureBox levelHorizontalWall47;
         private System.Windows.Forms.PictureBox levelRoom55;
-        private System.Windows.Forms.RadioButton levelRadioButton9;
-        private System.Windows.Forms.RadioButton levelRadioButton8;
-        private System.Windows.Forms.RadioButton levelRadioButton7;
-        private System.Windows.Forms.RadioButton levelRadioButton6;
-        private System.Windows.Forms.RadioButton levelRadioButton5;
-        private System.Windows.Forms.RadioButton levelRadioButton4;
-        private System.Windows.Forms.RadioButton levelRadioButton3;
-        private System.Windows.Forms.RadioButton levelRadioButton2;
-        private System.Windows.Forms.RadioButton levelRadioButton1;
+        private System.Windows.Forms.RadioButton levelRadioButton19;
+        private System.Windows.Forms.RadioButton levelRadioButton18;
+        private System.Windows.Forms.RadioButton levelRadioButton17;
+        private System.Windows.Forms.RadioButton levelRadioButton16;
+        private System.Windows.Forms.RadioButton levelRadioButton15;
+        private System.Windows.Forms.RadioButton levelRadioButton14;
+        private System.Windows.Forms.RadioButton levelRadioButton13;
+        private System.Windows.Forms.RadioButton levelRadioButton12;
+        private System.Windows.Forms.RadioButton levelRadioButton11;
         private System.Windows.Forms.CheckBox checkBox11;
         private System.Windows.Forms.ComboBox comboBox43;
         private System.Windows.Forms.ComboBox comboBox44;
@@ -6035,6 +6152,15 @@
         private System.Windows.Forms.Button filterFirstButton;
         private System.Windows.Forms.CheckBox bibleCheckBox;
         private System.Windows.Forms.Button bibleButton;
+        private System.Windows.Forms.RadioButton levelRadioButton29;
+        private System.Windows.Forms.RadioButton levelRadioButton28;
+        private System.Windows.Forms.RadioButton levelRadioButton27;
+        private System.Windows.Forms.RadioButton levelRadioButton26;
+        private System.Windows.Forms.RadioButton levelRadioButton25;
+        private System.Windows.Forms.RadioButton levelRadioButton24;
+        private System.Windows.Forms.RadioButton levelRadioButton23;
+        private System.Windows.Forms.RadioButton levelRadioButton22;
+        private System.Windows.Forms.RadioButton levelRadioButton21;
     }
 }
 
