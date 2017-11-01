@@ -30,9 +30,9 @@ namespace ZeldaRandomizerMap
         None,
         Pending,
         Clear,
-        Solid,
         Key,
         Shutter,
+        Solid,
     }
 
     class LevelTracker
@@ -282,38 +282,45 @@ namespace ZeldaRandomizerMap
                     case WallType.Clear:
                         m_verticalPictureBoxes[row, column].Image = ImageConstants.ClearWallBitmap;
                         break;
-                    case WallType.Solid:
-                        m_verticalPictureBoxes[row, column].Image = ImageConstants.SolidWallBitmap;
-                        break;
                     case WallType.Key:
                         m_verticalPictureBoxes[row, column].Image = ImageConstants.KeyWallBitmap;
                         break;
                     case WallType.Shutter:
                         m_verticalPictureBoxes[row, column].Image = ImageConstants.ShutterWallBitmap;
                         break;
+                    case WallType.Solid:
+                        m_verticalPictureBoxes[row, column].Image = ImageConstants.SolidWallBitmap;
+                        break;
                 }
             }
         }
 
-        public void ToggleVertical(int row, int column)
+        public void ToggleVertical(int row, int column, bool rightClick)
         {
-            switch (m_levelVerticalWalls[row, column])
+            if (rightClick)
             {
-                case WallType.Pending:
-                    m_levelVerticalWalls[row, column] = WallType.Clear;
-                    break;
-                case WallType.Clear:
-                    m_levelVerticalWalls[row, column] = WallType.Solid;
-                    break;
-                case WallType.Solid:
-                    m_levelVerticalWalls[row, column] = WallType.Key;
-                    break;
-                case WallType.Key:
-                    m_levelVerticalWalls[row, column] = WallType.Shutter;
-                    break;
-                case WallType.Shutter:
-                    m_levelVerticalWalls[row, column] = WallType.Pending;
-                    break;
+                m_levelVerticalWalls[row, column] = WallType.Solid;
+            }
+            else
+            {
+                switch (m_levelVerticalWalls[row, column])
+                {
+                    case WallType.Pending:
+                        m_levelVerticalWalls[row, column] = WallType.Clear;
+                        break;
+                    case WallType.Clear:
+                        m_levelVerticalWalls[row, column] = WallType.Key;
+                        break;
+                    case WallType.Key:
+                        m_levelVerticalWalls[row, column] = WallType.Shutter;
+                        break;
+                    case WallType.Shutter:
+                        m_levelVerticalWalls[row, column] = WallType.Pending;
+                        break;
+                    case WallType.Solid:
+                        m_levelVerticalWalls[row, column] = WallType.Pending;
+                        break;
+                }
             }
 
             UpdateVertical(row, column);
@@ -335,38 +342,45 @@ namespace ZeldaRandomizerMap
                     case WallType.Clear:
                         m_horizontalPictureBoxes[row, column].Image = ImageConstants.ClearWallBitmap;
                         break;
-                    case WallType.Solid:
-                        m_horizontalPictureBoxes[row, column].Image = ImageConstants.SolidWallBitmap;
-                        break;
                     case WallType.Key:
                         m_horizontalPictureBoxes[row, column].Image = ImageConstants.KeyWallBitmap;
                         break;
                     case WallType.Shutter:
                         m_horizontalPictureBoxes[row, column].Image = ImageConstants.ShutterWallBitmap;
                         break;
+                    case WallType.Solid:
+                        m_horizontalPictureBoxes[row, column].Image = ImageConstants.SolidWallBitmap;
+                        break;
                 }
             }
         }
 
-        public void ToggleHorizontal(int row, int column)
+        public void ToggleHorizontal(int row, int column, bool rightClick)
         {
-            switch (m_levelHorizontalWalls[row, column])
+            if (rightClick)
             {
-                case WallType.Pending:
-                    m_levelHorizontalWalls[row, column] = WallType.Clear;
-                    break;
-                case WallType.Clear:
-                    m_levelHorizontalWalls[row, column] = WallType.Solid;
-                    break;
-                case WallType.Solid:
-                    m_levelHorizontalWalls[row, column] = WallType.Key;
-                    break;
-                case WallType.Key:
-                    m_levelHorizontalWalls[row, column] = WallType.Shutter;
-                    break;
-                case WallType.Shutter:
-                    m_levelHorizontalWalls[row, column] = WallType.Pending;
-                    break;
+                m_levelHorizontalWalls[row, column] = WallType.Solid;
+            }
+            else
+            {
+                switch (m_levelHorizontalWalls[row, column])
+                {
+                    case WallType.Pending:
+                        m_levelHorizontalWalls[row, column] = WallType.Clear;
+                        break;
+                    case WallType.Clear:
+                        m_levelHorizontalWalls[row, column] = WallType.Key;
+                        break;
+                    case WallType.Key:
+                        m_levelHorizontalWalls[row, column] = WallType.Shutter;
+                        break;
+                    case WallType.Shutter:
+                        m_levelHorizontalWalls[row, column] = WallType.Pending;
+                        break;
+                    case WallType.Solid:
+                        m_levelHorizontalWalls[row, column] = WallType.Pending;
+                        break;
+                }
             }
 
             UpdateHorizontal(row, column);

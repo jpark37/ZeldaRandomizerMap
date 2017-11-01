@@ -20,20 +20,18 @@ namespace ZeldaRandomizerMap
             m_overworldTracker = new OverworldTracker(unexploredPictureBox, exploredPictureBox);
             m_levelTrackers = InitializeLevelTrackers();
 
-            m_levelTrackers[0, 0].ToggleHorizontal(7, 5);
-            m_levelTrackers[0, 0].ToggleHorizontal(7, 5);
-            m_levelTrackers[0, 0].ToggleHorizontal(7, 6);
-            m_levelTrackers[0, 0].ToggleHorizontal(7, 6);
+            m_levelTrackers[0, 0].ToggleHorizontal(7, 5, true);
+            m_levelTrackers[0, 0].ToggleHorizontal(7, 6, true);
             m_levelTrackers[0, 0].SelectRoom(7, 6);
-            m_levelTrackers[0, 0].ToggleVertical(6, 6);
+            m_levelTrackers[0, 0].ToggleVertical(6, 6, false);
             m_levelTrackers[0, 0].SelectRoom(6, 6);
 
             m_levelTrackers[1, 8].SelectRoom(7, 6);
-            m_levelTrackers[1, 8].ToggleVertical(6, 6);
+            m_levelTrackers[1, 8].ToggleVertical(6, 6, false);
             m_levelTrackers[1, 8].SelectRoom(6, 6);
 
             m_levelTrackers[2, 8].SelectRoom(7, 4);
-            m_levelTrackers[2, 8].ToggleVertical(6, 4);
+            m_levelTrackers[2, 8].ToggleVertical(6, 4, false);
             m_levelTrackers[2, 8].SelectRoom(6, 4);
 
             RefreshLevelsTab(0, 0);
@@ -752,14 +750,18 @@ namespace ZeldaRandomizerMap
             m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SelectRoom(row, column);
         }
 
-        private void ToggleVertical(int row, int column)
+        private void ToggleVertical(int row, int column, EventArgs e)
         {
-            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].ToggleVertical(row, column);
+            MouseEventArgs mouseArgs = e as MouseEventArgs;
+            bool rightClick = mouseArgs != null && mouseArgs.Button == MouseButtons.Right;
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].ToggleVertical(row, column, rightClick);
         }
 
-        private void ToggleHorizontal(int row, int column)
+        private void ToggleHorizontal(int row, int column, EventArgs e)
         {
-            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].ToggleHorizontal(row, column);
+            MouseEventArgs mouseArgs = e as MouseEventArgs;
+            bool rightClick = mouseArgs != null && mouseArgs.Button == MouseButtons.Right;
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].ToggleHorizontal(row, column, rightClick);
         }
 
         void RefreshLevelsTab(int questIndex, int levelIndex)
@@ -1227,562 +1229,562 @@ namespace ZeldaRandomizerMap
 
         private void levelVerticalWall0_Click(object sender, EventArgs e)
         {
-            ToggleVertical(0, 0);
+            ToggleVertical(0, 0, e);
         }
 
         private void levelVerticalWall1_Click(object sender, EventArgs e)
         {
-            ToggleVertical(0, 1);
+            ToggleVertical(0, 1, e);
         }
 
         private void levelVerticalWall2_Click(object sender, EventArgs e)
         {
-            ToggleVertical(0, 2);
+            ToggleVertical(0, 2, e);
         }
 
         private void levelVerticalWall3_Click(object sender, EventArgs e)
         {
-            ToggleVertical(0, 3);
+            ToggleVertical(0, 3, e);
         }
 
         private void levelVerticalWall4_Click(object sender, EventArgs e)
         {
-            ToggleVertical(0, 4);
+            ToggleVertical(0, 4, e);
         }
 
         private void levelVerticalWall5_Click(object sender, EventArgs e)
         {
-            ToggleVertical(0, 5);
+            ToggleVertical(0, 5, e);
         }
 
         private void levelVerticalWall6_Click(object sender, EventArgs e)
         {
-            ToggleVertical(0, 6);
+            ToggleVertical(0, 6, e);
         }
 
         private void levelVerticalWall7_Click(object sender, EventArgs e)
         {
-            ToggleVertical(0, 7);
+            ToggleVertical(0, 7, e);
         }
 
         private void levelVerticalWall8_Click(object sender, EventArgs e)
         {
-            ToggleVertical(1, 0);
+            ToggleVertical(1, 0, e);
         }
 
         private void levelVerticalWall9_Click(object sender, EventArgs e)
         {
-            ToggleVertical(1, 1);
+            ToggleVertical(1, 1, e);
         }
 
         private void levelVerticalWall10_Click(object sender, EventArgs e)
         {
-            ToggleVertical(1, 2);
+            ToggleVertical(1, 2, e);
         }
 
         private void levelVerticalWall11_Click(object sender, EventArgs e)
         {
-            ToggleVertical(1, 3);
+            ToggleVertical(1, 3, e);
         }
 
         private void levelVerticalWall12_Click(object sender, EventArgs e)
         {
-            ToggleVertical(1, 4);
+            ToggleVertical(1, 4, e);
         }
 
         private void levelVerticalWall13_Click(object sender, EventArgs e)
         {
-            ToggleVertical(1, 5);
+            ToggleVertical(1, 5, e);
         }
 
         private void levelVerticalWall14_Click(object sender, EventArgs e)
         {
-            ToggleVertical(1, 6);
+            ToggleVertical(1, 6, e);
         }
 
         private void levelVerticalWall15_Click(object sender, EventArgs e)
         {
-            ToggleVertical(1, 7);
+            ToggleVertical(1, 7, e);
         }
 
         private void levelVerticalWall16_Click(object sender, EventArgs e)
         {
-            ToggleVertical(2, 0);
+            ToggleVertical(2, 0, e);
         }
 
         private void levelVerticalWall17_Click(object sender, EventArgs e)
         {
-            ToggleVertical(2, 1);
+            ToggleVertical(2, 1, e);
         }
 
         private void levelVerticalWall18_Click(object sender, EventArgs e)
         {
-            ToggleVertical(2, 2);
+            ToggleVertical(2, 2, e);
         }
 
         private void levelVerticalWall19_Click(object sender, EventArgs e)
         {
-            ToggleVertical(2, 3);
+            ToggleVertical(2, 3, e);
         }
 
         private void levelVerticalWall20_Click(object sender, EventArgs e)
         {
-            ToggleVertical(2, 4);
+            ToggleVertical(2, 4, e);
         }
 
         private void levelVerticalWall21_Click(object sender, EventArgs e)
         {
-            ToggleVertical(2, 5);
+            ToggleVertical(2, 5, e);
         }
 
         private void levelVerticalWall22_Click(object sender, EventArgs e)
         {
-            ToggleVertical(2, 6);
+            ToggleVertical(2, 6, e);
         }
 
         private void levelVerticalWall23_Click(object sender, EventArgs e)
         {
-            ToggleVertical(2, 7);
+            ToggleVertical(2, 7, e);
         }
 
         private void levelVerticalWall24_Click(object sender, EventArgs e)
         {
-            ToggleVertical(3, 0);
+            ToggleVertical(3, 0, e);
         }
 
         private void levelVerticalWall25_Click(object sender, EventArgs e)
         {
-            ToggleVertical(3, 1);
+            ToggleVertical(3, 1, e);
         }
 
         private void levelVerticalWall26_Click(object sender, EventArgs e)
         {
-            ToggleVertical(3, 2);
+            ToggleVertical(3, 2, e);
         }
 
         private void levelVerticalWall27_Click(object sender, EventArgs e)
         {
-            ToggleVertical(3, 3);
+            ToggleVertical(3, 3, e);
         }
 
         private void levelVerticalWall28_Click(object sender, EventArgs e)
         {
-            ToggleVertical(3, 4);
+            ToggleVertical(3, 4, e);
         }
 
         private void levelVerticalWall29_Click(object sender, EventArgs e)
         {
-            ToggleVertical(3, 5);
+            ToggleVertical(3, 5, e);
         }
 
         private void levelVerticalWall30_Click(object sender, EventArgs e)
         {
-            ToggleVertical(3, 6);
+            ToggleVertical(3, 6, e);
         }
 
         private void levelVerticalWall31_Click(object sender, EventArgs e)
         {
-            ToggleVertical(3, 7);
+            ToggleVertical(3, 7, e);
         }
 
         private void levelVerticalWall32_Click(object sender, EventArgs e)
         {
-            ToggleVertical(4, 0);
+            ToggleVertical(4, 0, e);
         }
 
         private void levelVerticalWall33_Click(object sender, EventArgs e)
         {
-            ToggleVertical(4, 1);
+            ToggleVertical(4, 1, e);
         }
 
         private void levelVerticalWall34_Click(object sender, EventArgs e)
         {
-            ToggleVertical(4, 2);
+            ToggleVertical(4, 2, e);
         }
 
         private void levelVerticalWall35_Click(object sender, EventArgs e)
         {
-            ToggleVertical(4, 3);
+            ToggleVertical(4, 3, e);
         }
 
         private void levelVerticalWall36_Click(object sender, EventArgs e)
         {
-            ToggleVertical(4, 4);
+            ToggleVertical(4, 4, e);
         }
 
         private void levelVerticalWall37_Click(object sender, EventArgs e)
         {
-            ToggleVertical(4, 5);
+            ToggleVertical(4, 5, e);
         }
 
         private void levelVerticalWall38_Click(object sender, EventArgs e)
         {
-            ToggleVertical(4, 6);
+            ToggleVertical(4, 6, e);
         }
 
         private void levelVerticalWall39_Click(object sender, EventArgs e)
         {
-            ToggleVertical(4, 7);
+            ToggleVertical(4, 7, e);
         }
 
         private void levelVerticalWall40_Click(object sender, EventArgs e)
         {
-            ToggleVertical(5, 0);
+            ToggleVertical(5, 0, e);
         }
 
         private void levelVerticalWall41_Click(object sender, EventArgs e)
         {
-            ToggleVertical(5, 1);
+            ToggleVertical(5, 1, e);
         }
 
         private void levelVerticalWall42_Click(object sender, EventArgs e)
         {
-            ToggleVertical(5, 2);
+            ToggleVertical(5, 2, e);
         }
 
         private void levelVerticalWall43_Click(object sender, EventArgs e)
         {
-            ToggleVertical(5, 3);
+            ToggleVertical(5, 3, e);
         }
 
         private void levelVerticalWall44_Click(object sender, EventArgs e)
         {
-            ToggleVertical(5, 4);
+            ToggleVertical(5, 4, e);
         }
 
         private void levelVerticalWall45_Click(object sender, EventArgs e)
         {
-            ToggleVertical(5, 5);
+            ToggleVertical(5, 5, e);
         }
 
         private void levelVerticalWall46_Click(object sender, EventArgs e)
         {
-            ToggleVertical(5, 6);
+            ToggleVertical(5, 6, e);
         }
 
         private void levelVerticalWall47_Click(object sender, EventArgs e)
         {
-            ToggleVertical(5, 7);
+            ToggleVertical(5, 7, e);
         }
 
         private void levelVerticalWall48_Click(object sender, EventArgs e)
         {
-            ToggleVertical(6, 0);
+            ToggleVertical(6, 0, e);
         }
 
         private void levelVerticalWall49_Click(object sender, EventArgs e)
         {
-            ToggleVertical(6, 1);
+            ToggleVertical(6, 1, e);
         }
 
         private void levelVerticalWall50_Click(object sender, EventArgs e)
         {
-            ToggleVertical(6, 2);
+            ToggleVertical(6, 2, e);
         }
 
         private void levelVerticalWall51_Click(object sender, EventArgs e)
         {
-            ToggleVertical(6, 3);
+            ToggleVertical(6, 3, e);
         }
 
         private void levelVerticalWall52_Click(object sender, EventArgs e)
         {
-            ToggleVertical(6, 4);
+            ToggleVertical(6, 4, e);
         }
 
         private void levelVerticalWall53_Click(object sender, EventArgs e)
         {
-            ToggleVertical(6, 5);
+            ToggleVertical(6, 5, e);
         }
 
         private void levelVerticalWall54_Click(object sender, EventArgs e)
         {
-            ToggleVertical(6, 6);
+            ToggleVertical(6, 6, e);
         }
 
         private void levelVerticalWall55_Click(object sender, EventArgs e)
         {
-            ToggleVertical(6, 7);
+            ToggleVertical(6, 7, e);
         }
 
         private void levelHorizontalWall0_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(0, 0);
+            ToggleHorizontal(0, 0, e);
         }
 
         private void levelHorizontalWall1_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(0, 1);
+            ToggleHorizontal(0, 1, e);
         }
 
         private void levelHorizontalWall2_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(0, 2);
+            ToggleHorizontal(0, 2, e);
         }
 
         private void levelHorizontalWall3_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(0, 3);
+            ToggleHorizontal(0, 3, e);
         }
 
         private void levelHorizontalWall4_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(0, 4);
+            ToggleHorizontal(0, 4, e);
         }
 
         private void levelHorizontalWall5_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(0, 5);
+            ToggleHorizontal(0, 5, e);
         }
 
         private void levelHorizontalWall6_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(0, 6);
+            ToggleHorizontal(0, 6, e);
         }
 
         private void levelHorizontalWall7_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(1, 0);
+            ToggleHorizontal(1, 0, e);
         }
 
         private void levelHorizontalWall8_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(1, 1);
+            ToggleHorizontal(1, 1, e);
         }
 
         private void levelHorizontalWall9_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(1, 2);
+            ToggleHorizontal(1, 2, e);
         }
 
         private void levelHorizontalWall10_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(1, 3);
+            ToggleHorizontal(1, 3, e);
         }
 
         private void levelHorizontalWall11_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(1, 4);
+            ToggleHorizontal(1, 4, e);
         }
 
         private void levelHorizontalWall12_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(1, 5);
+            ToggleHorizontal(1, 5, e);
         }
 
         private void levelHorizontalWall13_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(1, 6);
+            ToggleHorizontal(1, 6, e);
         }
 
         private void levelHorizontalWall14_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(2, 0);
+            ToggleHorizontal(2, 0, e);
         }
 
         private void levelHorizontalWall15_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(2, 1);
+            ToggleHorizontal(2, 1, e);
         }
 
         private void levelHorizontalWall16_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(2, 2);
+            ToggleHorizontal(2, 2, e);
         }
 
         private void levelHorizontalWall17_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(2, 3);
+            ToggleHorizontal(2, 3, e);
         }
 
         private void levelHorizontalWall18_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(2, 4);
+            ToggleHorizontal(2, 4, e);
         }
 
         private void levelHorizontalWall19_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(2, 5);
+            ToggleHorizontal(2, 5, e);
         }
 
         private void levelHorizontalWall20_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(2, 6);
+            ToggleHorizontal(2, 6, e);
         }
 
         private void levelHorizontalWall21_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(3, 0);
+            ToggleHorizontal(3, 0, e);
         }
 
         private void levelHorizontalWall22_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(3, 1);
+            ToggleHorizontal(3, 1, e);
         }
 
         private void levelHorizontalWall23_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(3, 2);
+            ToggleHorizontal(3, 2, e);
         }
 
         private void levelHorizontalWall24_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(3, 3);
+            ToggleHorizontal(3, 3, e);
         }
 
         private void levelHorizontalWall25_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(3, 4);
+            ToggleHorizontal(3, 4, e);
         }
 
         private void levelHorizontalWall26_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(3, 5);
+            ToggleHorizontal(3, 5, e);
         }
 
         private void levelHorizontalWall27_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(3, 6);
+            ToggleHorizontal(3, 6, e);
         }
 
         private void levelHorizontalWall28_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(4, 0);
+            ToggleHorizontal(4, 0, e);
         }
 
         private void levelHorizontalWall29_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(4, 1);
+            ToggleHorizontal(4, 1, e);
         }
 
         private void levelHorizontalWall30_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(4, 2);
+            ToggleHorizontal(4, 2, e);
         }
 
         private void levelHorizontalWall31_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(4, 3);
+            ToggleHorizontal(4, 3, e);
         }
 
         private void levelHorizontalWall32_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(4, 4);
+            ToggleHorizontal(4, 4, e);
         }
 
         private void levelHorizontalWall33_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(4, 5);
+            ToggleHorizontal(4, 5, e);
         }
 
         private void levelHorizontalWall34_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(4, 6);
+            ToggleHorizontal(4, 6, e);
         }
 
         private void levelHorizontalWall35_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(5, 0);
+            ToggleHorizontal(5, 0, e);
         }
 
         private void levelHorizontalWall36_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(5, 1);
+            ToggleHorizontal(5, 1, e);
         }
 
         private void levelHorizontalWall37_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(5, 2);
+            ToggleHorizontal(5, 2, e);
         }
 
         private void levelHorizontalWall38_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(5, 3);
+            ToggleHorizontal(5, 3, e);
         }
 
         private void levelHorizontalWall39_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(5, 4);
+            ToggleHorizontal(5, 4, e);
         }
 
         private void levelHorizontalWall40_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(5, 5);
+            ToggleHorizontal(5, 5, e);
         }
 
         private void levelHorizontalWall41_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(5, 6);
+            ToggleHorizontal(5, 6, e);
         }
 
         private void levelHorizontalWall42_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(6, 0);
+            ToggleHorizontal(6, 0, e);
         }
 
         private void levelHorizontalWall43_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(6, 1);
+            ToggleHorizontal(6, 1, e);
         }
 
         private void levelHorizontalWall44_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(6, 2);
+            ToggleHorizontal(6, 2, e);
         }
 
         private void levelHorizontalWall45_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(6, 3);
+            ToggleHorizontal(6, 3, e);
         }
 
         private void levelHorizontalWall46_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(6, 4);
+            ToggleHorizontal(6, 4, e);
         }
 
         private void levelHorizontalWall47_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(6, 5);
+            ToggleHorizontal(6, 5, e);
         }
 
         private void levelHorizontalWall48_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(6, 6);
+            ToggleHorizontal(6, 6, e);
         }
 
         private void levelHorizontalWall49_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(7, 0);
+            ToggleHorizontal(7, 0, e);
         }
 
         private void levelHorizontalWall50_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(7, 1);
+            ToggleHorizontal(7, 1, e);
         }
 
         private void levelHorizontalWall51_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(7, 2);
+            ToggleHorizontal(7, 2, e);
         }
 
         private void levelHorizontalWall52_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(7, 3);
+            ToggleHorizontal(7, 3, e);
         }
 
         private void levelHorizontalWall53_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(7, 4);
+            ToggleHorizontal(7, 4, e);
         }
 
         private void levelHorizontalWall54_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(7, 5);
+            ToggleHorizontal(7, 5, e);
         }
 
         private void levelHorizontalWall55_Click(object sender, EventArgs e)
         {
-            ToggleHorizontal(7, 6);
+            ToggleHorizontal(7, 6, e);
         }
 
         private void potionButton_Click(object sender, EventArgs e)
