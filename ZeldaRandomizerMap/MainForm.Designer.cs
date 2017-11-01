@@ -44,15 +44,6 @@
             this.checkBox13 = new System.Windows.Forms.CheckBox();
             this.checkBox15 = new System.Windows.Forms.CheckBox();
             this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.itemNumericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.itemNumericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -128,6 +119,15 @@
             this.arrowButton = new System.Windows.Forms.Button();
             this.candleButton = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.levelRadioButton29 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton28 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton27 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton26 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton25 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton24 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton23 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton22 = new System.Windows.Forms.RadioButton();
+            this.levelRadioButton21 = new System.Windows.Forms.RadioButton();
             this.solidButton = new System.Windows.Forms.Button();
             this.levelRadioButtonUnknown = new System.Windows.Forms.RadioButton();
             this.nearPatraButton = new System.Windows.Forms.Button();
@@ -398,11 +398,7 @@
             this.comboBox43 = new System.Windows.Forms.ComboBox();
             this.comboBox44 = new System.Windows.Forms.ComboBox();
             this.label40 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
-            this.smallNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.mediumNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.largeNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -416,25 +412,46 @@
             this.comboBox52 = new System.Windows.Forms.ComboBox();
             this.comboBox53 = new System.Windows.Forms.ComboBox();
             this.comboBox54 = new System.Windows.Forms.ComboBox();
-            this.levelRadioButton29 = new System.Windows.Forms.RadioButton();
-            this.levelRadioButton28 = new System.Windows.Forms.RadioButton();
-            this.levelRadioButton27 = new System.Windows.Forms.RadioButton();
-            this.levelRadioButton26 = new System.Windows.Forms.RadioButton();
-            this.levelRadioButton25 = new System.Windows.Forms.RadioButton();
-            this.levelRadioButton24 = new System.Windows.Forms.RadioButton();
-            this.levelRadioButton23 = new System.Windows.Forms.RadioButton();
-            this.levelRadioButton22 = new System.Windows.Forms.RadioButton();
-            this.levelRadioButton21 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.checkBox17 = new System.Windows.Forms.CheckBox();
+            this.checkBox34 = new System.Windows.Forms.CheckBox();
+            this.checkBox35 = new System.Windows.Forms.CheckBox();
+            this.smallCheckBox1 = new System.Windows.Forms.CheckBox();
+            this.smallCheckBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox38 = new System.Windows.Forms.CheckBox();
+            this.checkBox39 = new System.Windows.Forms.CheckBox();
+            this.checkBox40 = new System.Windows.Forms.CheckBox();
+            this.checkBox41 = new System.Windows.Forms.CheckBox();
+            this.checkBox42 = new System.Windows.Forms.CheckBox();
+            this.checkBox43 = new System.Windows.Forms.CheckBox();
+            this.checkBox44 = new System.Windows.Forms.CheckBox();
+            this.checkBox45 = new System.Windows.Forms.CheckBox();
+            this.largeCheckBox1 = new System.Windows.Forms.CheckBox();
+            this.largeCheckBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox36 = new System.Windows.Forms.CheckBox();
+            this.firstQuestItemCheckBox = new System.Windows.Forms.CheckBox();
+            this.checkBox46 = new System.Windows.Forms.CheckBox();
+            this.checkBox47 = new System.Windows.Forms.CheckBox();
+            this.checkBox48 = new System.Windows.Forms.CheckBox();
+            this.secondQuestItemCheckBox = new System.Windows.Forms.CheckBox();
+            this.checkBox50 = new System.Windows.Forms.CheckBox();
+            this.checkBox51 = new System.Windows.Forms.CheckBox();
+            this.checkBox52 = new System.Windows.Forms.CheckBox();
+            this.checkBox53 = new System.Windows.Forms.CheckBox();
+            this.checkBox54 = new System.Windows.Forms.CheckBox();
+            this.checkBox55 = new System.Windows.Forms.CheckBox();
+            this.checkBox56 = new System.Windows.Forms.CheckBox();
+            this.secondQuestDungeonButton = new System.Windows.Forms.Button();
+            this.firstQuestDungeonButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.unexploredPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemNumericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemNumericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exploredPictureBox)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -616,10 +633,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.levelHorizontalWall6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.levelRoom7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.smallNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mediumNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.largeNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // unexploredPictureBox
@@ -780,172 +793,10 @@
             this.checkBox16.Text = "Silver Arrow";
             this.checkBox16.UseVisualStyleBackColor = true;
             // 
-            // itemNumericUpDown1
-            // 
-            this.itemNumericUpDown1.Location = new System.Drawing.Point(402, 28);
-            this.itemNumericUpDown1.Maximum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.itemNumericUpDown1.Name = "itemNumericUpDown1";
-            this.itemNumericUpDown1.ReadOnly = true;
-            this.itemNumericUpDown1.Size = new System.Drawing.Size(36, 20);
-            this.itemNumericUpDown1.TabIndex = 19;
-            this.itemNumericUpDown1.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(402, 53);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.ReadOnly = true;
-            this.numericUpDown2.Size = new System.Drawing.Size(36, 20);
-            this.numericUpDown2.TabIndex = 20;
-            this.numericUpDown2.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.Location = new System.Drawing.Point(402, 79);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.ReadOnly = true;
-            this.numericUpDown3.Size = new System.Drawing.Size(36, 20);
-            this.numericUpDown3.TabIndex = 21;
-            this.numericUpDown3.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // itemNumericUpDown4
-            // 
-            this.itemNumericUpDown4.Location = new System.Drawing.Point(402, 105);
-            this.itemNumericUpDown4.Maximum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.itemNumericUpDown4.Name = "itemNumericUpDown4";
-            this.itemNumericUpDown4.ReadOnly = true;
-            this.itemNumericUpDown4.Size = new System.Drawing.Size(36, 20);
-            this.itemNumericUpDown4.TabIndex = 22;
-            this.itemNumericUpDown4.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown5
-            // 
-            this.numericUpDown5.Location = new System.Drawing.Point(402, 131);
-            this.numericUpDown5.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.ReadOnly = true;
-            this.numericUpDown5.Size = new System.Drawing.Size(36, 20);
-            this.numericUpDown5.TabIndex = 23;
-            this.numericUpDown5.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown6
-            // 
-            this.numericUpDown6.Location = new System.Drawing.Point(402, 157);
-            this.numericUpDown6.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.ReadOnly = true;
-            this.numericUpDown6.Size = new System.Drawing.Size(36, 20);
-            this.numericUpDown6.TabIndex = 24;
-            this.numericUpDown6.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown7
-            // 
-            this.numericUpDown7.Location = new System.Drawing.Point(402, 183);
-            this.numericUpDown7.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.ReadOnly = true;
-            this.numericUpDown7.Size = new System.Drawing.Size(36, 20);
-            this.numericUpDown7.TabIndex = 25;
-            this.numericUpDown7.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown8
-            // 
-            this.numericUpDown8.Location = new System.Drawing.Point(402, 209);
-            this.numericUpDown8.Maximum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.ReadOnly = true;
-            this.numericUpDown8.Size = new System.Drawing.Size(36, 20);
-            this.numericUpDown8.TabIndex = 26;
-            this.numericUpDown8.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown9
-            // 
-            this.numericUpDown9.Location = new System.Drawing.Point(402, 235);
-            this.numericUpDown9.Maximum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.ReadOnly = true;
-            this.numericUpDown9.Size = new System.Drawing.Size(36, 20);
-            this.numericUpDown9.TabIndex = 27;
-            this.numericUpDown9.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(354, 30);
+            this.label1.Location = new System.Drawing.Point(480, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 13);
             this.label1.TabIndex = 28;
@@ -954,7 +805,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(354, 55);
+            this.label2.Location = new System.Drawing.Point(480, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 29;
@@ -963,7 +814,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(354, 81);
+            this.label3.Location = new System.Drawing.Point(480, 81);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 13);
             this.label3.TabIndex = 30;
@@ -972,7 +823,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(354, 107);
+            this.label4.Location = new System.Drawing.Point(480, 107);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 13);
             this.label4.TabIndex = 31;
@@ -981,7 +832,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(354, 133);
+            this.label5.Location = new System.Drawing.Point(480, 133);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 13);
             this.label5.TabIndex = 32;
@@ -990,7 +841,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(354, 159);
+            this.label6.Location = new System.Drawing.Point(480, 159);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(42, 13);
             this.label6.TabIndex = 33;
@@ -999,7 +850,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(354, 185);
+            this.label7.Location = new System.Drawing.Point(480, 185);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 13);
             this.label7.TabIndex = 34;
@@ -1008,7 +859,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(354, 211);
+            this.label8.Location = new System.Drawing.Point(480, 211);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(42, 13);
             this.label8.TabIndex = 35;
@@ -1017,7 +868,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(354, 237);
+            this.label9.Location = new System.Drawing.Point(480, 237);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(42, 13);
             this.label9.TabIndex = 36;
@@ -1026,7 +877,7 @@
             // checkBox18
             // 
             this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(444, 29);
+            this.checkBox18.Location = new System.Drawing.Point(580, 29);
             this.checkBox18.Name = "checkBox18";
             this.checkBox18.Size = new System.Drawing.Size(52, 17);
             this.checkBox18.TabIndex = 37;
@@ -1036,7 +887,7 @@
             // checkBox19
             // 
             this.checkBox19.AutoSize = true;
-            this.checkBox19.Location = new System.Drawing.Point(444, 54);
+            this.checkBox19.Location = new System.Drawing.Point(580, 54);
             this.checkBox19.Name = "checkBox19";
             this.checkBox19.Size = new System.Drawing.Size(52, 17);
             this.checkBox19.TabIndex = 38;
@@ -1046,7 +897,7 @@
             // checkBox20
             // 
             this.checkBox20.AutoSize = true;
-            this.checkBox20.Location = new System.Drawing.Point(444, 80);
+            this.checkBox20.Location = new System.Drawing.Point(580, 80);
             this.checkBox20.Name = "checkBox20";
             this.checkBox20.Size = new System.Drawing.Size(52, 17);
             this.checkBox20.TabIndex = 39;
@@ -1056,7 +907,7 @@
             // checkBox21
             // 
             this.checkBox21.AutoSize = true;
-            this.checkBox21.Location = new System.Drawing.Point(444, 106);
+            this.checkBox21.Location = new System.Drawing.Point(580, 106);
             this.checkBox21.Name = "checkBox21";
             this.checkBox21.Size = new System.Drawing.Size(52, 17);
             this.checkBox21.TabIndex = 40;
@@ -1066,7 +917,7 @@
             // checkBox22
             // 
             this.checkBox22.AutoSize = true;
-            this.checkBox22.Location = new System.Drawing.Point(444, 132);
+            this.checkBox22.Location = new System.Drawing.Point(580, 132);
             this.checkBox22.Name = "checkBox22";
             this.checkBox22.Size = new System.Drawing.Size(52, 17);
             this.checkBox22.TabIndex = 41;
@@ -1076,7 +927,7 @@
             // checkBox23
             // 
             this.checkBox23.AutoSize = true;
-            this.checkBox23.Location = new System.Drawing.Point(444, 158);
+            this.checkBox23.Location = new System.Drawing.Point(580, 158);
             this.checkBox23.Name = "checkBox23";
             this.checkBox23.Size = new System.Drawing.Size(52, 17);
             this.checkBox23.TabIndex = 42;
@@ -1086,7 +937,7 @@
             // checkBox24
             // 
             this.checkBox24.AutoSize = true;
-            this.checkBox24.Location = new System.Drawing.Point(444, 184);
+            this.checkBox24.Location = new System.Drawing.Point(580, 184);
             this.checkBox24.Name = "checkBox24";
             this.checkBox24.Size = new System.Drawing.Size(52, 17);
             this.checkBox24.TabIndex = 43;
@@ -1096,7 +947,7 @@
             // checkBox25
             // 
             this.checkBox25.AutoSize = true;
-            this.checkBox25.Location = new System.Drawing.Point(444, 210);
+            this.checkBox25.Location = new System.Drawing.Point(580, 210);
             this.checkBox25.Name = "checkBox25";
             this.checkBox25.Size = new System.Drawing.Size(52, 17);
             this.checkBox25.TabIndex = 44;
@@ -1106,7 +957,7 @@
             // checkBox26
             // 
             this.checkBox26.AutoSize = true;
-            this.checkBox26.Location = new System.Drawing.Point(502, 210);
+            this.checkBox26.Location = new System.Drawing.Point(638, 210);
             this.checkBox26.Name = "checkBox26";
             this.checkBox26.Size = new System.Drawing.Size(62, 17);
             this.checkBox26.TabIndex = 52;
@@ -1116,7 +967,7 @@
             // checkBox27
             // 
             this.checkBox27.AutoSize = true;
-            this.checkBox27.Location = new System.Drawing.Point(502, 184);
+            this.checkBox27.Location = new System.Drawing.Point(638, 184);
             this.checkBox27.Name = "checkBox27";
             this.checkBox27.Size = new System.Drawing.Size(62, 17);
             this.checkBox27.TabIndex = 51;
@@ -1126,7 +977,7 @@
             // checkBox28
             // 
             this.checkBox28.AutoSize = true;
-            this.checkBox28.Location = new System.Drawing.Point(502, 158);
+            this.checkBox28.Location = new System.Drawing.Point(638, 158);
             this.checkBox28.Name = "checkBox28";
             this.checkBox28.Size = new System.Drawing.Size(62, 17);
             this.checkBox28.TabIndex = 50;
@@ -1136,7 +987,7 @@
             // checkBox29
             // 
             this.checkBox29.AutoSize = true;
-            this.checkBox29.Location = new System.Drawing.Point(502, 132);
+            this.checkBox29.Location = new System.Drawing.Point(638, 132);
             this.checkBox29.Name = "checkBox29";
             this.checkBox29.Size = new System.Drawing.Size(62, 17);
             this.checkBox29.TabIndex = 49;
@@ -1146,7 +997,7 @@
             // checkBox30
             // 
             this.checkBox30.AutoSize = true;
-            this.checkBox30.Location = new System.Drawing.Point(502, 106);
+            this.checkBox30.Location = new System.Drawing.Point(638, 106);
             this.checkBox30.Name = "checkBox30";
             this.checkBox30.Size = new System.Drawing.Size(62, 17);
             this.checkBox30.TabIndex = 48;
@@ -1156,7 +1007,7 @@
             // checkBox31
             // 
             this.checkBox31.AutoSize = true;
-            this.checkBox31.Location = new System.Drawing.Point(502, 80);
+            this.checkBox31.Location = new System.Drawing.Point(638, 80);
             this.checkBox31.Name = "checkBox31";
             this.checkBox31.Size = new System.Drawing.Size(62, 17);
             this.checkBox31.TabIndex = 47;
@@ -1166,7 +1017,7 @@
             // checkBox32
             // 
             this.checkBox32.AutoSize = true;
-            this.checkBox32.Location = new System.Drawing.Point(502, 54);
+            this.checkBox32.Location = new System.Drawing.Point(638, 54);
             this.checkBox32.Name = "checkBox32";
             this.checkBox32.Size = new System.Drawing.Size(62, 17);
             this.checkBox32.TabIndex = 46;
@@ -1176,7 +1027,7 @@
             // checkBox33
             // 
             this.checkBox33.AutoSize = true;
-            this.checkBox33.Location = new System.Drawing.Point(502, 29);
+            this.checkBox33.Location = new System.Drawing.Point(638, 29);
             this.checkBox33.Name = "checkBox33";
             this.checkBox33.Size = new System.Drawing.Size(62, 17);
             this.checkBox33.TabIndex = 45;
@@ -1403,7 +1254,7 @@
             // 
             // filterSecondButton
             // 
-            this.filterSecondButton.Location = new System.Drawing.Point(955, 6);
+            this.filterSecondButton.Location = new System.Drawing.Point(954, 6);
             this.filterSecondButton.Name = "filterSecondButton";
             this.filterSecondButton.Size = new System.Drawing.Size(75, 23);
             this.filterSecondButton.TabIndex = 206;
@@ -1413,7 +1264,7 @@
             // 
             // filterFirstButton
             // 
-            this.filterFirstButton.Location = new System.Drawing.Point(874, 6);
+            this.filterFirstButton.Location = new System.Drawing.Point(873, 6);
             this.filterFirstButton.Name = "filterFirstButton";
             this.filterFirstButton.Size = new System.Drawing.Size(75, 23);
             this.filterFirstButton.TabIndex = 205;
@@ -1453,7 +1304,7 @@
             // 
             // mixedQuestButton
             // 
-            this.mixedQuestButton.Location = new System.Drawing.Point(793, 6);
+            this.mixedQuestButton.Location = new System.Drawing.Point(758, 6);
             this.mixedQuestButton.Name = "mixedQuestButton";
             this.mixedQuestButton.Size = new System.Drawing.Size(75, 23);
             this.mixedQuestButton.TabIndex = 201;
@@ -1463,7 +1314,7 @@
             // 
             // secondQuestButton
             // 
-            this.secondQuestButton.Location = new System.Drawing.Point(604, 6);
+            this.secondQuestButton.Location = new System.Drawing.Point(677, 6);
             this.secondQuestButton.Name = "secondQuestButton";
             this.secondQuestButton.Size = new System.Drawing.Size(75, 23);
             this.secondQuestButton.TabIndex = 200;
@@ -1473,7 +1324,7 @@
             // 
             // firstQuestButton
             // 
-            this.firstQuestButton.Location = new System.Drawing.Point(523, 6);
+            this.firstQuestButton.Location = new System.Drawing.Point(596, 6);
             this.firstQuestButton.Name = "firstQuestButton";
             this.firstQuestButton.Size = new System.Drawing.Size(75, 23);
             this.firstQuestButton.TabIndex = 198;
@@ -1954,6 +1805,105 @@
             this.tabPage2.Size = new System.Drawing.Size(1047, 777);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Levels";
+            // 
+            // levelRadioButton29
+            // 
+            this.levelRadioButton29.AutoSize = true;
+            this.levelRadioButton29.Location = new System.Drawing.Point(947, 712);
+            this.levelRadioButton29.Name = "levelRadioButton29";
+            this.levelRadioButton29.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton29.TabIndex = 240;
+            this.levelRadioButton29.Text = "LEVEL-9";
+            this.levelRadioButton29.UseVisualStyleBackColor = true;
+            this.levelRadioButton29.CheckedChanged += new System.EventHandler(this.levelRadioButton29_CheckedChanged);
+            // 
+            // levelRadioButton28
+            // 
+            this.levelRadioButton28.AutoSize = true;
+            this.levelRadioButton28.Location = new System.Drawing.Point(947, 689);
+            this.levelRadioButton28.Name = "levelRadioButton28";
+            this.levelRadioButton28.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton28.TabIndex = 239;
+            this.levelRadioButton28.Text = "LEVEL-8";
+            this.levelRadioButton28.UseVisualStyleBackColor = true;
+            this.levelRadioButton28.CheckedChanged += new System.EventHandler(this.levelRadioButton28_CheckedChanged);
+            // 
+            // levelRadioButton27
+            // 
+            this.levelRadioButton27.AutoSize = true;
+            this.levelRadioButton27.Location = new System.Drawing.Point(947, 666);
+            this.levelRadioButton27.Name = "levelRadioButton27";
+            this.levelRadioButton27.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton27.TabIndex = 238;
+            this.levelRadioButton27.Text = "LEVEL-7";
+            this.levelRadioButton27.UseVisualStyleBackColor = true;
+            this.levelRadioButton27.CheckedChanged += new System.EventHandler(this.levelRadioButton27_CheckedChanged);
+            // 
+            // levelRadioButton26
+            // 
+            this.levelRadioButton26.AutoSize = true;
+            this.levelRadioButton26.Location = new System.Drawing.Point(947, 643);
+            this.levelRadioButton26.Name = "levelRadioButton26";
+            this.levelRadioButton26.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton26.TabIndex = 237;
+            this.levelRadioButton26.Text = "LEVEL-6";
+            this.levelRadioButton26.UseVisualStyleBackColor = true;
+            this.levelRadioButton26.CheckedChanged += new System.EventHandler(this.levelRadioButton26_CheckedChanged);
+            // 
+            // levelRadioButton25
+            // 
+            this.levelRadioButton25.AutoSize = true;
+            this.levelRadioButton25.Location = new System.Drawing.Point(947, 620);
+            this.levelRadioButton25.Name = "levelRadioButton25";
+            this.levelRadioButton25.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton25.TabIndex = 236;
+            this.levelRadioButton25.Text = "LEVEL-5";
+            this.levelRadioButton25.UseVisualStyleBackColor = true;
+            this.levelRadioButton25.CheckedChanged += new System.EventHandler(this.levelRadioButton25_CheckedChanged);
+            // 
+            // levelRadioButton24
+            // 
+            this.levelRadioButton24.AutoSize = true;
+            this.levelRadioButton24.Location = new System.Drawing.Point(947, 597);
+            this.levelRadioButton24.Name = "levelRadioButton24";
+            this.levelRadioButton24.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton24.TabIndex = 235;
+            this.levelRadioButton24.Text = "LEVEL-4";
+            this.levelRadioButton24.UseVisualStyleBackColor = true;
+            this.levelRadioButton24.CheckedChanged += new System.EventHandler(this.levelRadioButton24_CheckedChanged);
+            // 
+            // levelRadioButton23
+            // 
+            this.levelRadioButton23.AutoSize = true;
+            this.levelRadioButton23.Location = new System.Drawing.Point(947, 574);
+            this.levelRadioButton23.Name = "levelRadioButton23";
+            this.levelRadioButton23.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton23.TabIndex = 234;
+            this.levelRadioButton23.Text = "LEVEL-3";
+            this.levelRadioButton23.UseVisualStyleBackColor = true;
+            this.levelRadioButton23.CheckedChanged += new System.EventHandler(this.levelRadioButton23_CheckedChanged);
+            // 
+            // levelRadioButton22
+            // 
+            this.levelRadioButton22.AutoSize = true;
+            this.levelRadioButton22.Location = new System.Drawing.Point(947, 551);
+            this.levelRadioButton22.Name = "levelRadioButton22";
+            this.levelRadioButton22.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton22.TabIndex = 233;
+            this.levelRadioButton22.Text = "LEVEL-2";
+            this.levelRadioButton22.UseVisualStyleBackColor = true;
+            this.levelRadioButton22.CheckedChanged += new System.EventHandler(this.levelRadioButton22_CheckedChanged);
+            // 
+            // levelRadioButton21
+            // 
+            this.levelRadioButton21.AutoSize = true;
+            this.levelRadioButton21.Location = new System.Drawing.Point(947, 529);
+            this.levelRadioButton21.Name = "levelRadioButton21";
+            this.levelRadioButton21.Size = new System.Drawing.Size(67, 17);
+            this.levelRadioButton21.TabIndex = 232;
+            this.levelRadioButton21.Text = "LEVEL-1";
+            this.levelRadioButton21.UseVisualStyleBackColor = true;
+            this.levelRadioButton21.CheckedChanged += new System.EventHandler(this.levelRadioButton21_CheckedChanged);
             // 
             // solidButton
             // 
@@ -3797,7 +3747,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(399, 12);
+            this.label11.Location = new System.Drawing.Point(525, 12);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(32, 13);
             this.label11.TabIndex = 72;
@@ -4956,29 +4906,6 @@
             this.label40.TabIndex = 193;
             this.label40.Text = "Coast";
             // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(127, 150);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.ReadOnly = true;
-            this.numericUpDown1.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown1.TabIndex = 198;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -4988,64 +4915,10 @@
             this.label10.TabIndex = 199;
             this.label10.Text = "Item";
             // 
-            // smallNumericUpDown
-            // 
-            this.smallNumericUpDown.Location = new System.Drawing.Point(222, 610);
-            this.smallNumericUpDown.Maximum = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            this.smallNumericUpDown.Name = "smallNumericUpDown";
-            this.smallNumericUpDown.ReadOnly = true;
-            this.smallNumericUpDown.Size = new System.Drawing.Size(35, 20);
-            this.smallNumericUpDown.TabIndex = 200;
-            this.smallNumericUpDown.Value = new decimal(new int[] {
-            4,
-            0,
-            0,
-            0});
-            // 
-            // mediumNumericUpDown
-            // 
-            this.mediumNumericUpDown.Location = new System.Drawing.Point(222, 636);
-            this.mediumNumericUpDown.Maximum = new decimal(new int[] {
-            7,
-            0,
-            0,
-            0});
-            this.mediumNumericUpDown.Name = "mediumNumericUpDown";
-            this.mediumNumericUpDown.ReadOnly = true;
-            this.mediumNumericUpDown.Size = new System.Drawing.Size(35, 20);
-            this.mediumNumericUpDown.TabIndex = 201;
-            this.mediumNumericUpDown.Value = new decimal(new int[] {
-            7,
-            0,
-            0,
-            0});
-            // 
-            // largeNumericUpDown
-            // 
-            this.largeNumericUpDown.Location = new System.Drawing.Point(222, 662);
-            this.largeNumericUpDown.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.largeNumericUpDown.Name = "largeNumericUpDown";
-            this.largeNumericUpDown.ReadOnly = true;
-            this.largeNumericUpDown.Size = new System.Drawing.Size(35, 20);
-            this.largeNumericUpDown.TabIndex = 202;
-            this.largeNumericUpDown.Value = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(175, 612);
+            this.label12.Location = new System.Drawing.Point(54, 612);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(41, 13);
             this.label12.TabIndex = 203;
@@ -5054,7 +4927,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(163, 638);
+            this.label13.Location = new System.Drawing.Point(42, 638);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(53, 13);
             this.label13.TabIndex = 204;
@@ -5063,7 +4936,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(173, 664);
+            this.label14.Location = new System.Drawing.Point(52, 664);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(43, 13);
             this.label14.TabIndex = 205;
@@ -5315,110 +5188,416 @@
             this.comboBox54.Size = new System.Drawing.Size(121, 21);
             this.comboBox54.TabIndex = 215;
             // 
-            // levelRadioButton29
+            // radioButton1
             // 
-            this.levelRadioButton29.AutoSize = true;
-            this.levelRadioButton29.Location = new System.Drawing.Point(947, 712);
-            this.levelRadioButton29.Name = "levelRadioButton29";
-            this.levelRadioButton29.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton29.TabIndex = 240;
-            this.levelRadioButton29.Text = "LEVEL-9";
-            this.levelRadioButton29.UseVisualStyleBackColor = true;
-            this.levelRadioButton29.CheckedChanged += new System.EventHandler(this.levelRadioButton29_CheckedChanged);
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(127, 150);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(31, 17);
+            this.radioButton1.TabIndex = 216;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "1";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // levelRadioButton28
+            // radioButton2
             // 
-            this.levelRadioButton28.AutoSize = true;
-            this.levelRadioButton28.Location = new System.Drawing.Point(947, 689);
-            this.levelRadioButton28.Name = "levelRadioButton28";
-            this.levelRadioButton28.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton28.TabIndex = 239;
-            this.levelRadioButton28.Text = "LEVEL-8";
-            this.levelRadioButton28.UseVisualStyleBackColor = true;
-            this.levelRadioButton28.CheckedChanged += new System.EventHandler(this.levelRadioButton28_CheckedChanged);
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(164, 150);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(31, 17);
+            this.radioButton2.TabIndex = 217;
+            this.radioButton2.Text = "2";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // levelRadioButton27
+            // radioButton3
             // 
-            this.levelRadioButton27.AutoSize = true;
-            this.levelRadioButton27.Location = new System.Drawing.Point(947, 666);
-            this.levelRadioButton27.Name = "levelRadioButton27";
-            this.levelRadioButton27.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton27.TabIndex = 238;
-            this.levelRadioButton27.Text = "LEVEL-7";
-            this.levelRadioButton27.UseVisualStyleBackColor = true;
-            this.levelRadioButton27.CheckedChanged += new System.EventHandler(this.levelRadioButton27_CheckedChanged);
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(201, 150);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(31, 17);
+            this.radioButton3.TabIndex = 218;
+            this.radioButton3.Text = "3";
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
-            // levelRadioButton26
+            // radioButton4
             // 
-            this.levelRadioButton26.AutoSize = true;
-            this.levelRadioButton26.Location = new System.Drawing.Point(947, 643);
-            this.levelRadioButton26.Name = "levelRadioButton26";
-            this.levelRadioButton26.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton26.TabIndex = 237;
-            this.levelRadioButton26.Text = "LEVEL-6";
-            this.levelRadioButton26.UseVisualStyleBackColor = true;
-            this.levelRadioButton26.CheckedChanged += new System.EventHandler(this.levelRadioButton26_CheckedChanged);
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(238, 150);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(31, 17);
+            this.radioButton4.TabIndex = 219;
+            this.radioButton4.Text = "4";
+            this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // levelRadioButton25
+            // radioButton5
             // 
-            this.levelRadioButton25.AutoSize = true;
-            this.levelRadioButton25.Location = new System.Drawing.Point(947, 620);
-            this.levelRadioButton25.Name = "levelRadioButton25";
-            this.levelRadioButton25.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton25.TabIndex = 236;
-            this.levelRadioButton25.Text = "LEVEL-5";
-            this.levelRadioButton25.UseVisualStyleBackColor = true;
-            this.levelRadioButton25.CheckedChanged += new System.EventHandler(this.levelRadioButton25_CheckedChanged);
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(275, 150);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(31, 17);
+            this.radioButton5.TabIndex = 220;
+            this.radioButton5.Text = "5";
+            this.radioButton5.UseVisualStyleBackColor = true;
             // 
-            // levelRadioButton24
+            // radioButton6
             // 
-            this.levelRadioButton24.AutoSize = true;
-            this.levelRadioButton24.Location = new System.Drawing.Point(947, 597);
-            this.levelRadioButton24.Name = "levelRadioButton24";
-            this.levelRadioButton24.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton24.TabIndex = 235;
-            this.levelRadioButton24.Text = "LEVEL-4";
-            this.levelRadioButton24.UseVisualStyleBackColor = true;
-            this.levelRadioButton24.CheckedChanged += new System.EventHandler(this.levelRadioButton24_CheckedChanged);
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(312, 150);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(31, 17);
+            this.radioButton6.TabIndex = 221;
+            this.radioButton6.Text = "6";
+            this.radioButton6.UseVisualStyleBackColor = true;
             // 
-            // levelRadioButton23
+            // radioButton7
             // 
-            this.levelRadioButton23.AutoSize = true;
-            this.levelRadioButton23.Location = new System.Drawing.Point(947, 574);
-            this.levelRadioButton23.Name = "levelRadioButton23";
-            this.levelRadioButton23.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton23.TabIndex = 234;
-            this.levelRadioButton23.Text = "LEVEL-3";
-            this.levelRadioButton23.UseVisualStyleBackColor = true;
-            this.levelRadioButton23.CheckedChanged += new System.EventHandler(this.levelRadioButton23_CheckedChanged);
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(349, 150);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(31, 17);
+            this.radioButton7.TabIndex = 222;
+            this.radioButton7.Text = "7";
+            this.radioButton7.UseVisualStyleBackColor = true;
             // 
-            // levelRadioButton22
+            // radioButton8
             // 
-            this.levelRadioButton22.AutoSize = true;
-            this.levelRadioButton22.Location = new System.Drawing.Point(947, 551);
-            this.levelRadioButton22.Name = "levelRadioButton22";
-            this.levelRadioButton22.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton22.TabIndex = 233;
-            this.levelRadioButton22.Text = "LEVEL-2";
-            this.levelRadioButton22.UseVisualStyleBackColor = true;
-            this.levelRadioButton22.CheckedChanged += new System.EventHandler(this.levelRadioButton22_CheckedChanged);
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(386, 150);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(31, 17);
+            this.radioButton8.TabIndex = 223;
+            this.radioButton8.Text = "8";
+            this.radioButton8.UseVisualStyleBackColor = true;
             // 
-            // levelRadioButton21
+            // checkBox14
             // 
-            this.levelRadioButton21.AutoSize = true;
-            this.levelRadioButton21.Location = new System.Drawing.Point(947, 529);
-            this.levelRadioButton21.Name = "levelRadioButton21";
-            this.levelRadioButton21.Size = new System.Drawing.Size(67, 17);
-            this.levelRadioButton21.TabIndex = 232;
-            this.levelRadioButton21.Text = "LEVEL-1";
-            this.levelRadioButton21.UseVisualStyleBackColor = true;
-            this.levelRadioButton21.CheckedChanged += new System.EventHandler(this.levelRadioButton21_CheckedChanged);
+            this.checkBox14.AutoSize = true;
+            this.checkBox14.Location = new System.Drawing.Point(101, 612);
+            this.checkBox14.Name = "checkBox14";
+            this.checkBox14.Size = new System.Drawing.Size(15, 14);
+            this.checkBox14.TabIndex = 224;
+            this.checkBox14.UseVisualStyleBackColor = true;
+            // 
+            // checkBox17
+            // 
+            this.checkBox17.AutoSize = true;
+            this.checkBox17.Location = new System.Drawing.Point(122, 612);
+            this.checkBox17.Name = "checkBox17";
+            this.checkBox17.Size = new System.Drawing.Size(15, 14);
+            this.checkBox17.TabIndex = 225;
+            this.checkBox17.UseVisualStyleBackColor = true;
+            // 
+            // checkBox34
+            // 
+            this.checkBox34.AutoSize = true;
+            this.checkBox34.Location = new System.Drawing.Point(143, 611);
+            this.checkBox34.Name = "checkBox34";
+            this.checkBox34.Size = new System.Drawing.Size(15, 14);
+            this.checkBox34.TabIndex = 226;
+            this.checkBox34.UseVisualStyleBackColor = true;
+            // 
+            // checkBox35
+            // 
+            this.checkBox35.AutoSize = true;
+            this.checkBox35.Location = new System.Drawing.Point(164, 611);
+            this.checkBox35.Name = "checkBox35";
+            this.checkBox35.Size = new System.Drawing.Size(15, 14);
+            this.checkBox35.TabIndex = 227;
+            this.checkBox35.UseVisualStyleBackColor = true;
+            // 
+            // smallCheckBox1
+            // 
+            this.smallCheckBox1.AutoSize = true;
+            this.smallCheckBox1.Location = new System.Drawing.Point(185, 611);
+            this.smallCheckBox1.Name = "smallCheckBox1";
+            this.smallCheckBox1.Size = new System.Drawing.Size(15, 14);
+            this.smallCheckBox1.TabIndex = 228;
+            this.smallCheckBox1.UseVisualStyleBackColor = true;
+            this.smallCheckBox1.Visible = false;
+            // 
+            // smallCheckBox2
+            // 
+            this.smallCheckBox2.AutoSize = true;
+            this.smallCheckBox2.Location = new System.Drawing.Point(206, 611);
+            this.smallCheckBox2.Name = "smallCheckBox2";
+            this.smallCheckBox2.Size = new System.Drawing.Size(15, 14);
+            this.smallCheckBox2.TabIndex = 229;
+            this.smallCheckBox2.UseVisualStyleBackColor = true;
+            this.smallCheckBox2.Visible = false;
+            // 
+            // checkBox38
+            // 
+            this.checkBox38.AutoSize = true;
+            this.checkBox38.Location = new System.Drawing.Point(206, 638);
+            this.checkBox38.Name = "checkBox38";
+            this.checkBox38.Size = new System.Drawing.Size(15, 14);
+            this.checkBox38.TabIndex = 235;
+            this.checkBox38.UseVisualStyleBackColor = true;
+            // 
+            // checkBox39
+            // 
+            this.checkBox39.AutoSize = true;
+            this.checkBox39.Location = new System.Drawing.Point(185, 638);
+            this.checkBox39.Name = "checkBox39";
+            this.checkBox39.Size = new System.Drawing.Size(15, 14);
+            this.checkBox39.TabIndex = 234;
+            this.checkBox39.UseVisualStyleBackColor = true;
+            // 
+            // checkBox40
+            // 
+            this.checkBox40.AutoSize = true;
+            this.checkBox40.Location = new System.Drawing.Point(164, 638);
+            this.checkBox40.Name = "checkBox40";
+            this.checkBox40.Size = new System.Drawing.Size(15, 14);
+            this.checkBox40.TabIndex = 233;
+            this.checkBox40.UseVisualStyleBackColor = true;
+            // 
+            // checkBox41
+            // 
+            this.checkBox41.AutoSize = true;
+            this.checkBox41.Location = new System.Drawing.Point(143, 638);
+            this.checkBox41.Name = "checkBox41";
+            this.checkBox41.Size = new System.Drawing.Size(15, 14);
+            this.checkBox41.TabIndex = 232;
+            this.checkBox41.UseVisualStyleBackColor = true;
+            // 
+            // checkBox42
+            // 
+            this.checkBox42.AutoSize = true;
+            this.checkBox42.Location = new System.Drawing.Point(122, 638);
+            this.checkBox42.Name = "checkBox42";
+            this.checkBox42.Size = new System.Drawing.Size(15, 14);
+            this.checkBox42.TabIndex = 231;
+            this.checkBox42.UseVisualStyleBackColor = true;
+            // 
+            // checkBox43
+            // 
+            this.checkBox43.AutoSize = true;
+            this.checkBox43.Location = new System.Drawing.Point(101, 638);
+            this.checkBox43.Name = "checkBox43";
+            this.checkBox43.Size = new System.Drawing.Size(15, 14);
+            this.checkBox43.TabIndex = 230;
+            this.checkBox43.UseVisualStyleBackColor = true;
+            // 
+            // checkBox44
+            // 
+            this.checkBox44.AutoSize = true;
+            this.checkBox44.Location = new System.Drawing.Point(227, 638);
+            this.checkBox44.Name = "checkBox44";
+            this.checkBox44.Size = new System.Drawing.Size(15, 14);
+            this.checkBox44.TabIndex = 236;
+            this.checkBox44.UseVisualStyleBackColor = true;
+            // 
+            // checkBox45
+            // 
+            this.checkBox45.AutoSize = true;
+            this.checkBox45.Location = new System.Drawing.Point(101, 664);
+            this.checkBox45.Name = "checkBox45";
+            this.checkBox45.Size = new System.Drawing.Size(15, 14);
+            this.checkBox45.TabIndex = 237;
+            this.checkBox45.UseVisualStyleBackColor = true;
+            // 
+            // largeCheckBox1
+            // 
+            this.largeCheckBox1.AutoSize = true;
+            this.largeCheckBox1.Location = new System.Drawing.Point(122, 664);
+            this.largeCheckBox1.Name = "largeCheckBox1";
+            this.largeCheckBox1.Size = new System.Drawing.Size(15, 14);
+            this.largeCheckBox1.TabIndex = 238;
+            this.largeCheckBox1.UseVisualStyleBackColor = true;
+            // 
+            // largeCheckBox2
+            // 
+            this.largeCheckBox2.AutoSize = true;
+            this.largeCheckBox2.Location = new System.Drawing.Point(143, 664);
+            this.largeCheckBox2.Name = "largeCheckBox2";
+            this.largeCheckBox2.Size = new System.Drawing.Size(15, 14);
+            this.largeCheckBox2.TabIndex = 239;
+            this.largeCheckBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox36
+            // 
+            this.checkBox36.AutoSize = true;
+            this.checkBox36.Location = new System.Drawing.Point(528, 30);
+            this.checkBox36.Name = "checkBox36";
+            this.checkBox36.Size = new System.Drawing.Size(15, 14);
+            this.checkBox36.TabIndex = 240;
+            this.checkBox36.UseVisualStyleBackColor = true;
+            // 
+            // firstQuestItemCheckBox
+            // 
+            this.firstQuestItemCheckBox.AutoSize = true;
+            this.firstQuestItemCheckBox.Location = new System.Drawing.Point(549, 30);
+            this.firstQuestItemCheckBox.Name = "firstQuestItemCheckBox";
+            this.firstQuestItemCheckBox.Size = new System.Drawing.Size(15, 14);
+            this.firstQuestItemCheckBox.TabIndex = 241;
+            this.firstQuestItemCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // checkBox46
+            // 
+            this.checkBox46.AutoSize = true;
+            this.checkBox46.Location = new System.Drawing.Point(528, 55);
+            this.checkBox46.Name = "checkBox46";
+            this.checkBox46.Size = new System.Drawing.Size(15, 14);
+            this.checkBox46.TabIndex = 242;
+            this.checkBox46.UseVisualStyleBackColor = true;
+            // 
+            // checkBox47
+            // 
+            this.checkBox47.AutoSize = true;
+            this.checkBox47.Location = new System.Drawing.Point(528, 81);
+            this.checkBox47.Name = "checkBox47";
+            this.checkBox47.Size = new System.Drawing.Size(15, 14);
+            this.checkBox47.TabIndex = 243;
+            this.checkBox47.UseVisualStyleBackColor = true;
+            // 
+            // checkBox48
+            // 
+            this.checkBox48.AutoSize = true;
+            this.checkBox48.Location = new System.Drawing.Point(528, 107);
+            this.checkBox48.Name = "checkBox48";
+            this.checkBox48.Size = new System.Drawing.Size(15, 14);
+            this.checkBox48.TabIndex = 244;
+            this.checkBox48.UseVisualStyleBackColor = true;
+            // 
+            // secondQuestItemCheckBox
+            // 
+            this.secondQuestItemCheckBox.AutoSize = true;
+            this.secondQuestItemCheckBox.Location = new System.Drawing.Point(549, 107);
+            this.secondQuestItemCheckBox.Name = "secondQuestItemCheckBox";
+            this.secondQuestItemCheckBox.Size = new System.Drawing.Size(15, 14);
+            this.secondQuestItemCheckBox.TabIndex = 245;
+            this.secondQuestItemCheckBox.UseVisualStyleBackColor = true;
+            this.secondQuestItemCheckBox.Visible = false;
+            // 
+            // checkBox50
+            // 
+            this.checkBox50.AutoSize = true;
+            this.checkBox50.Location = new System.Drawing.Point(528, 133);
+            this.checkBox50.Name = "checkBox50";
+            this.checkBox50.Size = new System.Drawing.Size(15, 14);
+            this.checkBox50.TabIndex = 246;
+            this.checkBox50.UseVisualStyleBackColor = true;
+            // 
+            // checkBox51
+            // 
+            this.checkBox51.AutoSize = true;
+            this.checkBox51.Location = new System.Drawing.Point(528, 159);
+            this.checkBox51.Name = "checkBox51";
+            this.checkBox51.Size = new System.Drawing.Size(15, 14);
+            this.checkBox51.TabIndex = 247;
+            this.checkBox51.UseVisualStyleBackColor = true;
+            // 
+            // checkBox52
+            // 
+            this.checkBox52.AutoSize = true;
+            this.checkBox52.Location = new System.Drawing.Point(528, 185);
+            this.checkBox52.Name = "checkBox52";
+            this.checkBox52.Size = new System.Drawing.Size(15, 14);
+            this.checkBox52.TabIndex = 248;
+            this.checkBox52.UseVisualStyleBackColor = true;
+            // 
+            // checkBox53
+            // 
+            this.checkBox53.AutoSize = true;
+            this.checkBox53.Location = new System.Drawing.Point(528, 211);
+            this.checkBox53.Name = "checkBox53";
+            this.checkBox53.Size = new System.Drawing.Size(15, 14);
+            this.checkBox53.TabIndex = 249;
+            this.checkBox53.UseVisualStyleBackColor = true;
+            // 
+            // checkBox54
+            // 
+            this.checkBox54.AutoSize = true;
+            this.checkBox54.Location = new System.Drawing.Point(549, 211);
+            this.checkBox54.Name = "checkBox54";
+            this.checkBox54.Size = new System.Drawing.Size(15, 14);
+            this.checkBox54.TabIndex = 250;
+            this.checkBox54.UseVisualStyleBackColor = true;
+            // 
+            // checkBox55
+            // 
+            this.checkBox55.AutoSize = true;
+            this.checkBox55.Location = new System.Drawing.Point(528, 237);
+            this.checkBox55.Name = "checkBox55";
+            this.checkBox55.Size = new System.Drawing.Size(15, 14);
+            this.checkBox55.TabIndex = 251;
+            this.checkBox55.UseVisualStyleBackColor = true;
+            // 
+            // checkBox56
+            // 
+            this.checkBox56.AutoSize = true;
+            this.checkBox56.Location = new System.Drawing.Point(549, 237);
+            this.checkBox56.Name = "checkBox56";
+            this.checkBox56.Size = new System.Drawing.Size(15, 14);
+            this.checkBox56.TabIndex = 252;
+            this.checkBox56.UseVisualStyleBackColor = true;
+            // 
+            // secondQuestDungeonButton
+            // 
+            this.secondQuestDungeonButton.Location = new System.Drawing.Point(651, 233);
+            this.secondQuestDungeonButton.Name = "secondQuestDungeonButton";
+            this.secondQuestDungeonButton.Size = new System.Drawing.Size(75, 23);
+            this.secondQuestDungeonButton.TabIndex = 210;
+            this.secondQuestDungeonButton.Text = "2nd Quest";
+            this.secondQuestDungeonButton.UseVisualStyleBackColor = true;
+            this.secondQuestDungeonButton.Click += new System.EventHandler(this.secondQuestDungeonButton_Click);
+            // 
+            // firstQuestDungeonButton
+            // 
+            this.firstQuestDungeonButton.Location = new System.Drawing.Point(570, 233);
+            this.firstQuestDungeonButton.Name = "firstQuestDungeonButton";
+            this.firstQuestDungeonButton.Size = new System.Drawing.Size(75, 23);
+            this.firstQuestDungeonButton.TabIndex = 209;
+            this.firstQuestDungeonButton.Text = "1st Quest";
+            this.firstQuestDungeonButton.UseVisualStyleBackColor = true;
+            this.firstQuestDungeonButton.Click += new System.EventHandler(this.firstQuestDungeonButton_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1811, 828);
+            this.Controls.Add(this.secondQuestDungeonButton);
+            this.Controls.Add(this.checkBox56);
+            this.Controls.Add(this.firstQuestDungeonButton);
+            this.Controls.Add(this.checkBox55);
+            this.Controls.Add(this.checkBox54);
+            this.Controls.Add(this.checkBox53);
+            this.Controls.Add(this.checkBox52);
+            this.Controls.Add(this.checkBox51);
+            this.Controls.Add(this.checkBox50);
+            this.Controls.Add(this.secondQuestItemCheckBox);
+            this.Controls.Add(this.checkBox48);
+            this.Controls.Add(this.checkBox47);
+            this.Controls.Add(this.checkBox46);
+            this.Controls.Add(this.firstQuestItemCheckBox);
+            this.Controls.Add(this.checkBox36);
+            this.Controls.Add(this.largeCheckBox2);
+            this.Controls.Add(this.largeCheckBox1);
+            this.Controls.Add(this.checkBox45);
+            this.Controls.Add(this.checkBox44);
+            this.Controls.Add(this.checkBox38);
+            this.Controls.Add(this.checkBox39);
+            this.Controls.Add(this.checkBox40);
+            this.Controls.Add(this.checkBox41);
+            this.Controls.Add(this.checkBox42);
+            this.Controls.Add(this.checkBox43);
+            this.Controls.Add(this.smallCheckBox2);
+            this.Controls.Add(this.smallCheckBox1);
+            this.Controls.Add(this.checkBox35);
+            this.Controls.Add(this.checkBox34);
+            this.Controls.Add(this.checkBox17);
+            this.Controls.Add(this.checkBox14);
+            this.Controls.Add(this.radioButton8);
+            this.Controls.Add(this.radioButton7);
+            this.Controls.Add(this.radioButton6);
+            this.Controls.Add(this.radioButton5);
+            this.Controls.Add(this.radioButton4);
+            this.Controls.Add(this.radioButton3);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.comboBox54);
             this.Controls.Add(this.comboBox53);
             this.Controls.Add(this.comboBox50);
@@ -5432,11 +5611,7 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.largeNumericUpDown);
-            this.Controls.Add(this.mediumNumericUpDown);
-            this.Controls.Add(this.smallNumericUpDown);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.comboBox43);
             this.Controls.Add(this.comboBox44);
             this.Controls.Add(this.label40);
@@ -5533,15 +5708,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.numericUpDown9);
-            this.Controls.Add(this.numericUpDown8);
-            this.Controls.Add(this.numericUpDown7);
-            this.Controls.Add(this.numericUpDown6);
-            this.Controls.Add(this.numericUpDown5);
-            this.Controls.Add(this.itemNumericUpDown4);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.itemNumericUpDown1);
             this.Controls.Add(this.checkBox16);
             this.Controls.Add(this.checkBox15);
             this.Controls.Add(this.checkBox13);
@@ -5562,15 +5728,6 @@
             this.Name = "MainForm";
             this.Text = "Zelda Randomizer Map";
             ((System.ComponentModel.ISupportInitialize)(this.unexploredPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemNumericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemNumericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exploredPictureBox)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -5754,10 +5911,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.levelHorizontalWall6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.levelRoom7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.smallNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mediumNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.largeNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5780,15 +5933,6 @@
         private System.Windows.Forms.CheckBox checkBox13;
         private System.Windows.Forms.CheckBox checkBox15;
         private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.NumericUpDown itemNumericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown itemNumericUpDown4;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
-        private System.Windows.Forms.NumericUpDown numericUpDown9;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -6124,15 +6268,11 @@
         private System.Windows.Forms.Button secondQuestButton;
         private System.Windows.Forms.Button firstQuestButton;
         private System.Windows.Forms.Button mixedQuestButton;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button nearPatraButton;
         private System.Windows.Forms.Button w4Button;
         private System.Windows.Forms.Button w3Button;
         private System.Windows.Forms.Button w2Button;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.NumericUpDown smallNumericUpDown;
-        private System.Windows.Forms.NumericUpDown mediumNumericUpDown;
-        private System.Windows.Forms.NumericUpDown largeNumericUpDown;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
@@ -6161,6 +6301,45 @@
         private System.Windows.Forms.RadioButton levelRadioButton23;
         private System.Windows.Forms.RadioButton levelRadioButton22;
         private System.Windows.Forms.RadioButton levelRadioButton21;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.CheckBox checkBox14;
+        private System.Windows.Forms.CheckBox checkBox17;
+        private System.Windows.Forms.CheckBox checkBox34;
+        private System.Windows.Forms.CheckBox checkBox35;
+        private System.Windows.Forms.CheckBox smallCheckBox1;
+        private System.Windows.Forms.CheckBox smallCheckBox2;
+        private System.Windows.Forms.CheckBox checkBox38;
+        private System.Windows.Forms.CheckBox checkBox39;
+        private System.Windows.Forms.CheckBox checkBox40;
+        private System.Windows.Forms.CheckBox checkBox41;
+        private System.Windows.Forms.CheckBox checkBox42;
+        private System.Windows.Forms.CheckBox checkBox43;
+        private System.Windows.Forms.CheckBox checkBox44;
+        private System.Windows.Forms.CheckBox checkBox45;
+        private System.Windows.Forms.CheckBox largeCheckBox1;
+        private System.Windows.Forms.CheckBox largeCheckBox2;
+        private System.Windows.Forms.CheckBox checkBox36;
+        private System.Windows.Forms.CheckBox firstQuestItemCheckBox;
+        private System.Windows.Forms.CheckBox checkBox46;
+        private System.Windows.Forms.CheckBox checkBox47;
+        private System.Windows.Forms.CheckBox checkBox48;
+        private System.Windows.Forms.CheckBox secondQuestItemCheckBox;
+        private System.Windows.Forms.CheckBox checkBox50;
+        private System.Windows.Forms.CheckBox checkBox51;
+        private System.Windows.Forms.CheckBox checkBox52;
+        private System.Windows.Forms.CheckBox checkBox53;
+        private System.Windows.Forms.CheckBox checkBox54;
+        private System.Windows.Forms.CheckBox checkBox55;
+        private System.Windows.Forms.CheckBox checkBox56;
+        private System.Windows.Forms.Button secondQuestDungeonButton;
+        private System.Windows.Forms.Button firstQuestDungeonButton;
     }
 }
 

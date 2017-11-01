@@ -2055,6 +2055,10 @@ namespace ZeldaRandomizerMap
             if (MessageBox.Show("Are you sure?", "1st Quest", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 m_overworldTracker.SetFirstQuest();
+                smallCheckBox1.Visible = false;
+                smallCheckBox2.Visible = false;
+                largeCheckBox1.Visible = true;
+                largeCheckBox2.Visible = true;
             }
         }
 
@@ -2063,6 +2067,10 @@ namespace ZeldaRandomizerMap
             if (MessageBox.Show("Are you sure?", "2nd Quest", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 m_overworldTracker.SetSecondQuest();
+                smallCheckBox1.Visible = true;
+                smallCheckBox2.Visible = true;
+                largeCheckBox1.Visible = false;
+                largeCheckBox2.Visible = false;
             }
         }
 
@@ -2071,6 +2079,10 @@ namespace ZeldaRandomizerMap
             if (MessageBox.Show("Are you sure?", "Mixed Quest", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 m_overworldTracker.SetMixedQuest();
+                smallCheckBox1.Visible = false;
+                smallCheckBox2.Visible = false;
+                largeCheckBox1.Visible = true;
+                largeCheckBox2.Visible = true;
             }
         }
 
@@ -2079,6 +2091,10 @@ namespace ZeldaRandomizerMap
             if (MessageBox.Show("Are you sure?", "Mixed to 1st", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 m_overworldTracker.FilterToFirst();
+                smallCheckBox1.Visible = false;
+                smallCheckBox2.Visible = false;
+                largeCheckBox1.Visible = true;
+                largeCheckBox2.Visible = true;
             }
         }
 
@@ -2087,9 +2103,23 @@ namespace ZeldaRandomizerMap
             if (MessageBox.Show("Are you sure?", "Mixed to 2nd", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 m_overworldTracker.FilterToSecond();
-                smallNumericUpDown.Value += 2;
-                largeNumericUpDown.Value -= 2;
+                smallCheckBox1.Visible = true;
+                smallCheckBox2.Visible = true;
+                largeCheckBox1.Visible = false;
+                largeCheckBox2.Visible = false;
             }
+        }
+
+        private void firstQuestDungeonButton_Click(object sender, EventArgs e)
+        {
+            firstQuestItemCheckBox.Visible = true;
+            secondQuestItemCheckBox.Visible = false;
+        }
+
+        private void secondQuestDungeonButton_Click(object sender, EventArgs e)
+        {
+            firstQuestItemCheckBox.Visible = false;
+            secondQuestItemCheckBox.Visible = true;
         }
 
         OverworldTracker m_overworldTracker;
