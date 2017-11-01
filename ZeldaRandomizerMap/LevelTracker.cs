@@ -9,11 +9,8 @@ namespace ZeldaRandomizerMap
 {
     enum RoomType
     {
-        None,
         Pending,
         Clear,
-        Key,
-        Shutter,
         StairsA,
         StairsB,
         StairsC,
@@ -338,6 +335,36 @@ namespace ZeldaRandomizerMap
             UpdateHorizontal(row, column);
         }
 
+        private bool IsRoomPreviouslyVisited(int row, int column)
+        {
+            bool visited = false;
+
+            if (m_levelRow != row || m_levelColumn != column)
+            {
+                int rowCount = m_levelRooms.GetLength(0);
+                int columnCount = m_levelRooms.GetLength(1);
+                if (row >= 0 && row < rowCount && column >= 0 && column < columnCount)
+                {
+                    switch (m_levelRooms[row, column])
+                    {
+                        case RoomType.Clear:
+                        case RoomType.StairsA:
+                        case RoomType.StairsB:
+                        case RoomType.StairsC:
+                        case RoomType.StairsD:
+                        case RoomType.StairsE:
+                        case RoomType.StairsF:
+                        case RoomType.StairsX:
+                        case RoomType.NearGanon:
+                            visited = true;
+                            break;
+                    }
+                }
+            }
+
+            return visited;
+        }
+
         private void SetRoomNearPatraHelper(int row, int column)
         {
             int rowCount = m_levelRooms.GetLength(0);
@@ -346,8 +373,14 @@ namespace ZeldaRandomizerMap
             {
                 if (m_levelRooms[row, column] == RoomType.Pending)
                 {
-                    m_levelRooms[row, column] = RoomType.NearPatra;
-                    UpdateRoom(row, column);
+                    if (!IsRoomPreviouslyVisited(row, column - 1) &&
+                        !IsRoomPreviouslyVisited(row, column + 1) &&
+                        !IsRoomPreviouslyVisited(row - 1, column) &&
+                        !IsRoomPreviouslyVisited(row + 1, column))
+                    {
+                        m_levelRooms[row, column] = RoomType.NearPatra;
+                        UpdateRoom(row, column);
+                    }
                 }
             }
         }
