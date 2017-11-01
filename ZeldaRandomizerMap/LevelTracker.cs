@@ -105,6 +105,8 @@ namespace ZeldaRandomizerMap
 
         public void SelectRoom(int row, int column)
         {
+            m_previousLevelRow = m_levelRow;
+            m_previousLevelColumn = m_levelColumn;
             m_levelRow = row;
             m_levelColumn = column;
             switch (m_levelRooms[row, column])
@@ -133,39 +135,74 @@ namespace ZeldaRandomizerMap
             UpdateRoom(m_levelRow, m_levelColumn);
         }
 
-        public void SetRoomStairsA()
+        public void SetRoomStairPair()
         {
-            m_levelRooms[m_levelRow, m_levelColumn] = RoomType.StairsA;
-            UpdateRoom(m_levelRow, m_levelColumn);
-        }
+            int stairsCountA = 0;
+            int stairsCountB = 0;
+            int stairsCountC = 0;
+            int stairsCountD = 0;
+            int stairsCountE = 0;
+            int stairsCountF = 0;
+            foreach (PictureBox pictureBox in m_roomPictureBoxes)
+            {
+                if (pictureBox != null)
+                {
+                    if (pictureBox.Image == ImageConstants.StairsRoomBitmapA)
+                    {
+                        ++stairsCountA;
+                    }
+                    if (pictureBox.Image == ImageConstants.StairsRoomBitmapB)
+                    {
+                        ++stairsCountB;
+                    }
+                    if (pictureBox.Image == ImageConstants.StairsRoomBitmapC)
+                    {
+                        ++stairsCountC;
+                    }
+                    if (pictureBox.Image == ImageConstants.StairsRoomBitmapD)
+                    {
+                        ++stairsCountD;
+                    }
+                    if (pictureBox.Image == ImageConstants.StairsRoomBitmapE)
+                    {
+                        ++stairsCountE;
+                    }
+                    if (pictureBox.Image == ImageConstants.StairsRoomBitmapF)
+                    {
+                        ++stairsCountF;
+                    }
+                }
+            }
 
-        public void SetRoomStairsB()
-        {
-            m_levelRooms[m_levelRow, m_levelColumn] = RoomType.StairsB;
-            UpdateRoom(m_levelRow, m_levelColumn);
-        }
+            RoomType stairsType = RoomType.StairsX;
+            if (stairsCountA == 0)
+            {
+                stairsType = RoomType.StairsA;
+            }
+            else if (stairsCountB == 0)
+            {
+                stairsType = RoomType.StairsB;
+            }
+            else if (stairsCountC == 0)
+            {
+                stairsType = RoomType.StairsC;
+            }
+            else if (stairsCountD == 0)
+            {
+                stairsType = RoomType.StairsD;
+            }
+            else if (stairsCountE == 0)
+            {
+                stairsType = RoomType.StairsE;
+            }
+            else if (stairsCountF == 0)
+            {
+                stairsType = RoomType.StairsF;
+            }
 
-        public void SetRoomStairsC()
-        {
-            m_levelRooms[m_levelRow, m_levelColumn] = RoomType.StairsC;
-            UpdateRoom(m_levelRow, m_levelColumn);
-        }
-
-        public void SetRoomStairsD()
-        {
-            m_levelRooms[m_levelRow, m_levelColumn] = RoomType.StairsD;
-            UpdateRoom(m_levelRow, m_levelColumn);
-        }
-
-        public void SetRoomStairsE()
-        {
-            m_levelRooms[m_levelRow, m_levelColumn] = RoomType.StairsE;
-            UpdateRoom(m_levelRow, m_levelColumn);
-        }
-
-        public void SetRoomStairsF()
-        {
-            m_levelRooms[m_levelRow, m_levelColumn] = RoomType.StairsF;
+            m_levelRooms[m_previousLevelRow, m_previousLevelColumn] = stairsType;
+            UpdateRoom(m_previousLevelRow, m_previousLevelColumn);
+            m_levelRooms[m_levelRow, m_levelColumn] = stairsType;
             UpdateRoom(m_levelRow, m_levelColumn);
         }
 
@@ -451,5 +488,7 @@ namespace ZeldaRandomizerMap
 
         int m_levelRow;
         int m_levelColumn;
+        int m_previousLevelRow;
+        int m_previousLevelColumn;
     }
 }

@@ -1190,34 +1190,9 @@ namespace ZeldaRandomizerMap
             m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomClear();
         }
 
-        private void stairsButtonA_Click(object sender, EventArgs e)
+        private void makeStairsButton_Click(object sender, EventArgs e)
         {
-            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomStairsA();
-        }
-
-        private void stairsButtonB_Click(object sender, EventArgs e)
-        {
-            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomStairsB();
-        }
-
-        private void stairsButtonC_Click(object sender, EventArgs e)
-        {
-            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomStairsC();
-        }
-
-        private void stairsButtonD_Click(object sender, EventArgs e)
-        {
-            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomStairsD();
-        }
-
-        private void stairsButtonE_Click(object sender, EventArgs e)
-        {
-            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomStairsE();
-        }
-
-        private void stairsButtonF_Click(object sender, EventArgs e)
-        {
-            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomStairsF();
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomStairPair();
         }
 
         private void stairsButtonX_Click(object sender, EventArgs e)

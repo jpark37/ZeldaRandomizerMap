@@ -170,12 +170,7 @@
             this.levelRoom56 = new System.Windows.Forms.PictureBox();
             this.ganonButton = new System.Windows.Forms.Button();
             this.nearGanonButton = new System.Windows.Forms.Button();
-            this.stairsButtonF = new System.Windows.Forms.Button();
-            this.stairsButtonE = new System.Windows.Forms.Button();
-            this.stairsButtonD = new System.Windows.Forms.Button();
-            this.stairsButtonC = new System.Windows.Forms.Button();
-            this.stairsButtonB = new System.Windows.Forms.Button();
-            this.stairsButtonA = new System.Windows.Forms.Button();
+            this.makeStairsButton = new System.Windows.Forms.Button();
             this.resetRoomButton = new System.Windows.Forms.Button();
             this.clearRoomButton = new System.Windows.Forms.Button();
             this.levelRoom46 = new System.Windows.Forms.PictureBox();
@@ -1641,12 +1636,7 @@
             this.tabPage2.Controls.Add(this.levelRoom56);
             this.tabPage2.Controls.Add(this.ganonButton);
             this.tabPage2.Controls.Add(this.nearGanonButton);
-            this.tabPage2.Controls.Add(this.stairsButtonF);
-            this.tabPage2.Controls.Add(this.stairsButtonE);
-            this.tabPage2.Controls.Add(this.stairsButtonD);
-            this.tabPage2.Controls.Add(this.stairsButtonC);
-            this.tabPage2.Controls.Add(this.stairsButtonB);
-            this.tabPage2.Controls.Add(this.stairsButtonA);
+            this.tabPage2.Controls.Add(this.makeStairsButton);
             this.tabPage2.Controls.Add(this.resetRoomButton);
             this.tabPage2.Controls.Add(this.clearRoomButton);
             this.tabPage2.Controls.Add(this.levelRoom46);
@@ -2256,7 +2246,7 @@
             // 
             // stairsButtonX
             // 
-            this.stairsButtonX.Location = new System.Drawing.Point(874, 296);
+            this.stairsButtonX.Location = new System.Drawing.Point(874, 151);
             this.stairsButtonX.Name = "stairsButtonX";
             this.stairsButtonX.Size = new System.Drawing.Size(79, 23);
             this.stairsButtonX.TabIndex = 195;
@@ -2314,65 +2304,15 @@
             this.nearGanonButton.UseVisualStyleBackColor = true;
             this.nearGanonButton.Click += new System.EventHandler(this.nearGanonButton_Click);
             // 
-            // stairsButtonF
+            // makeStairsButton
             // 
-            this.stairsButtonF.Location = new System.Drawing.Point(874, 267);
-            this.stairsButtonF.Name = "stairsButtonF";
-            this.stairsButtonF.Size = new System.Drawing.Size(79, 23);
-            this.stairsButtonF.TabIndex = 190;
-            this.stairsButtonF.Text = "Stairs F";
-            this.stairsButtonF.UseVisualStyleBackColor = true;
-            this.stairsButtonF.Click += new System.EventHandler(this.stairsButtonF_Click);
-            // 
-            // stairsButtonE
-            // 
-            this.stairsButtonE.Location = new System.Drawing.Point(874, 238);
-            this.stairsButtonE.Name = "stairsButtonE";
-            this.stairsButtonE.Size = new System.Drawing.Size(79, 23);
-            this.stairsButtonE.TabIndex = 189;
-            this.stairsButtonE.Text = "Stairs E";
-            this.stairsButtonE.UseVisualStyleBackColor = true;
-            this.stairsButtonE.Click += new System.EventHandler(this.stairsButtonE_Click);
-            // 
-            // stairsButtonD
-            // 
-            this.stairsButtonD.Location = new System.Drawing.Point(874, 209);
-            this.stairsButtonD.Name = "stairsButtonD";
-            this.stairsButtonD.Size = new System.Drawing.Size(79, 23);
-            this.stairsButtonD.TabIndex = 188;
-            this.stairsButtonD.Text = "Stairs D";
-            this.stairsButtonD.UseVisualStyleBackColor = true;
-            this.stairsButtonD.Click += new System.EventHandler(this.stairsButtonD_Click);
-            // 
-            // stairsButtonC
-            // 
-            this.stairsButtonC.Location = new System.Drawing.Point(874, 180);
-            this.stairsButtonC.Name = "stairsButtonC";
-            this.stairsButtonC.Size = new System.Drawing.Size(79, 23);
-            this.stairsButtonC.TabIndex = 187;
-            this.stairsButtonC.Text = "Stairs C";
-            this.stairsButtonC.UseVisualStyleBackColor = true;
-            this.stairsButtonC.Click += new System.EventHandler(this.stairsButtonC_Click);
-            // 
-            // stairsButtonB
-            // 
-            this.stairsButtonB.Location = new System.Drawing.Point(874, 151);
-            this.stairsButtonB.Name = "stairsButtonB";
-            this.stairsButtonB.Size = new System.Drawing.Size(79, 23);
-            this.stairsButtonB.TabIndex = 186;
-            this.stairsButtonB.Text = "Stairs B";
-            this.stairsButtonB.UseVisualStyleBackColor = true;
-            this.stairsButtonB.Click += new System.EventHandler(this.stairsButtonB_Click);
-            // 
-            // stairsButtonA
-            // 
-            this.stairsButtonA.Location = new System.Drawing.Point(874, 122);
-            this.stairsButtonA.Name = "stairsButtonA";
-            this.stairsButtonA.Size = new System.Drawing.Size(79, 23);
-            this.stairsButtonA.TabIndex = 185;
-            this.stairsButtonA.Text = "Stairs A";
-            this.stairsButtonA.UseVisualStyleBackColor = true;
-            this.stairsButtonA.Click += new System.EventHandler(this.stairsButtonA_Click);
+            this.makeStairsButton.Location = new System.Drawing.Point(874, 122);
+            this.makeStairsButton.Name = "makeStairsButton";
+            this.makeStairsButton.Size = new System.Drawing.Size(79, 23);
+            this.makeStairsButton.TabIndex = 185;
+            this.makeStairsButton.Text = "Make Stairs";
+            this.makeStairsButton.UseVisualStyleBackColor = true;
+            this.makeStairsButton.Click += new System.EventHandler(this.makeStairsButton_Click);
             // 
             // resetRoomButton
             // 
@@ -6125,12 +6065,7 @@
         private System.Windows.Forms.PictureBox levelHorizontalWall6;
         private System.Windows.Forms.PictureBox levelRoom7;
         private System.Windows.Forms.PictureBox levelRoom52;
-        private System.Windows.Forms.Button stairsButtonF;
-        private System.Windows.Forms.Button stairsButtonE;
-        private System.Windows.Forms.Button stairsButtonD;
-        private System.Windows.Forms.Button stairsButtonC;
-        private System.Windows.Forms.Button stairsButtonB;
-        private System.Windows.Forms.Button stairsButtonA;
+        private System.Windows.Forms.Button makeStairsButton;
         private System.Windows.Forms.Button resetRoomButton;
         private System.Windows.Forms.Button clearRoomButton;
         private System.Windows.Forms.Button zeldaButton;
