@@ -347,22 +347,10 @@
             this.comboBox21 = new System.Windows.Forms.ComboBox();
             this.comboBox24 = new System.Windows.Forms.ComboBox();
             this.comboBox27 = new System.Windows.Forms.ComboBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.comboBox28 = new System.Windows.Forms.ComboBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.comboBox29 = new System.Windows.Forms.ComboBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
             this.comboBox33 = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.comboBox34 = new System.Windows.Forms.ComboBox();
             this.label35 = new System.Windows.Forms.Label();
-            this.comboBox30 = new System.Windows.Forms.ComboBox();
-            this.comboBox31 = new System.Windows.Forms.ComboBox();
-            this.comboBox32 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
@@ -388,7 +376,6 @@
             this.comboBox40 = new System.Windows.Forms.ComboBox();
             this.comboBox41 = new System.Windows.Forms.ComboBox();
             this.comboBox42 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown43 = new System.Windows.Forms.NumericUpDown();
             this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.comboBox43 = new System.Windows.Forms.ComboBox();
             this.comboBox44 = new System.Windows.Forms.ComboBox();
@@ -397,11 +384,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.comboBox45 = new System.Windows.Forms.ComboBox();
-            this.comboBox46 = new System.Windows.Forms.ComboBox();
-            this.comboBox47 = new System.Windows.Forms.ComboBox();
-            this.comboBox48 = new System.Windows.Forms.ComboBox();
-            this.comboBox49 = new System.Windows.Forms.ComboBox();
             this.comboBox50 = new System.Windows.Forms.ComboBox();
             this.comboBox51 = new System.Windows.Forms.ComboBox();
             this.comboBox52 = new System.Windows.Forms.ComboBox();
@@ -446,6 +428,39 @@
             this.checkBox56 = new System.Windows.Forms.CheckBox();
             this.secondQuestDungeonButton = new System.Windows.Forms.Button();
             this.firstQuestDungeonButton = new System.Windows.Forms.Button();
+            this.checkBox37 = new System.Windows.Forms.CheckBox();
+            this.checkBox49 = new System.Windows.Forms.CheckBox();
+            this.checkBox57 = new System.Windows.Forms.CheckBox();
+            this.checkBox58 = new System.Windows.Forms.CheckBox();
+            this.comboBox55 = new System.Windows.Forms.ComboBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.checkBox59 = new System.Windows.Forms.CheckBox();
+            this.checkBox60 = new System.Windows.Forms.CheckBox();
+            this.checkBox61 = new System.Windows.Forms.CheckBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.checkBox62 = new System.Windows.Forms.CheckBox();
+            this.checkBox63 = new System.Windows.Forms.CheckBox();
+            this.checkBox64 = new System.Windows.Forms.CheckBox();
+            this.checkBox65 = new System.Windows.Forms.CheckBox();
+            this.checkBox67 = new System.Windows.Forms.CheckBox();
+            this.checkBox66 = new System.Windows.Forms.CheckBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.comboBox28 = new System.Windows.Forms.ComboBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.comboBox29 = new System.Windows.Forms.ComboBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.comboBox30 = new System.Windows.Forms.ComboBox();
+            this.comboBox31 = new System.Windows.Forms.ComboBox();
+            this.comboBox32 = new System.Windows.Forms.ComboBox();
+            this.comboBox49 = new System.Windows.Forms.ComboBox();
+            this.comboBox48 = new System.Windows.Forms.ComboBox();
+            this.comboBox47 = new System.Windows.Forms.ComboBox();
+            this.comboBox46 = new System.Windows.Forms.ComboBox();
+            this.comboBox45 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.unexploredPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exploredPictureBox)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -627,7 +642,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.levelVerticalWall7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.levelHorizontalWall6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.levelRoom7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).BeginInit();
             this.SuspendLayout();
             // 
             // unexploredPictureBox
@@ -4034,122 +4048,6 @@
             this.comboBox27.Size = new System.Drawing.Size(121, 21);
             this.comboBox27.TabIndex = 137;
             // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(487, 645);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(119, 13);
-            this.label27.TabIndex = 148;
-            this.label27.Text = "Blocked dungeon item?";
-            // 
-            // comboBox28
-            // 
-            this.comboBox28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox28.FormattingEnabled = true;
-            this.comboBox28.Items.AddRange(new object[] {
-            "",
-            "(null)",
-            "White Sword",
-            "Heart Container",
-            "Power Bracelet",
-            "Boomerang",
-            "Magical Boomerang",
-            "Bow",
-            "Raft",
-            "Stepladder",
-            "Recorder",
-            "Magical Rod",
-            "Bible/Magical Shield",
-            "Red Candle",
-            "Magical Key",
-            "Red Ring",
-            "Silver Arrow"});
-            this.comboBox28.Location = new System.Drawing.Point(490, 661);
-            this.comboBox28.Name = "comboBox28";
-            this.comboBox28.Size = new System.Drawing.Size(121, 21);
-            this.comboBox28.TabIndex = 147;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(345, 664);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(139, 13);
-            this.label28.TabIndex = 146;
-            this.label28.Text = "Power Bracelet/Gravestone";
-            // 
-            // comboBox29
-            // 
-            this.comboBox29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox29.FormattingEnabled = true;
-            this.comboBox29.Items.AddRange(new object[] {
-            "",
-            "(null)",
-            "White Sword",
-            "Heart Container",
-            "Power Bracelet",
-            "Boomerang",
-            "Magical Boomerang",
-            "Bow",
-            "Stepladder",
-            "Recorder",
-            "Magical Rod",
-            "Bible/Magical Shield",
-            "Red Candle",
-            "Magical Key",
-            "Red Ring",
-            "Silver Arrow"});
-            this.comboBox29.Location = new System.Drawing.Point(490, 688);
-            this.comboBox29.Name = "comboBox29";
-            this.comboBox29.Size = new System.Drawing.Size(121, 21);
-            this.comboBox29.TabIndex = 150;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(456, 691);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(27, 13);
-            this.label29.TabIndex = 149;
-            this.label29.Text = "Raft";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(424, 758);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(60, 13);
-            this.label30.TabIndex = 154;
-            this.label30.Text = "Bow/Arrow";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(487, 712);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(113, 13);
-            this.label31.TabIndex = 153;
-            this.label31.Text = "Blocked dungeon item";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(426, 731);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(58, 13);
-            this.label32.TabIndex = 151;
-            this.label32.Text = "Stepladder";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(433, 785);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(51, 13);
-            this.label33.TabIndex = 156;
-            this.label33.Text = "Recorder";
-            // 
             // comboBox33
             // 
             this.comboBox33.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -4166,7 +4064,7 @@
             "Lost Hills",
             "River",
             "Start"});
-            this.comboBox33.Location = new System.Drawing.Point(51, 755);
+            this.comboBox33.Location = new System.Drawing.Point(51, 795);
             this.comboBox33.Name = "comboBox33";
             this.comboBox33.Size = new System.Drawing.Size(121, 21);
             this.comboBox33.TabIndex = 162;
@@ -4174,7 +4072,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(48, 714);
+            this.label34.Location = new System.Drawing.Point(48, 697);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(48, 13);
             this.label34.TabIndex = 161;
@@ -4196,7 +4094,7 @@
             "Lost Hills",
             "River",
             "Start"});
-            this.comboBox34.Location = new System.Drawing.Point(51, 730);
+            this.comboBox34.Location = new System.Drawing.Point(51, 740);
             this.comboBox34.Name = "comboBox34";
             this.comboBox34.Size = new System.Drawing.Size(121, 21);
             this.comboBox34.TabIndex = 160;
@@ -4204,86 +4102,11 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(175, 758);
+            this.label35.Location = new System.Drawing.Point(175, 798);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(77, 13);
             this.label35.TabIndex = 159;
             this.label35.Text = "Magical Sword";
-            // 
-            // comboBox30
-            // 
-            this.comboBox30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox30.FormattingEnabled = true;
-            this.comboBox30.Items.AddRange(new object[] {
-            "",
-            "White Sword",
-            "Heart Container",
-            "Power Bracelet",
-            "Boomerang",
-            "Magical Boomerang",
-            "Bow",
-            "Raft",
-            "Recorder",
-            "Magical Rod",
-            "Bible/Magical Shield",
-            "Red Candle",
-            "Magical Key",
-            "Red Ring",
-            "Silver Arrow"});
-            this.comboBox30.Location = new System.Drawing.Point(490, 728);
-            this.comboBox30.Name = "comboBox30";
-            this.comboBox30.Size = new System.Drawing.Size(121, 21);
-            this.comboBox30.TabIndex = 163;
-            // 
-            // comboBox31
-            // 
-            this.comboBox31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox31.FormattingEnabled = true;
-            this.comboBox31.Items.AddRange(new object[] {
-            "",
-            "White Sword",
-            "Heart Container",
-            "Power Bracelet",
-            "Boomerang",
-            "Magical Boomerang",
-            "Raft",
-            "Stepladder",
-            "Recorder",
-            "Magical Rod",
-            "Bible/Magical Shield",
-            "Red Candle",
-            "Magical Key",
-            "Red Ring",
-            "Silver Arrow"});
-            this.comboBox31.Location = new System.Drawing.Point(490, 755);
-            this.comboBox31.Name = "comboBox31";
-            this.comboBox31.Size = new System.Drawing.Size(121, 21);
-            this.comboBox31.TabIndex = 164;
-            // 
-            // comboBox32
-            // 
-            this.comboBox32.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox32.FormattingEnabled = true;
-            this.comboBox32.Items.AddRange(new object[] {
-            "",
-            "White Sword",
-            "Heart Container",
-            "Power Bracelet",
-            "Boomerang",
-            "Magical Boomerang",
-            "Bow",
-            "Raft",
-            "Stepladder",
-            "Magical Rod",
-            "Bible/Magical Shield",
-            "Red Candle",
-            "Magical Key",
-            "Red Ring",
-            "Silver Arrow"});
-            this.comboBox32.Location = new System.Drawing.Point(490, 782);
-            this.comboBox32.Name = "comboBox32";
-            this.comboBox32.Size = new System.Drawing.Size(121, 21);
-            this.comboBox32.TabIndex = 165;
             // 
             // comboBox5
             // 
@@ -4758,24 +4581,6 @@
             this.comboBox42.Size = new System.Drawing.Size(94, 21);
             this.comboBox42.TabIndex = 190;
             // 
-            // numericUpDown43
-            // 
-            this.numericUpDown43.Location = new System.Drawing.Point(149, 34);
-            this.numericUpDown43.Maximum = new decimal(new int[] {
-            4,
-            0,
-            0,
-            0});
-            this.numericUpDown43.Name = "numericUpDown43";
-            this.numericUpDown43.ReadOnly = true;
-            this.numericUpDown43.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown43.TabIndex = 191;
-            this.numericUpDown43.Value = new decimal(new int[] {
-            4,
-            0,
-            0,
-            0});
-            // 
             // checkBox11
             // 
             this.checkBox11.AutoSize = true;
@@ -4807,7 +4612,7 @@
             "Magical Key",
             "Red Ring",
             "Silver Arrow"});
-            this.comboBox43.Location = new System.Drawing.Point(178, 730);
+            this.comboBox43.Location = new System.Drawing.Point(178, 740);
             this.comboBox43.Name = "comboBox43";
             this.comboBox43.Size = new System.Drawing.Size(121, 21);
             this.comboBox43.TabIndex = 197;
@@ -4832,7 +4637,7 @@
             "Magical Key",
             "Red Ring",
             "Silver Arrow"});
-            this.comboBox44.Location = new System.Drawing.Point(178, 782);
+            this.comboBox44.Location = new System.Drawing.Point(178, 767);
             this.comboBox44.Name = "comboBox44";
             this.comboBox44.Size = new System.Drawing.Size(121, 21);
             this.comboBox44.TabIndex = 195;
@@ -4840,7 +4645,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(48, 785);
+            this.label40.Location = new System.Drawing.Point(48, 770);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(34, 13);
             this.label40.TabIndex = 193;
@@ -4849,7 +4654,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(175, 714);
+            this.label10.Location = new System.Drawing.Point(175, 697);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(27, 13);
             this.label10.TabIndex = 199;
@@ -4858,7 +4663,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(54, 612);
+            this.label12.Location = new System.Drawing.Point(54, 602);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(41, 13);
             this.label12.TabIndex = 203;
@@ -4867,7 +4672,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(42, 638);
+            this.label13.Location = new System.Drawing.Point(42, 622);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(53, 13);
             this.label13.TabIndex = 204;
@@ -4876,139 +4681,11 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(52, 664);
+            this.label14.Location = new System.Drawing.Point(52, 642);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(43, 13);
             this.label14.TabIndex = 205;
             this.label14.Text = "Large $";
-            // 
-            // comboBox45
-            // 
-            this.comboBox45.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox45.FormattingEnabled = true;
-            this.comboBox45.Items.AddRange(new object[] {
-            "",
-            "White Sword",
-            "Heart Container",
-            "Power Bracelet",
-            "Boomerang",
-            "Magical Boomerang",
-            "Bow",
-            "Raft",
-            "Stepladder",
-            "Magical Rod",
-            "Bible/Magical Shield",
-            "Red Candle",
-            "Magical Key",
-            "Red Ring",
-            "Silver Arrow"});
-            this.comboBox45.Location = new System.Drawing.Point(617, 782);
-            this.comboBox45.Name = "comboBox45";
-            this.comboBox45.Size = new System.Drawing.Size(121, 21);
-            this.comboBox45.TabIndex = 210;
-            // 
-            // comboBox46
-            // 
-            this.comboBox46.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox46.FormattingEnabled = true;
-            this.comboBox46.Items.AddRange(new object[] {
-            "",
-            "White Sword",
-            "Heart Container",
-            "Power Bracelet",
-            "Boomerang",
-            "Magical Boomerang",
-            "Raft",
-            "Stepladder",
-            "Recorder",
-            "Magical Rod",
-            "Bible/Magical Shield",
-            "Red Candle",
-            "Magical Key",
-            "Red Ring",
-            "Silver Arrow"});
-            this.comboBox46.Location = new System.Drawing.Point(617, 755);
-            this.comboBox46.Name = "comboBox46";
-            this.comboBox46.Size = new System.Drawing.Size(121, 21);
-            this.comboBox46.TabIndex = 209;
-            // 
-            // comboBox47
-            // 
-            this.comboBox47.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox47.FormattingEnabled = true;
-            this.comboBox47.Items.AddRange(new object[] {
-            "",
-            "White Sword",
-            "Heart Container",
-            "Power Bracelet",
-            "Boomerang",
-            "Magical Boomerang",
-            "Bow",
-            "Raft",
-            "Recorder",
-            "Magical Rod",
-            "Bible/Magical Shield",
-            "Red Candle",
-            "Magical Key",
-            "Red Ring",
-            "Silver Arrow"});
-            this.comboBox47.Location = new System.Drawing.Point(617, 728);
-            this.comboBox47.Name = "comboBox47";
-            this.comboBox47.Size = new System.Drawing.Size(121, 21);
-            this.comboBox47.TabIndex = 208;
-            // 
-            // comboBox48
-            // 
-            this.comboBox48.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox48.FormattingEnabled = true;
-            this.comboBox48.Items.AddRange(new object[] {
-            "",
-            "(null)",
-            "White Sword",
-            "Heart Container",
-            "Power Bracelet",
-            "Boomerang",
-            "Magical Boomerang",
-            "Bow",
-            "Stepladder",
-            "Recorder",
-            "Magical Rod",
-            "Bible/Magical Shield",
-            "Red Candle",
-            "Magical Key",
-            "Red Ring",
-            "Silver Arrow"});
-            this.comboBox48.Location = new System.Drawing.Point(617, 688);
-            this.comboBox48.Name = "comboBox48";
-            this.comboBox48.Size = new System.Drawing.Size(121, 21);
-            this.comboBox48.TabIndex = 207;
-            // 
-            // comboBox49
-            // 
-            this.comboBox49.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox49.FormattingEnabled = true;
-            this.comboBox49.Items.AddRange(new object[] {
-            "",
-            "(null)",
-            "White Sword",
-            "Heart Container",
-            "Power Bracelet",
-            "Boomerang",
-            "Magical Boomerang",
-            "Bow",
-            "Raft",
-            "Stepladder",
-            "Recorder",
-            "Magical Rod",
-            "Bible/Magical Shield",
-            "Red Candle",
-            "Magical Key",
-            "Red Ring",
-            "Silver Arrow"});
-            this.comboBox49.Location = new System.Drawing.Point(617, 661);
-            this.comboBox49.Name = "comboBox49";
-            this.comboBox49.Size = new System.Drawing.Size(121, 21);
-            this.comboBox49.TabIndex = 206;
             // 
             // comboBox50
             // 
@@ -5213,7 +4890,7 @@
             // checkBox14
             // 
             this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(101, 612);
+            this.checkBox14.Location = new System.Drawing.Point(101, 602);
             this.checkBox14.Name = "checkBox14";
             this.checkBox14.Size = new System.Drawing.Size(15, 14);
             this.checkBox14.TabIndex = 224;
@@ -5222,7 +4899,7 @@
             // checkBox17
             // 
             this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(122, 612);
+            this.checkBox17.Location = new System.Drawing.Point(122, 602);
             this.checkBox17.Name = "checkBox17";
             this.checkBox17.Size = new System.Drawing.Size(15, 14);
             this.checkBox17.TabIndex = 225;
@@ -5231,7 +4908,7 @@
             // checkBox34
             // 
             this.checkBox34.AutoSize = true;
-            this.checkBox34.Location = new System.Drawing.Point(143, 611);
+            this.checkBox34.Location = new System.Drawing.Point(143, 601);
             this.checkBox34.Name = "checkBox34";
             this.checkBox34.Size = new System.Drawing.Size(15, 14);
             this.checkBox34.TabIndex = 226;
@@ -5240,7 +4917,7 @@
             // checkBox35
             // 
             this.checkBox35.AutoSize = true;
-            this.checkBox35.Location = new System.Drawing.Point(164, 611);
+            this.checkBox35.Location = new System.Drawing.Point(164, 601);
             this.checkBox35.Name = "checkBox35";
             this.checkBox35.Size = new System.Drawing.Size(15, 14);
             this.checkBox35.TabIndex = 227;
@@ -5249,7 +4926,7 @@
             // smallCheckBox1
             // 
             this.smallCheckBox1.AutoSize = true;
-            this.smallCheckBox1.Location = new System.Drawing.Point(185, 611);
+            this.smallCheckBox1.Location = new System.Drawing.Point(185, 601);
             this.smallCheckBox1.Name = "smallCheckBox1";
             this.smallCheckBox1.Size = new System.Drawing.Size(15, 14);
             this.smallCheckBox1.TabIndex = 228;
@@ -5259,7 +4936,7 @@
             // smallCheckBox2
             // 
             this.smallCheckBox2.AutoSize = true;
-            this.smallCheckBox2.Location = new System.Drawing.Point(206, 611);
+            this.smallCheckBox2.Location = new System.Drawing.Point(206, 601);
             this.smallCheckBox2.Name = "smallCheckBox2";
             this.smallCheckBox2.Size = new System.Drawing.Size(15, 14);
             this.smallCheckBox2.TabIndex = 229;
@@ -5269,7 +4946,7 @@
             // checkBox38
             // 
             this.checkBox38.AutoSize = true;
-            this.checkBox38.Location = new System.Drawing.Point(206, 638);
+            this.checkBox38.Location = new System.Drawing.Point(206, 622);
             this.checkBox38.Name = "checkBox38";
             this.checkBox38.Size = new System.Drawing.Size(15, 14);
             this.checkBox38.TabIndex = 235;
@@ -5278,7 +4955,7 @@
             // checkBox39
             // 
             this.checkBox39.AutoSize = true;
-            this.checkBox39.Location = new System.Drawing.Point(185, 638);
+            this.checkBox39.Location = new System.Drawing.Point(185, 622);
             this.checkBox39.Name = "checkBox39";
             this.checkBox39.Size = new System.Drawing.Size(15, 14);
             this.checkBox39.TabIndex = 234;
@@ -5287,7 +4964,7 @@
             // checkBox40
             // 
             this.checkBox40.AutoSize = true;
-            this.checkBox40.Location = new System.Drawing.Point(164, 638);
+            this.checkBox40.Location = new System.Drawing.Point(164, 622);
             this.checkBox40.Name = "checkBox40";
             this.checkBox40.Size = new System.Drawing.Size(15, 14);
             this.checkBox40.TabIndex = 233;
@@ -5296,7 +4973,7 @@
             // checkBox41
             // 
             this.checkBox41.AutoSize = true;
-            this.checkBox41.Location = new System.Drawing.Point(143, 638);
+            this.checkBox41.Location = new System.Drawing.Point(143, 622);
             this.checkBox41.Name = "checkBox41";
             this.checkBox41.Size = new System.Drawing.Size(15, 14);
             this.checkBox41.TabIndex = 232;
@@ -5305,7 +4982,7 @@
             // checkBox42
             // 
             this.checkBox42.AutoSize = true;
-            this.checkBox42.Location = new System.Drawing.Point(122, 638);
+            this.checkBox42.Location = new System.Drawing.Point(122, 622);
             this.checkBox42.Name = "checkBox42";
             this.checkBox42.Size = new System.Drawing.Size(15, 14);
             this.checkBox42.TabIndex = 231;
@@ -5314,7 +4991,7 @@
             // checkBox43
             // 
             this.checkBox43.AutoSize = true;
-            this.checkBox43.Location = new System.Drawing.Point(101, 638);
+            this.checkBox43.Location = new System.Drawing.Point(101, 622);
             this.checkBox43.Name = "checkBox43";
             this.checkBox43.Size = new System.Drawing.Size(15, 14);
             this.checkBox43.TabIndex = 230;
@@ -5323,7 +5000,7 @@
             // checkBox44
             // 
             this.checkBox44.AutoSize = true;
-            this.checkBox44.Location = new System.Drawing.Point(227, 638);
+            this.checkBox44.Location = new System.Drawing.Point(227, 622);
             this.checkBox44.Name = "checkBox44";
             this.checkBox44.Size = new System.Drawing.Size(15, 14);
             this.checkBox44.TabIndex = 236;
@@ -5332,7 +5009,7 @@
             // checkBox45
             // 
             this.checkBox45.AutoSize = true;
-            this.checkBox45.Location = new System.Drawing.Point(101, 664);
+            this.checkBox45.Location = new System.Drawing.Point(101, 642);
             this.checkBox45.Name = "checkBox45";
             this.checkBox45.Size = new System.Drawing.Size(15, 14);
             this.checkBox45.TabIndex = 237;
@@ -5341,7 +5018,7 @@
             // largeCheckBox1
             // 
             this.largeCheckBox1.AutoSize = true;
-            this.largeCheckBox1.Location = new System.Drawing.Point(122, 664);
+            this.largeCheckBox1.Location = new System.Drawing.Point(122, 642);
             this.largeCheckBox1.Name = "largeCheckBox1";
             this.largeCheckBox1.Size = new System.Drawing.Size(15, 14);
             this.largeCheckBox1.TabIndex = 238;
@@ -5350,7 +5027,7 @@
             // largeCheckBox2
             // 
             this.largeCheckBox2.AutoSize = true;
-            this.largeCheckBox2.Location = new System.Drawing.Point(143, 664);
+            this.largeCheckBox2.Location = new System.Drawing.Point(143, 642);
             this.largeCheckBox2.Name = "largeCheckBox2";
             this.largeCheckBox2.Size = new System.Drawing.Size(15, 14);
             this.largeCheckBox2.TabIndex = 239;
@@ -5494,11 +5171,509 @@
             this.firstQuestDungeonButton.UseVisualStyleBackColor = true;
             this.firstQuestDungeonButton.Click += new System.EventHandler(this.firstQuestDungeonButton_Click);
             // 
+            // checkBox37
+            // 
+            this.checkBox37.AutoSize = true;
+            this.checkBox37.Location = new System.Drawing.Point(149, 36);
+            this.checkBox37.Name = "checkBox37";
+            this.checkBox37.Size = new System.Drawing.Size(15, 14);
+            this.checkBox37.TabIndex = 253;
+            this.checkBox37.UseVisualStyleBackColor = true;
+            // 
+            // checkBox49
+            // 
+            this.checkBox49.AutoSize = true;
+            this.checkBox49.Location = new System.Drawing.Point(170, 36);
+            this.checkBox49.Name = "checkBox49";
+            this.checkBox49.Size = new System.Drawing.Size(15, 14);
+            this.checkBox49.TabIndex = 254;
+            this.checkBox49.UseVisualStyleBackColor = true;
+            // 
+            // checkBox57
+            // 
+            this.checkBox57.AutoSize = true;
+            this.checkBox57.Location = new System.Drawing.Point(191, 36);
+            this.checkBox57.Name = "checkBox57";
+            this.checkBox57.Size = new System.Drawing.Size(15, 14);
+            this.checkBox57.TabIndex = 255;
+            this.checkBox57.UseVisualStyleBackColor = true;
+            // 
+            // checkBox58
+            // 
+            this.checkBox58.AutoSize = true;
+            this.checkBox58.Location = new System.Drawing.Point(212, 36);
+            this.checkBox58.Name = "checkBox58";
+            this.checkBox58.Size = new System.Drawing.Size(15, 14);
+            this.checkBox58.TabIndex = 256;
+            this.checkBox58.UseVisualStyleBackColor = true;
+            // 
+            // comboBox55
+            // 
+            this.comboBox55.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox55.FormattingEnabled = true;
+            this.comboBox55.Items.AddRange(new object[] {
+            "",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Bow",
+            "Raft",
+            "Stepladder",
+            "Recorder",
+            "Magical Rod",
+            "Bible/Magical Shield",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox55.Location = new System.Drawing.Point(178, 713);
+            this.comboBox55.Name = "comboBox55";
+            this.comboBox55.Size = new System.Drawing.Size(121, 21);
+            this.comboBox55.TabIndex = 258;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(48, 716);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(36, 13);
+            this.label36.TabIndex = 257;
+            this.label36.Text = "Armos";
+            // 
+            // checkBox59
+            // 
+            this.checkBox59.AutoSize = true;
+            this.checkBox59.Location = new System.Drawing.Point(143, 662);
+            this.checkBox59.Name = "checkBox59";
+            this.checkBox59.Size = new System.Drawing.Size(15, 14);
+            this.checkBox59.TabIndex = 262;
+            this.checkBox59.UseVisualStyleBackColor = true;
+            // 
+            // checkBox60
+            // 
+            this.checkBox60.AutoSize = true;
+            this.checkBox60.Location = new System.Drawing.Point(122, 662);
+            this.checkBox60.Name = "checkBox60";
+            this.checkBox60.Size = new System.Drawing.Size(15, 14);
+            this.checkBox60.TabIndex = 261;
+            this.checkBox60.UseVisualStyleBackColor = true;
+            // 
+            // checkBox61
+            // 
+            this.checkBox61.AutoSize = true;
+            this.checkBox61.Location = new System.Drawing.Point(101, 662);
+            this.checkBox61.Name = "checkBox61";
+            this.checkBox61.Size = new System.Drawing.Size(15, 14);
+            this.checkBox61.TabIndex = 260;
+            this.checkBox61.UseVisualStyleBackColor = true;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(31, 662);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(64, 13);
+            this.label38.TabIndex = 259;
+            this.label38.Text = "Door Repair";
+            // 
+            // checkBox62
+            // 
+            this.checkBox62.AutoSize = true;
+            this.checkBox62.Location = new System.Drawing.Point(164, 662);
+            this.checkBox62.Name = "checkBox62";
+            this.checkBox62.Size = new System.Drawing.Size(15, 14);
+            this.checkBox62.TabIndex = 265;
+            this.checkBox62.UseVisualStyleBackColor = true;
+            // 
+            // checkBox63
+            // 
+            this.checkBox63.AutoSize = true;
+            this.checkBox63.Location = new System.Drawing.Point(185, 662);
+            this.checkBox63.Name = "checkBox63";
+            this.checkBox63.Size = new System.Drawing.Size(15, 14);
+            this.checkBox63.TabIndex = 264;
+            this.checkBox63.UseVisualStyleBackColor = true;
+            // 
+            // checkBox64
+            // 
+            this.checkBox64.AutoSize = true;
+            this.checkBox64.Location = new System.Drawing.Point(206, 662);
+            this.checkBox64.Name = "checkBox64";
+            this.checkBox64.Size = new System.Drawing.Size(15, 14);
+            this.checkBox64.TabIndex = 263;
+            this.checkBox64.UseVisualStyleBackColor = true;
+            // 
+            // checkBox65
+            // 
+            this.checkBox65.AutoSize = true;
+            this.checkBox65.Location = new System.Drawing.Point(227, 662);
+            this.checkBox65.Name = "checkBox65";
+            this.checkBox65.Size = new System.Drawing.Size(15, 14);
+            this.checkBox65.TabIndex = 266;
+            this.checkBox65.UseVisualStyleBackColor = true;
+            // 
+            // checkBox67
+            // 
+            this.checkBox67.AutoSize = true;
+            this.checkBox67.Location = new System.Drawing.Point(269, 662);
+            this.checkBox67.Name = "checkBox67";
+            this.checkBox67.Size = new System.Drawing.Size(15, 14);
+            this.checkBox67.TabIndex = 268;
+            this.checkBox67.UseVisualStyleBackColor = true;
+            this.checkBox67.Visible = false;
+            // 
+            // checkBox66
+            // 
+            this.checkBox66.AutoSize = true;
+            this.checkBox66.Location = new System.Drawing.Point(248, 662);
+            this.checkBox66.Name = "checkBox66";
+            this.checkBox66.Size = new System.Drawing.Size(15, 14);
+            this.checkBox66.TabIndex = 267;
+            this.checkBox66.UseVisualStyleBackColor = true;
+            this.checkBox66.Visible = false;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(345, 642);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(139, 13);
+            this.label28.TabIndex = 146;
+            this.label28.Text = "Power Bracelet/Gravestone";
+            // 
+            // comboBox28
+            // 
+            this.comboBox28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox28.FormattingEnabled = true;
+            this.comboBox28.Items.AddRange(new object[] {
+            "",
+            "(null)",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Bow",
+            "Raft",
+            "Stepladder",
+            "Recorder",
+            "Magical Rod",
+            "Bible/Magical Shield",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox28.Location = new System.Drawing.Point(490, 639);
+            this.comboBox28.Name = "comboBox28";
+            this.comboBox28.Size = new System.Drawing.Size(121, 21);
+            this.comboBox28.TabIndex = 147;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(487, 623);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(119, 13);
+            this.label27.TabIndex = 148;
+            this.label27.Text = "Blocked dungeon item?";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(456, 669);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(27, 13);
+            this.label29.TabIndex = 149;
+            this.label29.Text = "Raft";
+            // 
+            // comboBox29
+            // 
+            this.comboBox29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox29.FormattingEnabled = true;
+            this.comboBox29.Items.AddRange(new object[] {
+            "",
+            "(null)",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Bow",
+            "Stepladder",
+            "Recorder",
+            "Magical Rod",
+            "Bible/Magical Shield",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox29.Location = new System.Drawing.Point(490, 666);
+            this.comboBox29.Name = "comboBox29";
+            this.comboBox29.Size = new System.Drawing.Size(121, 21);
+            this.comboBox29.TabIndex = 150;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(426, 709);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(58, 13);
+            this.label32.TabIndex = 151;
+            this.label32.Text = "Stepladder";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(487, 690);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(113, 13);
+            this.label31.TabIndex = 153;
+            this.label31.Text = "Blocked dungeon item";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(424, 736);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(60, 13);
+            this.label30.TabIndex = 154;
+            this.label30.Text = "Bow/Arrow";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(433, 763);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(51, 13);
+            this.label33.TabIndex = 156;
+            this.label33.Text = "Recorder";
+            // 
+            // comboBox30
+            // 
+            this.comboBox30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox30.FormattingEnabled = true;
+            this.comboBox30.Items.AddRange(new object[] {
+            "",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Bow",
+            "Raft",
+            "Recorder",
+            "Magical Rod",
+            "Bible/Magical Shield",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox30.Location = new System.Drawing.Point(490, 706);
+            this.comboBox30.Name = "comboBox30";
+            this.comboBox30.Size = new System.Drawing.Size(121, 21);
+            this.comboBox30.TabIndex = 163;
+            // 
+            // comboBox31
+            // 
+            this.comboBox31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox31.FormattingEnabled = true;
+            this.comboBox31.Items.AddRange(new object[] {
+            "",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Raft",
+            "Stepladder",
+            "Recorder",
+            "Magical Rod",
+            "Bible/Magical Shield",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox31.Location = new System.Drawing.Point(490, 733);
+            this.comboBox31.Name = "comboBox31";
+            this.comboBox31.Size = new System.Drawing.Size(121, 21);
+            this.comboBox31.TabIndex = 164;
+            // 
+            // comboBox32
+            // 
+            this.comboBox32.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox32.FormattingEnabled = true;
+            this.comboBox32.Items.AddRange(new object[] {
+            "",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Bow",
+            "Raft",
+            "Stepladder",
+            "Magical Rod",
+            "Bible/Magical Shield",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox32.Location = new System.Drawing.Point(490, 760);
+            this.comboBox32.Name = "comboBox32";
+            this.comboBox32.Size = new System.Drawing.Size(121, 21);
+            this.comboBox32.TabIndex = 165;
+            // 
+            // comboBox49
+            // 
+            this.comboBox49.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox49.FormattingEnabled = true;
+            this.comboBox49.Items.AddRange(new object[] {
+            "",
+            "(null)",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Bow",
+            "Raft",
+            "Stepladder",
+            "Recorder",
+            "Magical Rod",
+            "Bible/Magical Shield",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox49.Location = new System.Drawing.Point(617, 639);
+            this.comboBox49.Name = "comboBox49";
+            this.comboBox49.Size = new System.Drawing.Size(121, 21);
+            this.comboBox49.TabIndex = 206;
+            // 
+            // comboBox48
+            // 
+            this.comboBox48.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox48.FormattingEnabled = true;
+            this.comboBox48.Items.AddRange(new object[] {
+            "",
+            "(null)",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Bow",
+            "Stepladder",
+            "Recorder",
+            "Magical Rod",
+            "Bible/Magical Shield",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox48.Location = new System.Drawing.Point(617, 666);
+            this.comboBox48.Name = "comboBox48";
+            this.comboBox48.Size = new System.Drawing.Size(121, 21);
+            this.comboBox48.TabIndex = 207;
+            // 
+            // comboBox47
+            // 
+            this.comboBox47.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox47.FormattingEnabled = true;
+            this.comboBox47.Items.AddRange(new object[] {
+            "",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Bow",
+            "Raft",
+            "Recorder",
+            "Magical Rod",
+            "Bible/Magical Shield",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox47.Location = new System.Drawing.Point(617, 706);
+            this.comboBox47.Name = "comboBox47";
+            this.comboBox47.Size = new System.Drawing.Size(121, 21);
+            this.comboBox47.TabIndex = 208;
+            // 
+            // comboBox46
+            // 
+            this.comboBox46.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox46.FormattingEnabled = true;
+            this.comboBox46.Items.AddRange(new object[] {
+            "",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Raft",
+            "Stepladder",
+            "Recorder",
+            "Magical Rod",
+            "Bible/Magical Shield",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox46.Location = new System.Drawing.Point(617, 733);
+            this.comboBox46.Name = "comboBox46";
+            this.comboBox46.Size = new System.Drawing.Size(121, 21);
+            this.comboBox46.TabIndex = 209;
+            // 
+            // comboBox45
+            // 
+            this.comboBox45.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox45.FormattingEnabled = true;
+            this.comboBox45.Items.AddRange(new object[] {
+            "",
+            "White Sword",
+            "Heart Container",
+            "Power Bracelet",
+            "Boomerang",
+            "Magical Boomerang",
+            "Bow",
+            "Raft",
+            "Stepladder",
+            "Magical Rod",
+            "Bible/Magical Shield",
+            "Red Candle",
+            "Magical Key",
+            "Red Ring",
+            "Silver Arrow"});
+            this.comboBox45.Location = new System.Drawing.Point(617, 760);
+            this.comboBox45.Name = "comboBox45";
+            this.comboBox45.Size = new System.Drawing.Size(121, 21);
+            this.comboBox45.TabIndex = 210;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1811, 828);
+            this.Controls.Add(this.checkBox67);
+            this.Controls.Add(this.checkBox66);
+            this.Controls.Add(this.checkBox65);
+            this.Controls.Add(this.checkBox62);
+            this.Controls.Add(this.checkBox63);
+            this.Controls.Add(this.checkBox64);
+            this.Controls.Add(this.checkBox59);
+            this.Controls.Add(this.checkBox60);
+            this.Controls.Add(this.checkBox61);
+            this.Controls.Add(this.label38);
+            this.Controls.Add(this.comboBox55);
+            this.Controls.Add(this.label36);
+            this.Controls.Add(this.checkBox58);
+            this.Controls.Add(this.checkBox57);
+            this.Controls.Add(this.checkBox49);
+            this.Controls.Add(this.checkBox37);
             this.Controls.Add(this.secondQuestDungeonButton);
             this.Controls.Add(this.checkBox56);
             this.Controls.Add(this.firstQuestDungeonButton);
@@ -5556,7 +5731,6 @@
             this.Controls.Add(this.comboBox44);
             this.Controls.Add(this.label40);
             this.Controls.Add(this.checkBox11);
-            this.Controls.Add(this.numericUpDown43);
             this.Controls.Add(this.comboBox42);
             this.Controls.Add(this.comboBox41);
             this.Controls.Add(this.comboBox38);
@@ -5850,7 +6024,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.levelVerticalWall7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.levelHorizontalWall6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.levelRoom7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -6105,22 +6278,10 @@
         private System.Windows.Forms.ComboBox comboBox21;
         private System.Windows.Forms.ComboBox comboBox24;
         private System.Windows.Forms.ComboBox comboBox27;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.ComboBox comboBox28;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.ComboBox comboBox29;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
         private System.Windows.Forms.ComboBox comboBox33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.ComboBox comboBox34;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.ComboBox comboBox30;
-        private System.Windows.Forms.ComboBox comboBox31;
-        private System.Windows.Forms.ComboBox comboBox32;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.ComboBox comboBox8;
         private System.Windows.Forms.ComboBox comboBox11;
@@ -6157,7 +6318,6 @@
         private System.Windows.Forms.RadioButton foodRadioButton;
         private System.Windows.Forms.RadioButton arrowRadioButton;
         private System.Windows.Forms.Button moneyButton;
-        private System.Windows.Forms.NumericUpDown numericUpDown43;
         private System.Windows.Forms.CheckBox ringCheckBox;
         private System.Windows.Forms.CheckBox candleCheckBox;
         private System.Windows.Forms.CheckBox foodCheckBox;
@@ -6213,11 +6373,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.RadioButton levelRadioButtonUnknown;
         private System.Windows.Forms.Button solidButton;
-        private System.Windows.Forms.ComboBox comboBox45;
-        private System.Windows.Forms.ComboBox comboBox46;
-        private System.Windows.Forms.ComboBox comboBox47;
-        private System.Windows.Forms.ComboBox comboBox48;
-        private System.Windows.Forms.ComboBox comboBox49;
         private System.Windows.Forms.ComboBox comboBox50;
         private System.Windows.Forms.ComboBox comboBox51;
         private System.Windows.Forms.ComboBox comboBox52;
@@ -6275,6 +6430,39 @@
         private System.Windows.Forms.CheckBox checkBox56;
         private System.Windows.Forms.Button secondQuestDungeonButton;
         private System.Windows.Forms.Button firstQuestDungeonButton;
+        private System.Windows.Forms.CheckBox checkBox37;
+        private System.Windows.Forms.CheckBox checkBox49;
+        private System.Windows.Forms.CheckBox checkBox57;
+        private System.Windows.Forms.CheckBox checkBox58;
+        private System.Windows.Forms.ComboBox comboBox55;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.CheckBox checkBox59;
+        private System.Windows.Forms.CheckBox checkBox60;
+        private System.Windows.Forms.CheckBox checkBox61;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.CheckBox checkBox62;
+        private System.Windows.Forms.CheckBox checkBox63;
+        private System.Windows.Forms.CheckBox checkBox64;
+        private System.Windows.Forms.CheckBox checkBox65;
+        private System.Windows.Forms.CheckBox checkBox67;
+        private System.Windows.Forms.CheckBox checkBox66;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.ComboBox comboBox28;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.ComboBox comboBox29;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.ComboBox comboBox30;
+        private System.Windows.Forms.ComboBox comboBox31;
+        private System.Windows.Forms.ComboBox comboBox32;
+        private System.Windows.Forms.ComboBox comboBox49;
+        private System.Windows.Forms.ComboBox comboBox48;
+        private System.Windows.Forms.ComboBox comboBox47;
+        private System.Windows.Forms.ComboBox comboBox46;
+        private System.Windows.Forms.ComboBox comboBox45;
     }
 }
 
