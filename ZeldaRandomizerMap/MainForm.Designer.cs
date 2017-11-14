@@ -5322,7 +5322,6 @@
             this.checkBox67.Size = new System.Drawing.Size(15, 14);
             this.checkBox67.TabIndex = 268;
             this.checkBox67.UseVisualStyleBackColor = true;
-            this.checkBox67.Visible = false;
             // 
             // checkBox66
             // 
@@ -5332,7 +5331,6 @@
             this.checkBox66.Size = new System.Drawing.Size(15, 14);
             this.checkBox66.TabIndex = 267;
             this.checkBox66.UseVisualStyleBackColor = true;
-            this.checkBox66.Visible = false;
             // 
             // label28
             // 
