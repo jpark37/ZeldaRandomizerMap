@@ -46,9 +46,11 @@ namespace ZeldaRandomizerMap
         public static readonly Bitmap BibleImage = MakeDecal(@"zelda\bible.png");
         public static readonly Bitmap CandleImage = MakeDecal(@"zelda\candle.png");
         public static readonly Bitmap ArrowImage = MakeDecal(@"zelda\arrow.png");
-        public static readonly Bitmap FoodImage = MakeDecal(@"zelda\food.png");
+        public static readonly Bitmap FoodCheapImage = MakeDecal(@"zelda\food.png");
+        public static readonly Bitmap FoodExpensiveImage = MakeDecal(@"zelda\food_expensive.png");
         public static readonly Bitmap BlueRingImage = MakeDecal(@"zelda\blue_ring.png");
-        public static readonly Bitmap KeyImage = MakeDecal(@"zelda\key.png");
+        public static readonly Bitmap KeyCheapImage = MakeDecal(@"zelda\key.png");
+        public static readonly Bitmap KeyExpensiveImage = MakeDecal(@"zelda\key_expensive.png");
         public static readonly Bitmap BombImage = MakeDecal(@"zelda\bomb.png");
         public static readonly Bitmap HintImage = MakeDecal(@"zelda\hint.png");
         public static readonly Bitmap MagicalSwordImage = MakeDecal(@"zelda\magical_sword.png");

@@ -53,11 +53,13 @@ namespace ZeldaRandomizerMap
             Bible = 1,
             BlueCandle = 2,
             Arrow = 4,
-            Food = 8,
-            BlueRing = 16,
-            Key = 32,
-            Bomb = 64,
-            All = ShopType.Bible | ShopType.BlueCandle | ShopType.Arrow | ShopType.Food | ShopType.BlueRing | ShopType.Key | ShopType.Bomb,
+            FoodCheap = 8,
+            FoodExpensive = 16,
+            BlueRing = 32,
+            KeyCheap = 64,
+            KeyExpensive = 128,
+            Bomb = 256,
+            All = ShopType.Bible | ShopType.BlueCandle | ShopType.Arrow | ShopType.FoodCheap | ShopType.FoodExpensive | ShopType.BlueRing | ShopType.KeyCheap | ShopType.KeyExpensive | ShopType.Bomb,
         }
 
         enum OverworldType
@@ -180,7 +182,14 @@ namespace ZeldaRandomizerMap
         public void SetNoteShopFood()
         {
             m_exploredCells[m_activeRow, m_activeColumn] = ExploreType.Shop;
-            m_shopCells[m_activeRow, m_activeColumn] |= ShopType.Food;
+            m_shopCells[m_activeRow, m_activeColumn] |= ShopType.FoodCheap;
+            UpdateExploredImage();
+        }
+
+        public void SetNoteShopExpensiveFood()
+        {
+            m_exploredCells[m_activeRow, m_activeColumn] = ExploreType.Shop;
+            m_shopCells[m_activeRow, m_activeColumn] |= ShopType.FoodExpensive;
             UpdateExploredImage();
         }
 
@@ -194,7 +203,14 @@ namespace ZeldaRandomizerMap
         public void SetNoteShopKey()
         {
             m_exploredCells[m_activeRow, m_activeColumn] = ExploreType.Shop;
-            m_shopCells[m_activeRow, m_activeColumn] |= ShopType.Key;
+            m_shopCells[m_activeRow, m_activeColumn] |= ShopType.KeyCheap;
+            UpdateExploredImage();
+        }
+
+        public void SetNoteShopExpensiveKey()
+        {
+            m_exploredCells[m_activeRow, m_activeColumn] = ExploreType.Shop;
+            m_shopCells[m_activeRow, m_activeColumn] |= ShopType.KeyExpensive;
             UpdateExploredImage();
         }
 
@@ -279,7 +295,7 @@ namespace ZeldaRandomizerMap
 
         public void SetShopFilterFood()
         {
-            m_shopFilter = ShopType.Food;
+            m_shopFilter = ShopType.FoodCheap | ShopType.FoodExpensive;
             UpdateExploredImage();
         }
 
@@ -291,7 +307,7 @@ namespace ZeldaRandomizerMap
 
         public void SetShopFilterKey()
         {
-            m_shopFilter = ShopType.Key;
+            m_shopFilter = ShopType.KeyCheap | ShopType.KeyExpensive;
             UpdateExploredImage();
         }
 
@@ -418,7 +434,7 @@ namespace ZeldaRandomizerMap
             }
             if (m_hasFood)
             {
-                filteredShopType &= ~ShopType.Food;
+                filteredShopType &= ~(ShopType.FoodCheap | ShopType.FoodExpensive);
             }
             if (m_hasRing)
             {
@@ -426,7 +442,7 @@ namespace ZeldaRandomizerMap
             }
             if (m_hasKey)
             {
-                filteredShopType &= ~ShopType.Key;
+                filteredShopType &= ~(ShopType.KeyCheap | ShopType.KeyExpensive);
             }
             return filteredShopType.HasFlag(shopType) && m_shopCells[row, column].HasFlag(shopType);
         }
@@ -574,17 +590,25 @@ namespace ZeldaRandomizerMap
                                             {
                                                 UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, ImageConstants.ArrowImage.GetPixel(decalX, decalY));
                                             }
-                                            else if (FilteredShopItem(row, column, ShopType.Food))
+                                            else if (FilteredShopItem(row, column, ShopType.FoodCheap))
                                             {
-                                                UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, ImageConstants.FoodImage.GetPixel(decalX, decalY));
+                                                UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, ImageConstants.FoodCheapImage.GetPixel(decalX, decalY));
+                                            }
+                                            else if (FilteredShopItem(row, column, ShopType.FoodExpensive))
+                                            {
+                                                UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, ImageConstants.FoodExpensiveImage.GetPixel(decalX, decalY));
                                             }
                                             else if (FilteredShopItem(row, column, ShopType.BlueRing))
                                             {
                                                 UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, ImageConstants.BlueRingImage.GetPixel(decalX, decalY));
                                             }
-                                            else if (FilteredShopItem(row, column, ShopType.Key))
+                                            else if (FilteredShopItem(row, column, ShopType.KeyCheap))
                                             {
-                                                UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, ImageConstants.KeyImage.GetPixel(decalX, decalY));
+                                                UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, ImageConstants.KeyCheapImage.GetPixel(decalX, decalY));
+                                            }
+                                            else if (FilteredShopItem(row, column, ShopType.KeyExpensive))
+                                            {
+                                                UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, ImageConstants.KeyExpensiveImage.GetPixel(decalX, decalY));
                                             }
                                             else if (FilteredShopItem(row, column, ShopType.Bomb))
                                             {

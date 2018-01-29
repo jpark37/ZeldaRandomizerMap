@@ -461,6 +461,8 @@
             this.comboBox47 = new System.Windows.Forms.ComboBox();
             this.comboBox46 = new System.Windows.Forms.ComboBox();
             this.comboBox45 = new System.Windows.Forms.ComboBox();
+            this.foodExpensiveButton = new System.Windows.Forms.Button();
+            this.keyExpensiveButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.unexploredPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exploredPictureBox)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -1185,6 +1187,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.keyExpensiveButton);
+            this.tabPage1.Controls.Add(this.foodExpensiveButton);
             this.tabPage1.Controls.Add(this.bibleCheckBox);
             this.tabPage1.Controls.Add(this.bibleButton);
             this.tabPage1.Controls.Add(this.filterSecondButton);
@@ -1344,7 +1348,7 @@
             // keyCheckBox
             // 
             this.keyCheckBox.AutoSize = true;
-            this.keyCheckBox.Location = new System.Drawing.Point(381, 751);
+            this.keyCheckBox.Location = new System.Drawing.Point(415, 751);
             this.keyCheckBox.Name = "keyCheckBox";
             this.keyCheckBox.Size = new System.Drawing.Size(15, 14);
             this.keyCheckBox.TabIndex = 199;
@@ -1364,7 +1368,7 @@
             // ringCheckBox
             // 
             this.ringCheckBox.AutoSize = true;
-            this.ringCheckBox.Location = new System.Drawing.Point(306, 751);
+            this.ringCheckBox.Location = new System.Drawing.Point(340, 751);
             this.ringCheckBox.Name = "ringCheckBox";
             this.ringCheckBox.Size = new System.Drawing.Size(15, 14);
             this.ringCheckBox.TabIndex = 195;
@@ -1398,7 +1402,7 @@
             // 
             // keyButton
             // 
-            this.keyButton.Location = new System.Drawing.Point(402, 748);
+            this.keyButton.Location = new System.Drawing.Point(436, 748);
             this.keyButton.Name = "keyButton";
             this.keyButton.Size = new System.Drawing.Size(48, 23);
             this.keyButton.TabIndex = 80;
@@ -1440,7 +1444,7 @@
             // 
             // ringButton
             // 
-            this.ringButton.Location = new System.Drawing.Point(327, 748);
+            this.ringButton.Location = new System.Drawing.Point(361, 748);
             this.ringButton.Name = "ringButton";
             this.ringButton.Size = new System.Drawing.Size(48, 23);
             this.ringButton.TabIndex = 79;
@@ -1462,7 +1466,7 @@
             // 
             // bombButton
             // 
-            this.bombButton.Location = new System.Drawing.Point(456, 748);
+            this.bombButton.Location = new System.Drawing.Point(524, 748);
             this.bombButton.Name = "bombButton";
             this.bombButton.Size = new System.Drawing.Size(48, 23);
             this.bombButton.TabIndex = 78;
@@ -5651,6 +5655,26 @@
             this.comboBox45.Size = new System.Drawing.Size(121, 21);
             this.comboBox45.TabIndex = 210;
             // 
+            // foodExpensiveButton
+            // 
+            this.foodExpensiveButton.Location = new System.Drawing.Point(306, 748);
+            this.foodExpensiveButton.Name = "foodExpensiveButton";
+            this.foodExpensiveButton.Size = new System.Drawing.Size(28, 23);
+            this.foodExpensiveButton.TabIndex = 209;
+            this.foodExpensiveButton.Text = "$";
+            this.foodExpensiveButton.UseVisualStyleBackColor = true;
+            this.foodExpensiveButton.Click += new System.EventHandler(this.foodExpensiveButton_Click);
+            // 
+            // keyExpensiveButton
+            // 
+            this.keyExpensiveButton.Location = new System.Drawing.Point(490, 748);
+            this.keyExpensiveButton.Name = "keyExpensiveButton";
+            this.keyExpensiveButton.Size = new System.Drawing.Size(28, 23);
+            this.keyExpensiveButton.TabIndex = 210;
+            this.keyExpensiveButton.Text = "$";
+            this.keyExpensiveButton.UseVisualStyleBackColor = true;
+            this.keyExpensiveButton.Click += new System.EventHandler(this.keyExpensiveButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -6461,6 +6485,8 @@
         private System.Windows.Forms.ComboBox comboBox47;
         private System.Windows.Forms.ComboBox comboBox46;
         private System.Windows.Forms.ComboBox comboBox45;
+        private System.Windows.Forms.Button keyExpensiveButton;
+        private System.Windows.Forms.Button foodExpensiveButton;
     }
 }
 

@@ -1907,6 +1907,11 @@ namespace ZeldaRandomizerMap
             m_overworldTracker.SetNoteShopFood();
         }
 
+        private void foodExpensiveButton_Click(object sender, EventArgs e)
+        {
+            m_overworldTracker.SetNoteShopExpensiveFood();
+        }
+
         private void ringCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             m_overworldTracker.SetHasRing(ringCheckBox.Checked);
@@ -1925,6 +1930,11 @@ namespace ZeldaRandomizerMap
         private void keyButton_Click(object sender, EventArgs e)
         {
             m_overworldTracker.SetNoteShopKey();
+        }
+
+        private void keyExpensiveButton_Click(object sender, EventArgs e)
+        {
+            m_overworldTracker.SetNoteShopExpensiveKey();
         }
 
         private void bombButton_Click(object sender, EventArgs e)
