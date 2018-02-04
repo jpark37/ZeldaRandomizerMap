@@ -35,7 +35,9 @@ namespace ZeldaRandomizerMap
             L9,
             LevelUnknown,
             Shop,
+            Heart,
             Potion,
+            Sword,
             WhiteSword,
             MagicalSword,
             WarpZone1,
@@ -221,9 +223,21 @@ namespace ZeldaRandomizerMap
             UpdateExploredImage();
         }
 
+        public void SetNoteHeart()
+        {
+            m_exploredCells[m_activeRow, m_activeColumn] = ExploreType.Heart;
+            UpdateExploredImage();
+        }
+
         public void SetNotePotion()
         {
             m_exploredCells[m_activeRow, m_activeColumn] = ExploreType.Potion;
+            UpdateExploredImage();
+        }
+
+        public void SetNoteSword()
+        {
+            m_exploredCells[m_activeRow, m_activeColumn] = ExploreType.Sword;
             UpdateExploredImage();
         }
 
@@ -615,8 +629,14 @@ namespace ZeldaRandomizerMap
                                                 UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, ImageConstants.BombImage.GetPixel(decalX, decalY));
                                             }
                                             break;
+                                        case ExploreType.Heart:
+                                            UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, ImageConstants.HeartImage.GetPixel(decalX, decalY));
+                                            break;
                                         case ExploreType.Potion:
                                             UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, ImageConstants.PotionImage.GetPixel(decalX, decalY));
+                                            break;
+                                        case ExploreType.Sword:
+                                            UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, ImageConstants.SwordImage.GetPixel(decalX, decalY));
                                             break;
                                         case ExploreType.WhiteSword:
                                             UpdateImageCell(scan0, (offsetX + decalX) * 4, (offsetY + decalY) * stride, ImageConstants.WhiteSwordImage.GetPixel(decalX, decalY));

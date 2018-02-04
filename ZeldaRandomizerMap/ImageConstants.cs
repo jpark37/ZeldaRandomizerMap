@@ -55,7 +55,9 @@ namespace ZeldaRandomizerMap
         public static readonly Bitmap HintImage = MakeDecal(@"zelda\hint.png");
         public static readonly Bitmap MagicalSwordImage = MakeDecal(@"zelda\magical_sword.png");
         public static readonly Bitmap MoneyImage = MakeDecal(@"zelda\money.png");
+        public static readonly Bitmap HeartImage = MakeDecal(@"zelda\heart.png");
         public static readonly Bitmap PotionImage = MakeDecal(@"zelda\potion.png");
+        public static readonly Bitmap SwordImage = MakeDecal(@"zelda\sword.png");
         public static readonly Bitmap WarpZone1Image = MakeDecal(@"zelda\warp_zone_1.png");
         public static readonly Bitmap WarpZone2Image = MakeDecal(@"zelda\warp_zone_2.png");
         public static readonly Bitmap WarpZone3Image = MakeDecal(@"zelda\warp_zone_3.png");

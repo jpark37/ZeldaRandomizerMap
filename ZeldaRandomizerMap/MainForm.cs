@@ -1787,9 +1787,19 @@ namespace ZeldaRandomizerMap
             ToggleHorizontal(7, 6, e);
         }
 
+        private void heartButton_Click(object sender, EventArgs e)
+        {
+            m_overworldTracker.SetNoteHeart();
+        }
+
         private void potionButton_Click(object sender, EventArgs e)
         {
             m_overworldTracker.SetNotePotion();
+        }
+
+        private void swordButton_Click(object sender, EventArgs e)
+        {
+            m_overworldTracker.SetNoteSword();
         }
 
         private void whiteSwordButton_Click(object sender, EventArgs e)

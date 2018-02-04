@@ -84,6 +84,8 @@
             this.resetButton = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.keyExpensiveButton = new System.Windows.Forms.Button();
+            this.foodExpensiveButton = new System.Windows.Forms.Button();
             this.bibleCheckBox = new System.Windows.Forms.CheckBox();
             this.bibleButton = new System.Windows.Forms.Button();
             this.filterSecondButton = new System.Windows.Forms.Button();
@@ -461,8 +463,8 @@
             this.comboBox47 = new System.Windows.Forms.ComboBox();
             this.comboBox46 = new System.Windows.Forms.ComboBox();
             this.comboBox45 = new System.Windows.Forms.ComboBox();
-            this.foodExpensiveButton = new System.Windows.Forms.Button();
-            this.keyExpensiveButton = new System.Windows.Forms.Button();
+            this.swordButton = new System.Windows.Forms.Button();
+            this.heartButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.unexploredPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exploredPictureBox)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -1057,7 +1059,7 @@
             // 
             // l1Button
             // 
-            this.l1Button.Location = new System.Drawing.Point(95, 377);
+            this.l1Button.Location = new System.Drawing.Point(72, 377);
             this.l1Button.Name = "l1Button";
             this.l1Button.Size = new System.Drawing.Size(27, 23);
             this.l1Button.TabIndex = 58;
@@ -1067,7 +1069,7 @@
             // 
             // l2Button
             // 
-            this.l2Button.Location = new System.Drawing.Point(128, 377);
+            this.l2Button.Location = new System.Drawing.Point(105, 377);
             this.l2Button.Name = "l2Button";
             this.l2Button.Size = new System.Drawing.Size(27, 23);
             this.l2Button.TabIndex = 59;
@@ -1077,7 +1079,7 @@
             // 
             // l3Button
             // 
-            this.l3Button.Location = new System.Drawing.Point(161, 377);
+            this.l3Button.Location = new System.Drawing.Point(138, 377);
             this.l3Button.Name = "l3Button";
             this.l3Button.Size = new System.Drawing.Size(27, 23);
             this.l3Button.TabIndex = 60;
@@ -1087,7 +1089,7 @@
             // 
             // l4Button
             // 
-            this.l4Button.Location = new System.Drawing.Point(194, 377);
+            this.l4Button.Location = new System.Drawing.Point(171, 377);
             this.l4Button.Name = "l4Button";
             this.l4Button.Size = new System.Drawing.Size(27, 23);
             this.l4Button.TabIndex = 61;
@@ -1097,7 +1099,7 @@
             // 
             // l5Button
             // 
-            this.l5Button.Location = new System.Drawing.Point(227, 377);
+            this.l5Button.Location = new System.Drawing.Point(204, 377);
             this.l5Button.Name = "l5Button";
             this.l5Button.Size = new System.Drawing.Size(27, 23);
             this.l5Button.TabIndex = 62;
@@ -1107,7 +1109,7 @@
             // 
             // l6Button
             // 
-            this.l6Button.Location = new System.Drawing.Point(260, 377);
+            this.l6Button.Location = new System.Drawing.Point(237, 377);
             this.l6Button.Name = "l6Button";
             this.l6Button.Size = new System.Drawing.Size(27, 23);
             this.l6Button.TabIndex = 63;
@@ -1117,7 +1119,7 @@
             // 
             // l7Button
             // 
-            this.l7Button.Location = new System.Drawing.Point(293, 377);
+            this.l7Button.Location = new System.Drawing.Point(270, 377);
             this.l7Button.Name = "l7Button";
             this.l7Button.Size = new System.Drawing.Size(27, 23);
             this.l7Button.TabIndex = 64;
@@ -1127,7 +1129,7 @@
             // 
             // l8Button
             // 
-            this.l8Button.Location = new System.Drawing.Point(326, 377);
+            this.l8Button.Location = new System.Drawing.Point(303, 377);
             this.l8Button.Name = "l8Button";
             this.l8Button.Size = new System.Drawing.Size(27, 23);
             this.l8Button.TabIndex = 65;
@@ -1137,7 +1139,7 @@
             // 
             // l9Button
             // 
-            this.l9Button.Location = new System.Drawing.Point(359, 377);
+            this.l9Button.Location = new System.Drawing.Point(336, 377);
             this.l9Button.Name = "l9Button";
             this.l9Button.Size = new System.Drawing.Size(27, 23);
             this.l9Button.TabIndex = 66;
@@ -1147,7 +1149,7 @@
             // 
             // levelButton
             // 
-            this.levelButton.Location = new System.Drawing.Point(392, 377);
+            this.levelButton.Location = new System.Drawing.Point(369, 377);
             this.levelButton.Name = "levelButton";
             this.levelButton.Size = new System.Drawing.Size(27, 23);
             this.levelButton.TabIndex = 67;
@@ -1187,6 +1189,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.heartButton);
+            this.tabPage1.Controls.Add(this.swordButton);
             this.tabPage1.Controls.Add(this.keyExpensiveButton);
             this.tabPage1.Controls.Add(this.foodExpensiveButton);
             this.tabPage1.Controls.Add(this.bibleCheckBox);
@@ -1245,6 +1249,26 @@
             this.tabPage1.Text = "Overworld";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // keyExpensiveButton
+            // 
+            this.keyExpensiveButton.Location = new System.Drawing.Point(490, 748);
+            this.keyExpensiveButton.Name = "keyExpensiveButton";
+            this.keyExpensiveButton.Size = new System.Drawing.Size(28, 23);
+            this.keyExpensiveButton.TabIndex = 210;
+            this.keyExpensiveButton.Text = "$";
+            this.keyExpensiveButton.UseVisualStyleBackColor = true;
+            this.keyExpensiveButton.Click += new System.EventHandler(this.keyExpensiveButton_Click);
+            // 
+            // foodExpensiveButton
+            // 
+            this.foodExpensiveButton.Location = new System.Drawing.Point(306, 748);
+            this.foodExpensiveButton.Name = "foodExpensiveButton";
+            this.foodExpensiveButton.Size = new System.Drawing.Size(28, 23);
+            this.foodExpensiveButton.TabIndex = 209;
+            this.foodExpensiveButton.Text = "$";
+            this.foodExpensiveButton.UseVisualStyleBackColor = true;
+            this.foodExpensiveButton.Click += new System.EventHandler(this.foodExpensiveButton_Click);
+            // 
             // bibleCheckBox
             // 
             this.bibleCheckBox.AutoSize = true;
@@ -1287,7 +1311,7 @@
             // 
             // w4Button
             // 
-            this.w4Button.Location = new System.Drawing.Point(821, 377);
+            this.w4Button.Location = new System.Drawing.Point(849, 377);
             this.w4Button.Name = "w4Button";
             this.w4Button.Size = new System.Drawing.Size(34, 23);
             this.w4Button.TabIndex = 204;
@@ -1297,7 +1321,7 @@
             // 
             // w3Button
             // 
-            this.w3Button.Location = new System.Drawing.Point(781, 377);
+            this.w3Button.Location = new System.Drawing.Point(809, 377);
             this.w3Button.Name = "w3Button";
             this.w3Button.Size = new System.Drawing.Size(34, 23);
             this.w3Button.TabIndex = 203;
@@ -1307,7 +1331,7 @@
             // 
             // w2Button
             // 
-            this.w2Button.Location = new System.Drawing.Point(741, 377);
+            this.w2Button.Location = new System.Drawing.Point(769, 377);
             this.w2Button.Name = "w2Button";
             this.w2Button.Size = new System.Drawing.Size(34, 23);
             this.w2Button.TabIndex = 202;
@@ -1498,7 +1522,7 @@
             // 
             // w1Button
             // 
-            this.w1Button.Location = new System.Drawing.Point(701, 377);
+            this.w1Button.Location = new System.Drawing.Point(729, 377);
             this.w1Button.Name = "w1Button";
             this.w1Button.Size = new System.Drawing.Size(34, 23);
             this.w1Button.TabIndex = 77;
@@ -1520,7 +1544,7 @@
             // 
             // hintButton
             // 
-            this.hintButton.Location = new System.Drawing.Point(894, 377);
+            this.hintButton.Location = new System.Drawing.Point(906, 377);
             this.hintButton.Name = "hintButton";
             this.hintButton.Size = new System.Drawing.Size(52, 23);
             this.hintButton.TabIndex = 76;
@@ -1542,7 +1566,7 @@
             // 
             // magicalSwordButton
             // 
-            this.magicalSwordButton.Location = new System.Drawing.Point(609, 377);
+            this.magicalSwordButton.Location = new System.Drawing.Point(653, 377);
             this.magicalSwordButton.Name = "magicalSwordButton";
             this.magicalSwordButton.Size = new System.Drawing.Size(52, 23);
             this.magicalSwordButton.TabIndex = 75;
@@ -1552,7 +1576,7 @@
             // 
             // whiteSwordButton
             // 
-            this.whiteSwordButton.Location = new System.Drawing.Point(551, 377);
+            this.whiteSwordButton.Location = new System.Drawing.Point(595, 377);
             this.whiteSwordButton.Name = "whiteSwordButton";
             this.whiteSwordButton.Size = new System.Drawing.Size(52, 23);
             this.whiteSwordButton.TabIndex = 74;
@@ -1562,7 +1586,7 @@
             // 
             // potionButton
             // 
-            this.potionButton.Location = new System.Drawing.Point(457, 377);
+            this.potionButton.Location = new System.Drawing.Point(485, 377);
             this.potionButton.Name = "potionButton";
             this.potionButton.Size = new System.Drawing.Size(56, 23);
             this.potionButton.TabIndex = 73;
@@ -5655,25 +5679,25 @@
             this.comboBox45.Size = new System.Drawing.Size(121, 21);
             this.comboBox45.TabIndex = 210;
             // 
-            // foodExpensiveButton
+            // swordButton
             // 
-            this.foodExpensiveButton.Location = new System.Drawing.Point(306, 748);
-            this.foodExpensiveButton.Name = "foodExpensiveButton";
-            this.foodExpensiveButton.Size = new System.Drawing.Size(28, 23);
-            this.foodExpensiveButton.TabIndex = 209;
-            this.foodExpensiveButton.Text = "$";
-            this.foodExpensiveButton.UseVisualStyleBackColor = true;
-            this.foodExpensiveButton.Click += new System.EventHandler(this.foodExpensiveButton_Click);
+            this.swordButton.Location = new System.Drawing.Point(566, 377);
+            this.swordButton.Name = "swordButton";
+            this.swordButton.Size = new System.Drawing.Size(23, 23);
+            this.swordButton.TabIndex = 211;
+            this.swordButton.Text = "S";
+            this.swordButton.UseVisualStyleBackColor = true;
+            this.swordButton.Click += new System.EventHandler(this.swordButton_Click);
             // 
-            // keyExpensiveButton
+            // heartButton
             // 
-            this.keyExpensiveButton.Location = new System.Drawing.Point(490, 748);
-            this.keyExpensiveButton.Name = "keyExpensiveButton";
-            this.keyExpensiveButton.Size = new System.Drawing.Size(28, 23);
-            this.keyExpensiveButton.TabIndex = 210;
-            this.keyExpensiveButton.Text = "$";
-            this.keyExpensiveButton.UseVisualStyleBackColor = true;
-            this.keyExpensiveButton.Click += new System.EventHandler(this.keyExpensiveButton_Click);
+            this.heartButton.Location = new System.Drawing.Point(423, 377);
+            this.heartButton.Name = "heartButton";
+            this.heartButton.Size = new System.Drawing.Size(56, 23);
+            this.heartButton.TabIndex = 212;
+            this.heartButton.Text = "Heart";
+            this.heartButton.UseVisualStyleBackColor = true;
+            this.heartButton.Click += new System.EventHandler(this.heartButton_Click);
             // 
             // MainForm
             // 
@@ -6487,6 +6511,8 @@
         private System.Windows.Forms.ComboBox comboBox45;
         private System.Windows.Forms.Button keyExpensiveButton;
         private System.Windows.Forms.Button foodExpensiveButton;
+        private System.Windows.Forms.Button swordButton;
+        private System.Windows.Forms.Button heartButton;
     }
 }
 
