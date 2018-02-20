@@ -2056,6 +2056,7 @@ namespace ZeldaRandomizerMap
                 smallCheckBox2.Visible = false;
                 largeCheckBox1.Visible = true;
                 largeCheckBox2.Visible = true;
+                doorRepairCheckBox.Visible = false;
             }
         }
 
@@ -2068,6 +2069,7 @@ namespace ZeldaRandomizerMap
                 smallCheckBox2.Visible = true;
                 largeCheckBox1.Visible = false;
                 largeCheckBox2.Visible = false;
+                doorRepairCheckBox.Visible = true;
             }
         }
 
@@ -2080,6 +2082,7 @@ namespace ZeldaRandomizerMap
                 smallCheckBox2.Visible = false;
                 largeCheckBox1.Visible = true;
                 largeCheckBox2.Visible = true;
+                doorRepairCheckBox.Visible = false;
             }
         }
 
@@ -2092,6 +2095,7 @@ namespace ZeldaRandomizerMap
                 smallCheckBox2.Visible = false;
                 largeCheckBox1.Visible = true;
                 largeCheckBox2.Visible = true;
+                doorRepairCheckBox.Visible = false;
             }
         }
 
@@ -2104,6 +2108,7 @@ namespace ZeldaRandomizerMap
                 smallCheckBox2.Visible = true;
                 largeCheckBox1.Visible = false;
                 largeCheckBox2.Visible = false;
+                doorRepairCheckBox.Visible = true;
             }
         }
 

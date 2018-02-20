@@ -84,6 +84,8 @@
             this.resetButton = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.heartButton = new System.Windows.Forms.Button();
+            this.swordButton = new System.Windows.Forms.Button();
             this.keyExpensiveButton = new System.Windows.Forms.Button();
             this.foodExpensiveButton = new System.Windows.Forms.Button();
             this.bibleCheckBox = new System.Windows.Forms.CheckBox();
@@ -463,8 +465,7 @@
             this.comboBox47 = new System.Windows.Forms.ComboBox();
             this.comboBox46 = new System.Windows.Forms.ComboBox();
             this.comboBox45 = new System.Windows.Forms.ComboBox();
-            this.swordButton = new System.Windows.Forms.Button();
-            this.heartButton = new System.Windows.Forms.Button();
+            this.doorRepairCheckBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.unexploredPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exploredPictureBox)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -1248,6 +1249,26 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Overworld";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // heartButton
+            // 
+            this.heartButton.Location = new System.Drawing.Point(423, 377);
+            this.heartButton.Name = "heartButton";
+            this.heartButton.Size = new System.Drawing.Size(56, 23);
+            this.heartButton.TabIndex = 212;
+            this.heartButton.Text = "Heart";
+            this.heartButton.UseVisualStyleBackColor = true;
+            this.heartButton.Click += new System.EventHandler(this.heartButton_Click);
+            // 
+            // swordButton
+            // 
+            this.swordButton.Location = new System.Drawing.Point(566, 377);
+            this.swordButton.Name = "swordButton";
+            this.swordButton.Size = new System.Drawing.Size(23, 23);
+            this.swordButton.TabIndex = 211;
+            this.swordButton.Text = "S";
+            this.swordButton.UseVisualStyleBackColor = true;
+            this.swordButton.Click += new System.EventHandler(this.swordButton_Click);
             // 
             // keyExpensiveButton
             // 
@@ -5679,31 +5700,22 @@
             this.comboBox45.Size = new System.Drawing.Size(121, 21);
             this.comboBox45.TabIndex = 210;
             // 
-            // swordButton
+            // doorRepairCheckBox
             // 
-            this.swordButton.Location = new System.Drawing.Point(566, 377);
-            this.swordButton.Name = "swordButton";
-            this.swordButton.Size = new System.Drawing.Size(23, 23);
-            this.swordButton.TabIndex = 211;
-            this.swordButton.Text = "S";
-            this.swordButton.UseVisualStyleBackColor = true;
-            this.swordButton.Click += new System.EventHandler(this.swordButton_Click);
-            // 
-            // heartButton
-            // 
-            this.heartButton.Location = new System.Drawing.Point(423, 377);
-            this.heartButton.Name = "heartButton";
-            this.heartButton.Size = new System.Drawing.Size(56, 23);
-            this.heartButton.TabIndex = 212;
-            this.heartButton.Text = "Heart";
-            this.heartButton.UseVisualStyleBackColor = true;
-            this.heartButton.Click += new System.EventHandler(this.heartButton_Click);
+            this.doorRepairCheckBox.AutoSize = true;
+            this.doorRepairCheckBox.Location = new System.Drawing.Point(290, 662);
+            this.doorRepairCheckBox.Name = "doorRepairCheckBox";
+            this.doorRepairCheckBox.Size = new System.Drawing.Size(15, 14);
+            this.doorRepairCheckBox.TabIndex = 269;
+            this.doorRepairCheckBox.UseVisualStyleBackColor = true;
+            this.doorRepairCheckBox.Visible = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1811, 828);
+            this.Controls.Add(this.doorRepairCheckBox);
             this.Controls.Add(this.checkBox67);
             this.Controls.Add(this.checkBox66);
             this.Controls.Add(this.checkBox65);
@@ -6513,6 +6525,7 @@
         private System.Windows.Forms.Button foodExpensiveButton;
         private System.Windows.Forms.Button swordButton;
         private System.Windows.Forms.Button heartButton;
+        private System.Windows.Forms.CheckBox doorRepairCheckBox;
     }
 }
 
