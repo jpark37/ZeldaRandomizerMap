@@ -220,22 +220,38 @@ namespace ZeldaRandomizerMap
             {
                 if (m_levelColumn > 0)
                 {
-                    m_horizontalPictureBoxes[m_levelRow, m_levelColumn - 1].Image = ImageConstants.SolidWallBitmap;
+                    PictureBox box = m_horizontalPictureBoxes[m_levelRow, m_levelColumn - 1];
+                    if (box != null)
+                    {
+                        box.Image = ImageConstants.SolidWallBitmap;
+                    }
                 }
                 if (m_levelColumn < 7)
                 {
-                    m_horizontalPictureBoxes[m_levelRow, m_levelColumn].Image = ImageConstants.SolidWallBitmap;
+                    PictureBox box = m_horizontalPictureBoxes[m_levelRow, m_levelColumn];
+                    if (box != null)
+                    {
+                        box.Image = ImageConstants.SolidWallBitmap;
+                    }
                 }
             }
             if (m_levelColumn < 8)
             {
                 if (m_levelRow > 0)
                 {
-                    m_verticalPictureBoxes[m_levelRow - 1, m_levelColumn].Image = ImageConstants.SolidWallBitmap;
+                    PictureBox box = m_verticalPictureBoxes[m_levelRow - 1, m_levelColumn];
+                    if (box != null)
+                    {
+                        box.Image = ImageConstants.SolidWallBitmap;
+                    }
                 }
                 if (m_levelRow < 7)
                 {
-                    m_verticalPictureBoxes[m_levelRow, m_levelColumn].Image = ImageConstants.SolidWallBitmap;
+                    PictureBox box = m_verticalPictureBoxes[m_levelRow, m_levelColumn];
+                    if (box != null)
+                    {
+                        box.Image = ImageConstants.SolidWallBitmap;
+                    }
                 }
             }
         }
