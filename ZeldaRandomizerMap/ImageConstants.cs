@@ -73,9 +73,10 @@ namespace ZeldaRandomizerMap
         public static readonly Bitmap PendingRoomBitmap = MakeSolidBitmap(Color.Black);
         public static readonly Bitmap ClearRoomBitmap = MakeSolidBitmap(Color.White);
         public static readonly Bitmap SolidRoomBitmap = MakeSolidBitmap(Color.Red);
+        public static readonly Bitmap BlueBubbleRoomBitmap = MakeSolidBitmap(Color.Blue);
         public static readonly Bitmap NearPatraRoomBitmap = MakeSolidBitmap(Color.Yellow);
-        public static readonly Bitmap NearGanonRoomBitmap = MakeSolidBitmap(Color.Pink);
-        public static readonly Bitmap GanonRoomBitmap = MakeSolidBitmap(Color.Magenta);
+        public static readonly Bitmap NearGannonRoomBitmap = MakeSolidBitmap(Color.Pink);
+        public static readonly Bitmap GannonRoomBitmap = MakeSolidBitmap(Color.Magenta);
         public static readonly Bitmap ZeldaRoomBitmap = MakeSolidBitmap(Color.Cyan);
         public static readonly Bitmap PendingWallBitmap = MakeSolidBitmap(Color.Black);
         public static readonly Bitmap ClearWallBitmap = MakeSolidBitmap(Color.White);

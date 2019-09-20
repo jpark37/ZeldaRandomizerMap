@@ -709,8 +709,8 @@ namespace ZeldaRandomizerMap
             { CellType.Free,     CellType.Bomb,     CellType.Recorder, CellType.None,     CellType.Free,  CellType.Free, CellType.Bomb,     CellType.Free,   CellType.Candle,     CellType.Bracelet,   CellType.None,     CellType.Bomb,     CellType.Bomb,     CellType.Bomb,     CellType.None,     CellType.None },
         };
 
-        CellType[,] m_cells = (CellType[,])StartingCellsMixed.Clone();
-        OverworldType m_overworldType = OverworldType.Mixed;
+        CellType[,] m_cells = (CellType[,])StartingCells1.Clone();
+        OverworldType m_overworldType = OverworldType.First;
 
         ExploreType[,] m_exploredCells = new ExploreType[8, 16];
         ShopType[,] m_shopCells = new ShopType[8, 16];

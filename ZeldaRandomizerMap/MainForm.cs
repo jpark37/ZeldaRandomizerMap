@@ -1207,6 +1207,11 @@ namespace ZeldaRandomizerMap
             m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomSolid();
         }
 
+        private void blueBubbleButton_Click(object sender, EventArgs e)
+        {
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomBlueBubble();
+        }
+
         private void nearPatraButton_Click(object sender, EventArgs e)
         {
             m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomNearPatra();
@@ -1214,12 +1219,12 @@ namespace ZeldaRandomizerMap
 
         private void nearGanonButton_Click(object sender, EventArgs e)
         {
-            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomNearGanon();
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomNearGannon();
         }
 
         private void ganonButton_Click(object sender, EventArgs e)
         {
-            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomGanon();
+            m_levelTrackers[m_activeQuestIndex, m_activeLevelIndex].SetRoomGannon();
         }
 
         private void zeldaButton_Click(object sender, EventArgs e)
@@ -2051,39 +2056,54 @@ namespace ZeldaRandomizerMap
         {
             if (MessageBox.Show("Are you sure?", "1st Quest", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                m_overworldTracker.SetFirstQuest();
-                smallCheckBox1.Visible = false;
-                smallCheckBox2.Visible = false;
-                largeCheckBox1.Visible = true;
-                largeCheckBox2.Visible = true;
-                doorRepairCheckBox.Visible = false;
+                SetFirstQuestOverworld();
             }
+        }
+
+        private void SetFirstQuestOverworld()
+        {
+            m_overworldTracker.SetFirstQuest();
+            smallCheckBox1.Visible = false;
+            smallCheckBox2.Visible = false;
+            largeCheckBox1.Visible = true;
+            largeCheckBox2.Visible = true;
+            doorRepairCheckBox.Visible = false;
         }
 
         private void secondQuestButton_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are you sure?", "2nd Quest", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                m_overworldTracker.SetSecondQuest();
-                smallCheckBox1.Visible = true;
-                smallCheckBox2.Visible = true;
-                largeCheckBox1.Visible = false;
-                largeCheckBox2.Visible = false;
-                doorRepairCheckBox.Visible = true;
+                SetSecondQuestOverworld();
             }
+        }
+
+        private void SetSecondQuestOverworld()
+        {
+            m_overworldTracker.SetSecondQuest();
+            smallCheckBox1.Visible = true;
+            smallCheckBox2.Visible = true;
+            largeCheckBox1.Visible = false;
+            largeCheckBox2.Visible = false;
+            doorRepairCheckBox.Visible = true;
         }
 
         private void mixedQuestButton_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are you sure?", "Mixed Quest", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                m_overworldTracker.SetMixedQuest();
-                smallCheckBox1.Visible = false;
-                smallCheckBox2.Visible = false;
-                largeCheckBox1.Visible = true;
-                largeCheckBox2.Visible = true;
-                doorRepairCheckBox.Visible = false;
+                SetMixedQuestOverworld();
             }
+        }
+
+        private void SetMixedQuestOverworld()
+        {
+            m_overworldTracker.SetMixedQuest();
+            smallCheckBox1.Visible = false;
+            smallCheckBox2.Visible = false;
+            largeCheckBox1.Visible = true;
+            largeCheckBox2.Visible = true;
+            doorRepairCheckBox.Visible = false;
         }
 
         private void filterFirstButton_Click(object sender, EventArgs e)

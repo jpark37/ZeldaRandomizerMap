@@ -19,9 +19,10 @@ namespace ZeldaRandomizerMap
         StairsF,
         StairsX,
         Solid,
+        BlueBubble,
         NearPatra,
-        NearGanon,
-        Ganon,
+        NearGannon,
+        Gannon,
         Zelda,
     }
 
@@ -87,14 +88,17 @@ namespace ZeldaRandomizerMap
                     case RoomType.Solid:
                         m_roomPictureBoxes[row, column].Image = ImageConstants.SolidRoomBitmap;
                         break;
+                    case RoomType.BlueBubble:
+                        m_roomPictureBoxes[row, column].Image = ImageConstants.BlueBubbleRoomBitmap;
+                        break;
                     case RoomType.NearPatra:
                         m_roomPictureBoxes[row, column].Image = ImageConstants.NearPatraRoomBitmap;
                         break;
-                    case RoomType.NearGanon:
-                        m_roomPictureBoxes[row, column].Image = ImageConstants.NearGanonRoomBitmap;
+                    case RoomType.NearGannon:
+                        m_roomPictureBoxes[row, column].Image = ImageConstants.NearGannonRoomBitmap;
                         break;
-                    case RoomType.Ganon:
-                        m_roomPictureBoxes[row, column].Image = ImageConstants.GanonRoomBitmap;
+                    case RoomType.Gannon:
+                        m_roomPictureBoxes[row, column].Image = ImageConstants.GannonRoomBitmap;
                         break;
                     case RoomType.Zelda:
                         m_roomPictureBoxes[row, column].Image = ImageConstants.ZeldaRoomBitmap;
@@ -256,6 +260,12 @@ namespace ZeldaRandomizerMap
             }
         }
 
+        public void SetRoomBlueBubble()
+        {
+            m_levelRooms[m_levelRow, m_levelColumn] = RoomType.BlueBubble;
+            UpdateRoom(m_levelRow, m_levelColumn);
+        }
+
         public void SetRoomNearPatra()
         {
             SetRoomNearPatraHelper(m_levelRow - 1, m_levelColumn);
@@ -264,15 +274,15 @@ namespace ZeldaRandomizerMap
             SetRoomNearPatraHelper(m_levelRow + 1, m_levelColumn);
         }
 
-        public void SetRoomNearGanon()
+        public void SetRoomNearGannon()
         {
-            m_levelRooms[m_levelRow, m_levelColumn] = RoomType.NearGanon;
+            m_levelRooms[m_levelRow, m_levelColumn] = RoomType.NearGannon;
             UpdateRoom(m_levelRow, m_levelColumn);
         }
 
-        public void SetRoomGanon()
+        public void SetRoomGannon()
         {
-            m_levelRooms[m_levelRow, m_levelColumn] = RoomType.Ganon;
+            m_levelRooms[m_levelRow, m_levelColumn] = RoomType.Gannon;
             UpdateRoom(m_levelRow, m_levelColumn);
         }
 
@@ -422,7 +432,7 @@ namespace ZeldaRandomizerMap
                         case RoomType.StairsE:
                         case RoomType.StairsF:
                         case RoomType.StairsX:
-                        case RoomType.NearGanon:
+                        case RoomType.NearGannon:
                             visited = true;
                             break;
                     }
